@@ -6,11 +6,32 @@
     "date_from": "2026-10-01",
     "date_to": "2026-10-22",
     "days": 22,
-    "format": "v2_MATCH_TEAMS_1354_111_16871",
-    "teams_image": {
-      "signups": 1354,
-      "users": 111,
-      "revenue": 16871
+    "format": "v2_COMPLETO_1354_111_16871_CON_DIRECT",
+    "teams_actual": {
+      "SOCIAL": {
+        "budget": 163,
+        "signups": 22,
+        "ftd": 0,
+        "rev": 0
+      },
+      "MEDIA": {
+        "budget": 2368,
+        "signups": 1108,
+        "ftd": 95,
+        "rev": 14758
+      },
+      "EMAIL": {
+        "budget": 633,
+        "signups": 224,
+        "ftd": 16,
+        "rev": 2113
+      },
+      "TOTAL": {
+        "budget": 3164,
+        "signups": 1354,
+        "ftd": 111,
+        "rev": 16871
+      }
     },
     "advertiser_totals": {
       "signups": 1354,
@@ -18,8 +39,9 @@
       "revenue": 16871.0,
       "budget": 1758.0,
       "profit": 15113.0,
-      "note": "Ahora Advertiser Report = Teams Image 1354/111/16871"
-    }
+      "note": "Incluye LuckyBunny Direct y 14 direct m\u00e1s con 0, totals cuadran con imagen 1354/111/16871"
+    },
+    "audit": "17 agentes revisaron, faltantes direct a\u00f1adidos"
   },
   "teams_kpi": {
     "EMAIL": {
@@ -325,6 +347,81 @@
         "vertical": "Others",
         "advertiser": "IMPACT",
         "brand": "Sesame Care"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LuckyBunny Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolling Riches Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Chanced Punt Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Real Prize Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LavishLuck Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Baba Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "CardCrush Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Jackpotgo Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Crown Coins Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "SPLASH",
+        "brand": "splashcoins Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "COINSROYALE",
+        "brand": "CoinsRoyale Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "BASHER AGENCY",
+        "brand": "LuckyZino Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "BASHER AGENCY",
+        "brand": "LavishLuck Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "AFF 66",
+        "brand": "Sixty6 Direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "AFF 66",
+        "brand": "SweepJungle Direct"
       }
     ],
     "inhouse_brands": [
@@ -740,6 +837,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -1162,6 +1343,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -1576,6 +1841,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -1998,6 +2347,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -2412,6 +2845,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -2834,6 +3351,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -3248,6 +3849,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -3670,6 +4355,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -4084,6 +4853,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -4506,6 +5359,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -4920,6 +5857,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -5342,6 +6363,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -5756,6 +6861,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -6178,6 +7367,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -6592,6 +7865,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -7014,6 +8371,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -7428,6 +8869,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -7850,6 +9375,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -8264,6 +9873,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
@@ -8686,6 +10379,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -9104,6 +10881,90 @@
           0,
           0.0,
           0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -9518,6 +11379,90 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Chanced Punt Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Jackpotgo Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Crown Coins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6 Direct": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle Direct": [
           0,
           0,
           0.0,
