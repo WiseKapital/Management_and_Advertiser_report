@@ -5,8 +5,10 @@
     "month_key": "2026-10",
     "date_from": "2026-10-01",
     "date_to": "2026-10-22",
-    "days": 22,
-    "format": "v2_DEFINITIVO_1354_111_16871_2138_LUCKYBUNNY_DIRECT_42_5_600_REAL_CORREGIDO_VERTICAL_ADVERTISER",
+    "days_in_month": 31,
+    "days_elapsed": 22,
+    "is_month_closed": false,
+    "format": "v2_single_table_CLEAN_22d_1354_111_16871_2138_REAL_CORREGIDO",
     "teams_actual": {
       "SOCIAL": {
         "budget": 163,
@@ -43,7 +45,7 @@
       "revenue": 16871.0,
       "budget": 2138.0,
       "profit": 14733.0,
-      "note": "CORREGIDO - Vertical Casino/Sweepstake/Others + Advertiser real (no —). Numeros reales tabla 2138 budget + LuckyBunny Direct 42/5/600"
+      "note": "Usando catalogo CORRECTO Casino/Sweepstake/Others + advertiser real. Sin —. LuckyBunny Direct 42/5/600"
     }
   },
   "teams_kpi": {
@@ -76,547 +78,311 @@
       "profit": 15580.0
     }
   },
-  "advertisers_brands_report": [
-    {
-      "vertical": "Casino",
-      "advertiser": "ACEBET",
-      "brand": "Acebet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "Slotornado",
-      "signups": 50,
-      "ftd": 0,
-      "revenue": 400.0,
-      "budget": 28.0,
-      "profit": 372.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "7Bit Casino",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "Casino Smartlink",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "Betnjet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "LevelUP",
-      "signups": 2,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "FS Casino",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "QBet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "ALL IN AFFILIATES",
-      "brand": "Smash Casino",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "BASHER AGENCY",
-      "brand": "5Bet",
-      "signups": 1,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Casino",
-      "advertiser": "BETMGMPARTNERS",
-      "brand": "BetMGM casino",
-      "signups": 3,
-      "ftd": 1,
-      "revenue": 360.0,
-      "budget": 0.0,
-      "profit": 360.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "AFF 66",
-      "brand": "Sixty6",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "AFF 66",
-      "brand": "SweepJungle",
-      "signups": 1,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "BASHER AGENCY",
-      "brand": "LuckyZino Sweepstakes Casino",
-      "signups": 19,
-      "ftd": 7,
-      "revenue": 840.0,
-      "budget": 0.0,
-      "profit": 840.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "BASHER AGENCY",
-      "brand": "LavishLuck Sweepstakes Casino",
-      "signups": 45,
-      "ftd": 3,
-      "revenue": 420.0,
-      "budget": 0.0,
-      "profit": 420.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "CHANCED",
-      "brand": "Chanced Punt",
-      "signups": 119,
-      "ftd": 28,
-      "revenue": 4200.0,
-      "budget": 0.0,
-      "profit": 4200.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "COINSROYALE",
-      "brand": "CoinsRoyale",
-      "signups": 15,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "COINSROYALE",
-      "brand": "Coins Royale sweeps",
-      "signups": 1,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "ESKHOL_REAL_LONES",
-      "brand": "Real Prize(Eskhol)",
-      "signups": 112,
-      "ftd": 9,
-      "revenue": 1710.0,
-      "budget": 0.0,
-      "profit": 1710.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Rolling Riches",
-      "signups": 55,
-      "ftd": 19,
-      "revenue": 2850.0,
-      "budget": 1080.0,
-      "profit": 1770.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "LuckyBunny",
-      "signups": 65,
-      "ftd": 11,
-      "revenue": 1320.0,
-      "budget": 330.0,
-      "profit": 990.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "The Boss",
-      "signups": 63,
-      "ftd": 4,
-      "revenue": 680.0,
-      "budget": 0.0,
-      "profit": 680.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "LavishLuck",
-      "signups": 80,
-      "ftd": 3,
-      "revenue": 540.0,
-      "budget": 0.0,
-      "profit": 540.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Baba",
-      "signups": 20,
-      "ftd": 3,
-      "revenue": 450.0,
-      "budget": 0.0,
-      "profit": 450.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "CardCrush",
-      "signups": 188,
-      "ftd": 4,
-      "revenue": 440.0,
-      "budget": 0.0,
-      "profit": 440.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Spinblitz SEO",
-      "signups": 27,
-      "ftd": 2,
-      "revenue": 400.0,
-      "budget": 0.0,
-      "profit": 400.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Casinio",
-      "signups": 70,
-      "ftd": 3,
-      "revenue": 316.0,
-      "budget": 0.0,
-      "profit": 316.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Jackpotgo",
-      "signups": 111,
-      "ftd": 3,
-      "revenue": 510.0,
-      "budget": 220.0,
-      "profit": 290.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Hello Million",
-      "signups": 8,
-      "ftd": 1,
-      "revenue": 150.0,
-      "budget": 0.0,
-      "profit": 150.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "PolyCasino",
-      "signups": 10,
-      "ftd": 1,
-      "revenue": 130.0,
-      "budget": 0.0,
-      "profit": 130.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "TitanTreasure",
-      "signups": 64,
-      "ftd": 1,
-      "revenue": 130.0,
-      "budget": 0.0,
-      "profit": 130.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "CrashMania",
-      "signups": 12,
-      "ftd": 1,
-      "revenue": 125.0,
-      "budget": 0.0,
-      "profit": 125.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Crown Coins Email",
-      "signups": 13,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "CoinsBack",
-      "signups": 3,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Go Go Gold Win",
-      "signups": 5,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Rolla",
-      "signups": 13,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Real Prize",
-      "signups": 9,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Richsweeps",
-      "signups": 17,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Pulsz SEO",
-      "signups": 16,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Spree",
-      "signups": 2,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "Sweet Sweep",
-      "signups": 6,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "LuckyZino",
-      "signups": 27,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 220.0,
-      "profit": -220.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "McLuck",
-      "signups": 5,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 260.0,
-      "profit": -260.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "LUCKY_BUNNY_DIRECT",
-      "brand": "luckybunny_direct",
-      "signups": 42,
-      "ftd": 5,
-      "revenue": 600.0,
-      "budget": 0.0,
-      "profit": 600.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "SPLASH",
-      "brand": "splashcoins",
-      "signups": 30,
-      "ftd": 2,
-      "revenue": 300.0,
-      "budget": 0.0,
-      "profit": 300.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "BASHER AGENCY",
-      "brand": "Cazimbo",
-      "signups": 3,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "BASHER AGENCY",
-      "brand": "Baba Sweepstakes Casino",
-      "signups": 5,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "BASHER AGENCY",
-      "brand": "Sweet Sweeps",
-      "signups": 17,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "COINSROYALE",
-      "brand": "Coins Royale Las Vegas",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "IMPACT",
-      "brand": "Borrowell",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "IMPACT",
-      "brand": "Freecash",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "IMPACT",
-      "brand": "MOLOTOV",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "vertical": "Others",
-      "advertiser": "IMPACT",
-      "brand": "Sesame Care",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    }
-  ],
+  "catalogs": {
+    "advertisers": [
+      "ACEBET",
+      "AFF 66",
+      "ALL IN AFFILIATES",
+      "BASHER AGENCY",
+      "BETMGMPARTNERS",
+      "CHANCED",
+      "COINSROYALE",
+      "ESKHOL_REAL_LONES",
+      "GAMETIME DIGITAL",
+      "IMPACT",
+      "LUCKY_BUNNY_DIRECT",
+      "SPLASH"
+    ],
+    "advertiser_report_catalog": [
+      {
+        "vertical": "Casino",
+        "advertiser": "ACEBET",
+        "brand": "Acebet"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "Slotornado"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "7Bit Casino"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "Casino Smartlink"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "Betnjet"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "LevelUP"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "FS Casino"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "QBet"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "Smash Casino"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "BASHER AGENCY",
+        "brand": "5Bet"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "BETMGMPARTNERS",
+        "brand": "BetMGM casino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "AFF 66",
+        "brand": "Sixty6"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "AFF 66",
+        "brand": "SweepJungle"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "BASHER AGENCY",
+        "brand": "LuckyZino Sweepstakes Casino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "BASHER AGENCY",
+        "brand": "LavishLuck Sweepstakes Casino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "CHANCED",
+        "brand": "Chanced Punt"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "COINSROYALE",
+        "brand": "CoinsRoyale"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "COINSROYALE",
+        "brand": "Coins Royale sweeps"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "ESKHOL_REAL_LONES",
+        "brand": "Real Prize(Eskhol)"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolling Riches"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LuckyBunny"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "The Boss"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Baba"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "CardCrush"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Spinblitz SEO"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LavishLuck"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Jackpotgo"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Casinio"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Hello Million"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "PolyCasino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "TitanTreasure"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "CrashMania"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "CoinsBack"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Crown Coins Email"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Go Go Gold Win"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolla"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Richsweeps"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Pulsz SEO"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "McLuck"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Real Prize"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Sweet Sweep"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LuckyZino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Spree"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "LUCKY_BUNNY_DIRECT",
+        "brand": "luckybunny_direct"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "SPLASH",
+        "brand": "splashcoins"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "BASHER AGENCY",
+        "brand": "Cazimbo"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "BASHER AGENCY",
+        "brand": "Baba Sweepstakes Casino"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "BASHER AGENCY",
+        "brand": "Sweet Sweeps"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "COINSROYALE",
+        "brand": "Coins Royale Las Vegas"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "Borrowell"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "Freecash"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "MOLOTOV"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "Sesame Care"
+      }
+    ],
+    "inhouse_brands": [
+      "Bonusclubs",
+      "Sweepzkings",
+      "ImperialSweeps",
+      "Jackpotrabbit___c",
+      "Re",
+      "Royalzclub sweeps",
+      "SuperSlotz sweeps",
+      "Spin2Win  sweeps LP",
+      "SweepzQueenz",
+      "Wannnasee USA LP",
+      "Pirates LP"
+    ]
+  },
   "daily_records": [
     {
       "date": "2026-10-01",
       "teams": {
-        "SOCIAL": [
-          7.4,
+        "EMAIL": [
+          28.78,
+          11,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -624,11 +390,11 @@
           5,
           670.81
         ],
-        "EMAIL": [
-          28.78,
-          11,
+        "SOCIAL": [
+          7.4,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -838,12 +604,6 @@
           30.9,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          1,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           1,
@@ -862,10 +622,10 @@
           18.19,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           4,
           1,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -873,6 +633,12 @@
           1,
           23.19,
           10.0
+        ],
+        "Casinio": [
+          4,
+          1,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -898,13 +664,13 @@
           5.69,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           1,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           1,
           0,
           0.0,
@@ -922,12 +688,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -940,7 +700,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          1,
+          0,
+          0.0,
+          11.81
+        ],
+        "Real Prize": [
           1,
           0,
           0.0,
@@ -958,11 +724,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           1,
           0,
           0.0,
-          11.81
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -1025,12 +791,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 85,
-        "ftd": 21,
-        "revenue": 766.87,
-        "budget": 97.19
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -1048,11 +808,11 @@
     {
       "date": "2026-10-02",
       "teams": {
-        "SOCIAL": [
-          7.4,
+        "EMAIL": [
+          28.78,
+          11,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -1060,11 +820,11 @@
           5,
           670.81
         ],
-        "EMAIL": [
-          28.78,
-          11,
+        "SOCIAL": [
+          7.4,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -1274,12 +1034,6 @@
           30.9,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          1,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           1,
@@ -1298,10 +1052,10 @@
           18.19,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           4,
           1,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -1309,6 +1063,12 @@
           1,
           23.19,
           10.0
+        ],
+        "Casinio": [
+          4,
+          1,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -1334,13 +1094,13 @@
           5.69,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           1,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           1,
           0,
           0.0,
@@ -1358,12 +1118,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -1376,7 +1130,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          1,
+          0,
+          0.0,
+          11.81
+        ],
+        "Real Prize": [
           1,
           0,
           0.0,
@@ -1394,11 +1154,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           1,
           0,
           0.0,
-          11.81
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -1461,12 +1221,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 80,
-        "ftd": 16,
-        "revenue": 766.87,
-        "budget": 97.19
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -1484,11 +1238,11 @@
     {
       "date": "2026-10-03",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.78,
+          11,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -1496,11 +1250,11 @@
           5,
           670.81
         ],
-        "EMAIL": [
-          28.78,
-          11,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -1710,12 +1464,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          1,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           1,
@@ -1734,10 +1482,10 @@
           18.19,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           4,
           1,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -1745,6 +1493,12 @@
           1,
           23.19,
           10.0
+        ],
+        "Casinio": [
+          4,
+          1,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -1770,13 +1524,13 @@
           5.69,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           1,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           1,
           0,
           0.0,
@@ -1794,12 +1548,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -1812,8 +1560,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          1,
           0,
+          0.0,
+          11.81
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -1830,11 +1584,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
-          1,
+        "Spree": [
+          0,
           0,
           0.0,
-          11.81
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -1897,12 +1651,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 77,
-        "ftd": 14,
-        "revenue": 766.9,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -1920,11 +1668,11 @@
     {
       "date": "2026-10-04",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.78,
+          11,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -1932,11 +1680,11 @@
           5,
           670.81
         ],
-        "EMAIL": [
-          28.78,
-          11,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -2146,12 +1894,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -2170,10 +1912,10 @@
           18.19,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           4,
           0,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -2181,6 +1923,12 @@
           0,
           23.19,
           10.0
+        ],
+        "Casinio": [
+          4,
+          0,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -2206,14 +1954,14 @@
           5.69,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -2225,12 +1973,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -2248,8 +1990,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          1,
           0,
+          0.0,
+          11.81
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -2266,11 +2014,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
-          1,
+        "Spree": [
+          0,
           0,
           0.0,
-          11.81
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -2333,12 +2081,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 74,
-        "ftd": 9,
-        "revenue": 766.9,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -2356,11 +2098,11 @@
     {
       "date": "2026-10-05",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.78,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -2368,11 +2110,11 @@
           5,
           670.82
         ],
-        "EMAIL": [
-          28.78,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -2582,12 +2324,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -2606,10 +2342,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -2617,6 +2353,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -2642,14 +2384,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -2661,12 +2403,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -2684,8 +2420,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          1,
           0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -2702,11 +2444,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
-          1,
+        "Spree": [
+          0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -2769,12 +2511,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 73,
-        "ftd": 7,
-        "revenue": 766.86,
-        "budget": 97.19
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -2792,11 +2528,11 @@
     {
       "date": "2026-10-06",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.78,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -2804,11 +2540,11 @@
           5,
           670.82
         ],
-        "EMAIL": [
-          28.78,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -3018,12 +2754,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -3042,10 +2772,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -3053,6 +2783,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -3078,14 +2814,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -3097,12 +2833,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -3120,8 +2850,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
           0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -3138,11 +2874,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -3205,12 +2941,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 68,
-        "ftd": 6,
-        "revenue": 766.86,
-        "budget": 97.19
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -3228,11 +2958,11 @@
     {
       "date": "2026-10-07",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -3240,11 +2970,11 @@
           5,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -3454,12 +3184,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -3478,10 +3202,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -3489,6 +3213,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -3514,14 +3244,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -3533,12 +3263,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -3556,8 +3280,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
           0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -3574,11 +3304,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -3640,12 +3370,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 66,
-        "ftd": 5,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -3664,11 +3388,11 @@
     {
       "date": "2026-10-08",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.63,
@@ -3676,11 +3400,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -3890,12 +3614,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -3914,10 +3632,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.37,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -3925,6 +3643,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.37,
+          0.0
         ],
         "Hello Million": [
           1,
@@ -3950,14 +3674,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -3969,12 +3693,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -3992,8 +3710,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
           0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -4010,11 +3734,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -4077,12 +3801,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 66,
-        "ftd": 4,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -4100,11 +3818,11 @@
     {
       "date": "2026-10-09",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.64,
@@ -4112,11 +3830,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -4326,12 +4044,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -4350,10 +4062,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -4361,6 +4073,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -4386,14 +4104,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -4405,12 +4123,6 @@
           0.0
         ],
         "Rolla": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Real Prize": [
           1,
           0,
           0.0,
@@ -4428,8 +4140,14 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
           0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
+          1,
           0,
           0.0,
           0.0
@@ -4446,11 +4164,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -4513,12 +4231,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 64,
-        "ftd": 4,
-        "revenue": 766.85,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -4536,11 +4248,11 @@
     {
       "date": "2026-10-10",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.04
         ],
         "MEDIA": [
           107.64,
@@ -4548,11 +4260,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.04
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -4762,12 +4474,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.54,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -4786,10 +4492,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.54,
           0.0
         ],
         "Jackpotgo": [
@@ -4797,6 +4503,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -4822,14 +4534,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -4846,12 +4558,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -4864,7 +4570,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -4882,11 +4594,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -4949,12 +4661,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 62,
-        "ftd": 3,
-        "revenue": 766.85,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -4972,11 +4678,11 @@
     {
       "date": "2026-10-11",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -4984,11 +4690,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -5198,12 +4904,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -5222,10 +4922,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -5233,6 +4933,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -5258,14 +4964,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -5282,12 +4988,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -5300,7 +5000,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -5318,11 +5024,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -5385,12 +5091,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 61,
-        "ftd": 3,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -5408,11 +5108,11 @@
     {
       "date": "2026-10-12",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -5420,11 +5120,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -5634,12 +5334,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -5658,10 +5352,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -5669,6 +5363,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -5694,14 +5394,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -5718,12 +5418,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -5736,7 +5430,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -5754,11 +5454,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -5821,12 +5521,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 60,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -5844,11 +5538,11 @@
     {
       "date": "2026-10-13",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -5856,11 +5550,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -6070,12 +5764,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -6094,10 +5782,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -6105,6 +5793,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -6130,14 +5824,14 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
-          1,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
-          0,
+        "Crown Coins Email": [
+          1,
           0,
           0.0,
           0.0
@@ -6154,12 +5848,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -6172,7 +5860,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -6190,11 +5884,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -6257,12 +5951,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 58,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -6280,11 +5968,11 @@
     {
       "date": "2026-10-14",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -6292,11 +5980,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -6506,12 +6194,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          4,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -6530,10 +6212,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
-          3,
+        "LavishLuck": [
+          4,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -6541,6 +6223,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -6566,13 +6254,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -6590,12 +6278,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -6608,7 +6290,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -6626,11 +6314,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -6692,12 +6380,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 56,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -6716,11 +6398,11 @@
     {
       "date": "2026-10-15",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -6728,11 +6410,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -6942,12 +6624,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -6966,10 +6642,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -6977,6 +6653,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -7002,13 +6684,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -7026,12 +6708,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -7044,7 +6720,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -7062,11 +6744,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -7128,12 +6810,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 55,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -7152,11 +6828,11 @@
     {
       "date": "2026-10-16",
       "teams": {
-        "SOCIAL": [
-          7.41,
+        "EMAIL": [
+          28.77,
+          10,
           1,
-          0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -7164,11 +6840,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
           1,
-          96.05
+          0,
+          0.0
         ]
       },
       "advertisers": {
@@ -7378,12 +7054,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -7402,10 +7072,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -7413,6 +7083,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -7438,13 +7114,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -7462,12 +7138,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -7480,7 +7150,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -7498,11 +7174,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -7565,12 +7241,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 54,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -7588,11 +7258,11 @@
     {
       "date": "2026-10-17",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -7600,11 +7270,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -7814,12 +7484,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -7838,10 +7502,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -7849,6 +7513,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -7874,13 +7544,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -7898,12 +7568,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           1,
           0,
@@ -7916,7 +7580,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -7934,11 +7604,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -8000,12 +7670,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 53,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -8024,11 +7688,11 @@
     {
       "date": "2026-10-18",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -8036,11 +7700,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -8250,12 +7914,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -8274,10 +7932,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -8285,6 +7943,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -8310,13 +7974,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -8334,12 +7998,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           0,
           0,
@@ -8352,7 +8010,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -8370,11 +8034,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -8436,12 +8100,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 51,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -8460,11 +8118,11 @@
     {
       "date": "2026-10-19",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -8472,11 +8130,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -8686,12 +8344,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -8710,10 +8362,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -8721,6 +8373,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -8746,13 +8404,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -8770,12 +8428,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           0,
           0,
@@ -8788,7 +8440,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -8806,11 +8464,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -8873,12 +8531,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 51,
-        "ftd": 2,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -8896,11 +8548,11 @@
     {
       "date": "2026-10-20",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -8908,11 +8560,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -9122,12 +8774,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           1,
           0,
@@ -9146,10 +8792,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -9157,6 +8803,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -9182,13 +8834,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -9206,12 +8858,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           0,
           0,
@@ -9224,7 +8870,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -9242,11 +8894,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           2,
@@ -9309,12 +8961,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 49,
-        "ftd": 1,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -9332,11 +8978,11 @@
     {
       "date": "2026-10-21",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -9344,11 +8990,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -9558,12 +9204,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           0,
           0,
@@ -9582,10 +9222,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -9593,6 +9233,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -9618,13 +9264,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -9642,12 +9288,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           0,
           0,
@@ -9660,7 +9300,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -9678,11 +9324,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           1,
@@ -9745,12 +9391,6 @@
           0.0
         ]
       },
-      "advertiser_totals_day": {
-        "signups": 46,
-        "ftd": 1,
-        "revenue": 766.86,
-        "budget": 97.18
-      },
       "inhouse": {
         "Bonusclubs": 0.0,
         "Sweepzkings": 0.0,
@@ -9768,11 +9408,11 @@
     {
       "date": "2026-10-22",
       "teams": {
-        "SOCIAL": [
-          7.41,
-          1,
+        "EMAIL": [
+          28.77,
+          10,
           0,
-          0.0
+          96.05
         ],
         "MEDIA": [
           107.64,
@@ -9780,11 +9420,11 @@
           4,
           670.82
         ],
-        "EMAIL": [
-          28.77,
-          10,
+        "SOCIAL": [
+          7.41,
+          1,
           0,
-          96.05
+          0.0
         ]
       },
       "advertisers": {
@@ -9994,12 +9634,6 @@
           30.91,
           0.0
         ],
-        "LavishLuck": [
-          3,
-          0,
-          24.55,
-          0.0
-        ],
         "Baba": [
           0,
           0,
@@ -10018,10 +9652,10 @@
           18.18,
           0.0
         ],
-        "Casinio": [
+        "LavishLuck": [
           3,
           0,
-          14.36,
+          24.55,
           0.0
         ],
         "Jackpotgo": [
@@ -10029,6 +9663,12 @@
           0,
           23.18,
           10.0
+        ],
+        "Casinio": [
+          3,
+          0,
+          14.36,
+          0.0
         ],
         "Hello Million": [
           0,
@@ -10054,13 +9694,13 @@
           5.68,
           0.0
         ],
-        "Crown Coins Email": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "CoinsBack": [
+        "Crown Coins Email": [
           0,
           0,
           0.0,
@@ -10078,12 +9718,6 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Richsweeps": [
           0,
           0,
@@ -10096,7 +9730,13 @@
           0.0,
           0.0
         ],
-        "Spree": [
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          11.82
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -10114,11 +9754,11 @@
           0.0,
           10.0
         ],
-        "McLuck": [
+        "Spree": [
           0,
           0,
           0.0,
-          11.82
+          0.0
         ],
         "luckybunny_direct": [
           1,
@@ -10180,12 +9820,6 @@
           0.0,
           0.0
         ]
-      },
-      "advertiser_totals_day": {
-        "signups": 45,
-        "ftd": 1,
-        "revenue": 766.86,
-        "budget": 97.18
       },
       "inhouse": {
         "Bonusclubs": 0.0,
