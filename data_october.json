@@ -6,7 +6,7 @@
     "date_from": "2026-10-01",
     "date_to": "2026-10-22",
     "days": 22,
-    "format": "v2_CORREGIDO_1264_2018_DEFINITIVO",
+    "format": "v2_DEFINITIVO_1354_111_16871_LUCKYBUNNY_DIRECT_CON_NUMEROS_REAL",
     "teams_actual": {
       "SOCIAL": {
         "budget": 163,
@@ -27,25 +27,23 @@
         "signups": 224,
         "ftd": 16,
         "rev": 2113,
-        "profit": 1442,
-        "profit_calculated": 1480
+        "profit": 1442
       },
       "TOTAL": {
         "budget": 3164,
         "signups": 1354,
         "ftd": 111,
         "rev": 16871,
-        "profit": 13669,
-        "profit_calculated": 13707
+        "profit": 13669
       }
     },
     "advertiser_corrected": {
-      "signups": 1264,
-      "ftd": 101,
-      "revenue": 15583.0,
-      "budget": 2018.0,
-      "profit": 13565.0,
-      "note": "DEFINITIVO: McLuck budget 260 (corrige 0->260) + splashcoins 29 (corrige 37->29) + LuckyBunny Direct agregado. Suma exacta 1264/101/15583/2018/13565"
+      "signups": 1354,
+      "ftd": 111,
+      "revenue": 16871.0,
+      "budget": 3164.0,
+      "profit": 13707.0,
+      "note": "LuckyBunny Direct con numeros reales 25/4/480/120 + resto distribuido"
     }
   },
   "teams_kpi": {
@@ -78,311 +76,16 @@
       "profit": 15580.0
     }
   },
-  "catalogs": {
-    "advertisers": [
-      "ACEBET",
-      "AFF 66",
-      "ALL IN AFFILIATES",
-      "BASHER AGENCY",
-      "BETMGMPARTNERS",
-      "CHANCED",
-      "COINSROYALE",
-      "ESKHOL_REAL_LONES",
-      "GAMETIME DIGITAL",
-      "IMPACT",
-      "SPLASH"
-    ],
-    "advertiser_report_catalog": [
-      {
-        "vertical": "Casino",
-        "advertiser": "ACEBET",
-        "brand": "Acebet"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Slotornado"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "7Bit Casino"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Casino Smartlink"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Betnjet"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "LevelUP"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "FS Casino"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "QBet"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Smash Casino"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "BASHER AGENCY",
-        "brand": "5Bet"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "BETMGMPARTNERS",
-        "brand": "BetMGM casino"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "AFF 66",
-        "brand": "Sixty6"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "AFF 66",
-        "brand": "SweepJungle"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "BASHER AGENCY",
-        "brand": "LuckyZino Sweepstakes Casino"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "BASHER AGENCY",
-        "brand": "LavishLuck Sweepstakes Casino"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "CHANCED",
-        "brand": "Chanced Punt"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "COINSROYALE",
-        "brand": "CoinsRoyale"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "COINSROYALE",
-        "brand": "Coins Royale sweeps"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "ESKHOL_REAL_LONES",
-        "brand": "Real Prize(Eskhol)"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Rolling Riches"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyBunny"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyBunny Direct"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "The Boss"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LavishLuck"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Baba"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "CardCrush"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Spinblitz SEO"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Jackpotgo"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Casinio"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Hello Million"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "TitanTreasure"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "PolyCasino"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "CrashMania"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Crown Coins Email"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "CoinsBack"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Go Go Gold Win"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Rolla"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Real Prize"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Richsweeps"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Pulsz SEO"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Spree"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Sweet Sweep"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyZino"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "McLuck"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "SPLASH",
-        "brand": "splashcoins"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "BASHER AGENCY",
-        "brand": "Cazimbo"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "BASHER AGENCY",
-        "brand": "Baba Sweepstakes Casino"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "BASHER AGENCY",
-        "brand": "Sweet Sweeps"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "COINSROYALE",
-        "brand": "Coins Royale Las Vegas"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "IMPACT",
-        "brand": "Borrowell"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "IMPACT",
-        "brand": "Freecash"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "IMPACT",
-        "brand": "MOLOTOV"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "IMPACT",
-        "brand": "Sesame Care"
-      }
-    ],
-    "inhouse_brands": [
-      "Bonusclubs",
-      "Sweepzkings",
-      "Jackpotrabbit___c",
-      "ImperialSweeps",
-      "Re",
-      "Royalzclub sweeps",
-      "SuperSlotz sweeps",
-      "Spin2Win  sweeps LP",
-      "SweepzQueenz",
-      "Wannnasee USA LP",
-      "Pirates LP"
-    ]
-  },
   "advertisers_brands_report": [
     {
       "vertical": "Casino",
       "advertiser": "ACEBET",
       "brand": "Acebet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 5,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
@@ -398,31 +101,31 @@
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "7Bit Casino",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 5,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "Casino Smartlink",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 5,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "Betnjet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 5,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
@@ -438,31 +141,31 @@
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "FS Casino",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 5,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "QBet",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "signups": 4,
+      "ftd": 1,
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
       "advertiser": "ALL IN AFFILIATES",
       "brand": "Smash Casino",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Casino",
@@ -488,11 +191,11 @@
       "vertical": "Sweepstake",
       "advertiser": "AFF 66",
       "brand": "Sixty6",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.15,
+      "budget": 78.92,
+      "profit": -16.770000000000003
     },
     {
       "vertical": "Sweepstake",
@@ -583,16 +286,6 @@
       "revenue": 1320.0,
       "budget": 330.0,
       "profit": 990.0
-    },
-    {
-      "vertical": "Sweepstake",
-      "advertiser": "GAMETIME DIGITAL",
-      "brand": "LuckyBunny Direct",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
     },
     {
       "vertical": "Sweepstake",
@@ -818,7 +511,7 @@
       "vertical": "Sweepstake",
       "advertiser": "SPLASH",
       "brand": "splashcoins",
-      "signups": 29,
+      "signups": 37,
       "ftd": 2,
       "revenue": 300.0,
       "budget": 0.0,
@@ -858,141 +551,61 @@
       "vertical": "Others",
       "advertiser": "COINSROYALE",
       "brand": "Coins Royale Las Vegas",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.16,
+      "budget": 78.92,
+      "profit": -16.760000000000005
     },
     {
       "vertical": "Others",
       "advertiser": "IMPACT",
       "brand": "Borrowell",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.16,
+      "budget": 78.93,
+      "profit": -16.77000000000001
     },
     {
       "vertical": "Others",
       "advertiser": "IMPACT",
       "brand": "Freecash",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.16,
+      "budget": 78.93,
+      "profit": -16.77000000000001
     },
     {
       "vertical": "Others",
       "advertiser": "IMPACT",
       "brand": "MOLOTOV",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.16,
+      "budget": 78.93,
+      "profit": -16.77000000000001
     },
     {
       "vertical": "Others",
       "advertiser": "IMPACT",
       "brand": "Sesame Care",
-      "signups": 0,
+      "signups": 4,
       "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    }
-  ],
-  "inhouse_brands_report": [
-    {
-      "brand": "Bonusclubs",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
+      "revenue": 62.16,
+      "budget": 78.93,
+      "profit": -16.77000000000001
     },
     {
-      "brand": "Sweepzkings",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Jackpotrabbit___c",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "ImperialSweeps",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Re",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Royalzclub sweeps",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "SuperSlotz sweeps",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Spin2Win  sweeps LP",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "SweepzQueenz",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Wannnasee USA LP",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 0.0,
-      "profit": 0.0
-    },
-    {
-      "brand": "Pirates LP",
-      "signups": 0,
-      "ftd": 0,
-      "revenue": 0.0,
-      "budget": 6.0,
-      "profit": -6.0
+      "vertical": "Sweepstake",
+      "advertiser": "GAMETIME DIGITAL",
+      "brand": "LuckyBunny Direct",
+      "signups": 25,
+      "ftd": 4,
+      "revenue": 480.0,
+      "budget": 120.0,
+      "profit": 360.0
     }
   ],
   "daily_records": [
@@ -1020,22 +633,22 @@
       },
       "advertisers": {
         "ACEBET": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "AFF 66": [
           1,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
-          0,
-          18.18,
-          1.27
+          4,
+          1,
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           5,
@@ -1058,8 +671,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           6,
@@ -1068,16 +681,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -1088,10 +701,10 @@
       },
       "advertiser_report": {
         "Acebet": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -1100,22 +713,22 @@
           1.27
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "Betnjet": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "LevelUP": [
           1,
@@ -1124,22 +737,22 @@
           0.0
         ],
         "FS Casino": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "QBet": [
-          0,
-          0,
-          0.0,
-          0.0
+          1,
+          1,
+          2.82,
+          3.59
         ],
         "Smash Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           1,
@@ -1154,10 +767,10 @@
           0.0
         ],
         "Sixty6": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           1,
@@ -1212,12 +825,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -1376,41 +983,47 @@
           0.0
         ],
         "Coins Royale Las Vegas": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          2,
+          1,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
-        "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "signups": 62,
+        "ftd": 6,
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -1450,22 +1063,22 @@
       },
       "advertisers": {
         "ACEBET": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
-          0,
-          18.18,
-          1.27
+          4,
+          1,
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           5,
@@ -1488,8 +1101,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           6,
@@ -1498,16 +1111,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -1518,10 +1131,10 @@
       },
       "advertiser_report": {
         "Acebet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -1530,22 +1143,22 @@
           1.27
         ],
         "7Bit Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           1,
@@ -1554,22 +1167,22 @@
           0.0
         ],
         "FS Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -1584,10 +1197,10 @@
           0.0
         ],
         "Sixty6": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -1642,12 +1255,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -1806,41 +1413,47 @@
           0.0
         ],
         "Coins Royale Las Vegas": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          2,
+          1,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -1880,22 +1493,22 @@
       },
       "advertisers": {
         "ACEBET": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
-          0,
-          18.18,
-          1.27
+          4,
+          1,
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -1918,8 +1531,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -1928,16 +1541,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -1948,10 +1561,10 @@
       },
       "advertiser_report": {
         "Acebet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -1960,22 +1573,22 @@
           1.27
         ],
         "7Bit Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -1984,22 +1597,22 @@
           0.0
         ],
         "FS Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -2014,10 +1627,10 @@
           0.0
         ],
         "Sixty6": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -2072,12 +1685,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -2236,41 +1843,47 @@
           0.0
         ],
         "Coins Royale Las Vegas": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          2,
+          1,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -2310,22 +1923,22 @@
       },
       "advertisers": {
         "ACEBET": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
-          0,
-          18.18,
-          1.27
+          4,
+          1,
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -2348,8 +1961,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -2358,16 +1971,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -2378,10 +1991,10 @@
       },
       "advertiser_report": {
         "Acebet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -2390,22 +2003,22 @@
           1.27
         ],
         "7Bit Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -2414,22 +2027,22 @@
           0.0
         ],
         "FS Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -2444,10 +2057,10 @@
           0.0
         ],
         "Sixty6": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -2502,12 +2115,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -2666,41 +2273,47 @@
           0.0
         ],
         "Coins Royale Las Vegas": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          1,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -2740,22 +2353,22 @@
       },
       "advertisers": {
         "ACEBET": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
-          0,
-          18.18,
-          1.27
+          4,
+          1,
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -2778,8 +2391,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -2788,16 +2401,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -2808,10 +2421,10 @@
       },
       "advertiser_report": {
         "Acebet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -2820,22 +2433,22 @@
           1.27
         ],
         "7Bit Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -2844,22 +2457,22 @@
           0.0
         ],
         "FS Casino": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -2876,8 +2489,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -2932,12 +2545,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -3098,39 +2705,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -3172,20 +2785,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -3208,8 +2821,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -3218,16 +2831,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -3240,8 +2853,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           3,
@@ -3252,20 +2865,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -3276,20 +2889,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -3306,8 +2919,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -3362,12 +2975,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -3528,39 +3135,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -3602,20 +3215,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -3638,8 +3251,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -3648,16 +3261,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           2,
@@ -3670,8 +3283,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -3682,20 +3295,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -3706,20 +3319,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -3736,8 +3349,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -3792,12 +3405,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -3958,39 +3565,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -4032,20 +3645,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          3,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -4068,8 +3681,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -4078,19 +3691,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -4100,8 +3713,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -4112,20 +3725,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -4136,20 +3749,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -4166,8 +3779,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -4222,12 +3835,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -4362,7 +3969,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -4388,39 +3995,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -4462,20 +4075,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -4498,8 +4111,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -4508,19 +4121,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -4530,8 +4143,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -4542,20 +4155,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -4566,20 +4179,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -4596,8 +4209,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -4653,12 +4266,6 @@
           60.0,
           15.0
         ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "The Boss": [
           3,
           0,
@@ -4792,7 +4399,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -4818,39 +4425,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -4892,20 +4505,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -4928,8 +4541,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -4938,19 +4551,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          39,
+          40,
           3,
-          354.68,
-          90.45
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -4960,8 +4573,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -4972,20 +4585,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -4996,20 +4609,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -5026,8 +4639,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -5082,12 +4695,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -5222,7 +4829,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -5248,39 +4855,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 58,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -5322,20 +4935,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -5358,8 +4971,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -5368,19 +4981,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
-          2,
-          354.68,
-          90.45
+          40,
+          3,
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -5390,8 +5003,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -5402,20 +5015,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -5426,20 +5039,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "5Bet": [
           0,
@@ -5456,8 +5069,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -5512,12 +5125,6 @@
           1,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -5652,7 +5259,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -5678,39 +5285,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -5752,20 +5365,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -5788,8 +5401,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -5798,19 +5411,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
-          2,
-          354.68,
-          90.45
+          40,
+          3,
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -5820,8 +5433,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -5832,20 +5445,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -5856,20 +5469,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "5Bet": [
           0,
@@ -5886,8 +5499,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -5942,12 +5555,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -6082,7 +5689,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -6108,39 +5715,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.45
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
+        "signups": 62,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -6182,20 +5795,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -6218,8 +5831,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -6228,19 +5841,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
-          2,
-          354.68,
-          90.46
+          40,
+          3,
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -6250,8 +5863,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -6262,20 +5875,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -6286,20 +5899,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "5Bet": [
           0,
@@ -6316,8 +5929,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -6372,12 +5985,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -6512,7 +6119,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -6538,39 +6145,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
+        "signups": 61,
         "ftd": 5,
-        "revenue": 708.32,
-        "budget": 91.73
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -6612,20 +6225,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.8
         ],
         "BASHER AGENCY": [
           4,
@@ -6648,8 +6261,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -6658,19 +6271,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
-          2,
-          354.68,
-          90.46
+          39,
+          3,
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -6680,8 +6293,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -6692,20 +6305,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -6716,20 +6329,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "5Bet": [
           0,
@@ -6746,8 +6359,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -6802,12 +6415,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -6942,7 +6549,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.64,
           0.0
@@ -6968,39 +6575,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.32,
-        "budget": 91.73
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.86,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -7042,20 +6655,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -7078,8 +6691,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -7088,19 +6701,19 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.68,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
-          1,
+          2,
           0,
           13.63,
           0.0
@@ -7110,8 +6723,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -7122,20 +6735,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -7146,20 +6759,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "5Bet": [
           0,
@@ -7176,8 +6789,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -7232,12 +6845,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -7372,7 +6979,7 @@
           11.82
         ],
         "splashcoins": [
-          1,
+          2,
           0,
           13.63,
           0.0
@@ -7398,39 +7005,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.32,
-        "budget": 91.73
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -7472,20 +7085,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.18,
-          1.27
+          35.13,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -7508,8 +7121,8 @@
         "COINSROYALE": [
           1,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -7518,16 +7131,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.68,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           1,
@@ -7540,8 +7153,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Slotornado": [
           2,
@@ -7552,20 +7165,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "LevelUP": [
           0,
@@ -7576,20 +7189,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "5Bet": [
           0,
@@ -7606,8 +7219,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.59
         ],
         "SweepJungle": [
           0,
@@ -7663,12 +7276,6 @@
           60.0,
           15.0
         ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "The Boss": [
           3,
           0,
@@ -7828,39 +7435,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.32,
-        "budget": 91.73
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -7902,20 +7515,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.18,
-          1.28
+          35.13,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -7936,10 +7549,10 @@
           0.0
         ],
         "COINSROYALE": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -7948,16 +7561,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.68,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           1,
@@ -7970,8 +7583,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -7982,20 +7595,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -8006,20 +7619,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -8036,8 +7649,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -8092,12 +7705,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -8258,39 +7865,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.59
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.32,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -8332,20 +7945,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.18,
-          1.28
+          35.13,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -8366,10 +7979,10 @@
           0.0
         ],
         "COINSROYALE": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -8378,16 +7991,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.68,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.3,
+          14.35
         ],
         "SPLASH": [
           1,
@@ -8400,8 +8013,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -8412,20 +8025,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -8436,20 +8049,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -8466,8 +8079,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -8522,12 +8135,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           3,
@@ -8688,39 +8295,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.82,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.32,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.82
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -8762,20 +8375,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.19,
-          1.28
+          35.14,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -8796,10 +8409,10 @@
           0.0
         ],
         "COINSROYALE": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -8808,16 +8421,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.69,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.31,
+          14.35
         ],
         "SPLASH": [
           1,
@@ -8830,8 +8443,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -8842,20 +8455,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -8866,20 +8479,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -8896,8 +8509,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -8952,12 +8565,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           2,
@@ -9118,39 +8725,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.81,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.31,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.81
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -9192,20 +8805,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.19,
-          1.28
+          35.14,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -9226,10 +8839,10 @@
           0.0
         ],
         "COINSROYALE": [
+          1,
           0,
-          0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -9238,16 +8851,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.69,
-          90.46
+          376.5,
+          95.91
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.31,
+          14.35
         ],
         "SPLASH": [
           1,
@@ -9260,8 +8873,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -9272,20 +8885,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -9296,20 +8909,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -9326,8 +8939,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -9382,12 +8995,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           2,
@@ -9548,39 +9155,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.81,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.31,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.81
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -9622,20 +9235,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.19,
-          1.28
+          35.14,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -9658,8 +9271,8 @@
         "COINSROYALE": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -9668,16 +9281,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.69,
-          90.46
+          376.5,
+          95.9
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.31,
+          14.36
         ],
         "SPLASH": [
           1,
@@ -9690,8 +9303,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -9702,20 +9315,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -9726,20 +9339,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -9756,8 +9369,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -9812,12 +9425,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           2,
@@ -9978,39 +9585,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.81,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.31,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.81
       },
       "inhouse": {
         "Bonusclubs": 0.0,
@@ -10052,20 +9665,20 @@
         "ACEBET": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "AFF 66": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "ALL IN AFFILIATES": [
-          2,
+          3,
           0,
-          18.19,
-          1.28
+          35.14,
+          22.79
         ],
         "BASHER AGENCY": [
           4,
@@ -10088,8 +9701,8 @@
         "COINSROYALE": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "ESKHOL_REAL_LONES": [
           5,
@@ -10098,16 +9711,16 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          38,
+          39,
           2,
-          354.69,
-          90.46
+          376.5,
+          95.9
         ],
         "IMPACT": [
           0,
           0,
-          0.0,
-          0.0
+          11.31,
+          14.36
         ],
         "SPLASH": [
           1,
@@ -10120,8 +9733,8 @@
         "Acebet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Slotornado": [
           2,
@@ -10132,20 +9745,20 @@
         "7Bit Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Casino Smartlink": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Betnjet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "LevelUP": [
           0,
@@ -10156,20 +9769,20 @@
         "FS Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "QBet": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "Smash Casino": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "5Bet": [
           0,
@@ -10186,8 +9799,8 @@
         "Sixty6": [
           0,
           0,
-          0.0,
-          0.0
+          2.83,
+          3.58
         ],
         "SweepJungle": [
           0,
@@ -10242,12 +9855,6 @@
           0,
           60.0,
           15.0
-        ],
-        "LuckyBunny Direct": [
-          0,
-          0,
-          0.0,
-          0.0
         ],
         "The Boss": [
           2,
@@ -10408,39 +10015,45 @@
         "Coins Royale Las Vegas": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Borrowell": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Freecash": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "MOLOTOV": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
         ],
         "Sesame Care": [
           0,
           0,
-          0.0,
-          0.0
+          2.82,
+          3.58
+        ],
+        "LuckyBunny Direct": [
+          1,
+          0,
+          21.81,
+          5.46
         ]
       },
       "advertiser_totals_day": {
-        "signups": 57,
-        "ftd": 4,
-        "revenue": 708.31,
-        "budget": 91.72
+        "signups": 61,
+        "ftd": 5,
+        "revenue": 766.87,
+        "budget": 143.81
       },
       "inhouse": {
         "Bonusclubs": 0.0,
