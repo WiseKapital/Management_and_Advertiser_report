@@ -8,7 +8,22 @@
     "days_in_month": 31,
     "days_elapsed": 22,
     "is_month_closed": false,
-    "format": "v2_single_table_CLEAN_22d_1272"
+    "format": "v2_CLEAN_22d_CORRECT_1272",
+    "totals_corrected": {
+      "advertiser_report": {
+        "signups": 1272,
+        "ftd": 101,
+        "revenue": 15583.0,
+        "budget": 1758.0,
+        "profit": 13825.0
+      },
+      "teams": {
+        "budget": 3164,
+        "signups": 1330,
+        "users": 111,
+        "revenue": 16863
+      }
+    }
   },
   "teams_kpi": {
     "EMAIL": {
