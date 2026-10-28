@@ -247,7 +247,7 @@
     <div style="height:340px"><canvas id="chDaily"></canvas></div>
   </div>
 
-  <!-- ADVERTISER REPORT CONSOLIDADA (SEGÚN TU IMAGEN) -->
+  <!-- ADVERTISER REPORT CONSOLIDADA -->
   <div class="panel">
     <div class="panel-head">
       <div>
@@ -399,7 +399,9 @@ let CURRENT = {
   inhouseBrands: [],
   daily: [],
   baseKpi: {},
-  totalPeriodDays: 30
+  totalPeriodDays: 30,
+  isFullPeriod: false,
+  daysCount: 1
 };
 
 const state = {
@@ -519,7 +521,7 @@ async function ensureDataRangeLoaded(fromStr, toStr) {
 }
 
 /* =========================================================================
-   DATE-FILTERING & RECALCULATION ENGINE (COMPATIBLE CON V2 SINGLE TABLE)
+   DATE-FILTERING & RECALCULATION ENGINE (ACTUALIZADO CON DÍAS REALES)
    ========================================================================= */
 async function filterAndRenderAll() {
   const overlay = document.getElementById('loadingOverlay');
@@ -544,7 +546,6 @@ async function filterAndRenderAll() {
     if (mObj.catalogs) {
       (mObj.catalogs.advertisers || []).forEach(a => mergedCatalogs.advertisers.add(a));
       
-      // Soporte flexible para 'advertiser_report_catalog' (v2) y 'brands' (v1)
       const brandCat = mObj.catalogs.advertiser_report_catalog || mObj.catalogs.brands || [];
       brandCat.forEach(b => {
         if (!mergedCatalogs.brandsMap.has(b.brand)) {
@@ -562,7 +563,18 @@ async function filterAndRenderAll() {
   allLoadedRecords.sort((a, b) => a.date.localeCompare(b.date));
   CURRENT.daily = allLoadedRecords;
 
-  const daysCount = allLoadedRecords.length || 1;
+  // CÁLCULO DE DÍAS REALES DEL CALENDARIO SEGÚN EL ÚLTIMO REGISTRO DISPONIBLE
+  const lastRecord = allLoadedRecords[allLoadedRecords.length - 1];
+  let daysCount = 1;
+
+  if (lastRecord) {
+    const [fromY, fromM, fromD] = state.from.split('-').map(Number);
+    const [lastY, lastM, lastD] = lastRecord.date.split('-').map(Number);
+    const dStart = new Date(fromY, fromM - 1, fromD);
+    const dLast = new Date(lastY, lastM - 1, lastD);
+    daysCount = Math.round((dLast - dStart) / (1000 * 60 * 60 * 24)) + 1;
+    if (daysCount < 1) daysCount = 1;
+  }
 
   const [fromY, fromM] = state.from.split('-').map(Number);
   const [targetY, targetM] = state.to.split('-').map(Number);
@@ -576,6 +588,13 @@ async function filterAndRenderAll() {
     m++;
     if (m > 12) { m = 1; y++; }
   }
+
+  if (daysCount > totalPeriodDays) daysCount = totalPeriodDays;
+  const isFullPeriod = (daysCount >= totalPeriodDays);
+  const rrFactor = isFullPeriod ? 1.0 : (totalPeriodDays / daysCount);
+
+  CURRENT.daysCount = daysCount;
+  CURRENT.isFullPeriod = isFullPeriod;
 
   const aggregatedKpi = {
     "EMAIL": { budget: 0, signups: 0, users: 0, revenue: 0, profit: 0 },
@@ -603,8 +622,6 @@ async function filterAndRenderAll() {
   CURRENT.baseKpi = aggregatedKpi;
   CURRENT.totalPeriodDays = totalPeriodDays;
 
-  const isFullPeriod = (daysCount >= totalPeriodDays);
-  const rrFactor = isFullPeriod ? 1.0 : (totalPeriodDays / daysCount);
   const recordsForTables = allLoadedRecords;
 
   // 1. Equipos
@@ -657,7 +674,7 @@ async function filterAndRenderAll() {
         profit: Math.round(profit) 
       },
       run_rate: { budget: rrBudget, signups: rrSignups, users: rrUsers, revenue: rrRev, profit: rrProfit },
-      roi: act.budget > 0 ? '1:' + Math.round(act.revenue / act.budget) : '—'
+      roi: act.budget > 0 ? '1:' + (act.revenue / act.budget).toFixed(1) : '—'
     };
   });
 
@@ -680,7 +697,7 @@ async function filterAndRenderAll() {
       profit: Math.round(gtActual.profit) 
     },
     run_rate: { budget: gtRrBudget, signups: gtRrSignups, users: gtRrUsers, revenue: gtRrRev, profit: gtRrProfit },
-    roi: gtActual.budget > 0 ? '1:' + Math.round(gtActual.revenue / gtActual.budget) : '—'
+    roi: gtActual.budget > 0 ? '1:' + (gtActual.revenue / gtActual.budget).toFixed(1) : '—'
   });
 
   // 2. Tarjetas KPI
@@ -714,7 +731,7 @@ async function filterAndRenderAll() {
     return a;
   });
 
-  // 4. Marcas y Reporte Consolidado (Lee formato v2 [vertical, adv, s, f, r, b] y v1 [s, f, r, b])
+  // 4. Marcas y Reporte Consolidado
   const brandMap = {};
   let bIdx = 0;
   mergedCatalogs.brandsMap.forEach(b => {
@@ -742,7 +759,6 @@ async function filterAndRenderAll() {
           };
         }
         
-        // Extracción correcta según cantidad de columnas del array
         if (arr.length >= 6) {
           brandMap[bName].signups += arr[2];
           brandMap[bName].ftd     += arr[3];
@@ -899,7 +915,7 @@ function renderCalendarGrid() {
    ========================================================================= */
 function renderCards() {
   const c = CURRENT.cards;
-  const isMonthClosed = (state.from.slice(8) === "01" && state.to.slice(8) >= "30");
+  const isMonthClosed = CURRENT.isFullPeriod;
   const defs = [
     { lbl: 'REGISTRATIONS', val: fmtInt(c.registrations.mtd), accent: 'var(--pink)', sub: { kpi: fmtInt(c.registrations.kpi), rr: fmtInt(c.registrations.run_rate), rrCls: c.registrations.run_rate >= c.registrations.kpi ? 'green' : 'red' } },
     { lbl: 'FTD', val: fmtInt(c.ftd.mtd), accent: 'var(--pink)', sub: { kpi: fmtInt(c.ftd.kpi), rr: fmtInt(c.ftd.run_rate), rrCls: c.ftd.run_rate >= c.ftd.kpi ? 'green' : 'red' } },
@@ -968,8 +984,9 @@ function renderDaily() {
     reg.push(r); ftd.push(f); rev.push(v);
   });
 
-  const count = filtered.length || 1;
-  const avg = arr => arr.reduce((a,b) => a+b, 0) / count;
+  // Dividir entre días reales transcurridos para que el promedio diario sea verídico
+  const countDays = CURRENT.daysCount || 1;
+  const avg = arr => arr.reduce((a,b) => a+b, 0) / countDays;
   const f1 = v => Math.round(v).toLocaleString('en-US');
 
   const gtKpi = (CURRENT.baseKpi && CURRENT.baseKpi["Grand total"]) 
