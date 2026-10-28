@@ -9,7 +9,7 @@
     "days_elapsed": 28,
     "is_month_closed": false,
     "format": "v2_10BUCKETS_START_OCT1_UPTREND_ORIGINAL_STRUCTURE_01-04-07-10-13-16-19-22-25",
-    "aggregation": "9 buckets empezando Oct 1 - tendencia hacia arriba: 01(1-3)=85, 04(4-6)=99, 07(7-9)=105, 10(10-12)=155, 13(13-15)=142, 16(16-18)=179, 19(19-21)=203, 22(22-24)=229, 25(25-28)=325",
+    "aggregation": "9 buckets empezando Oct 1 - tendencia hacia arriba: 01(1-3)=85, 04(4-6)=99, 07(7-9)=106, 10(10-12)=155, 13(13-15)=143, 16(16-18)=179, 19(19-21)=203, 22(22-24)=229, 28(25-28)=325 - último bucket etiquetado como Oct 28 para llegar hasta hoy",
     "teams_actual": {
       "SOCIAL": {
         "budget": 338,
@@ -4325,8 +4325,8 @@
       }
     },
     {
-      "date": "2026-10-25",
-      "date_range": "25-28 Oct",
+      "date": "2026-10-28",
+      "date_range": "25-28 Oct (bucket 9 - incluye hasta hoy)",
       "teams": {
         "SOCIAL": [
           72.08,
