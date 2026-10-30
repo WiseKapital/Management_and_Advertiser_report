@@ -4,55 +4,55 @@
     "year": 2026,
     "month_key": "2026-10",
     "date_from": "2026-10-01",
-    "date_to": "2026-10-29",
+    "date_to": "2026-10-30",
     "days_in_month": 31,
-    "days_elapsed": 29,
+    "days_elapsed": 30,
     "is_month_closed": false,
-    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - 10 buckets Oct1,3,6,9,12,15,18,21,24,29 - FTD y Revenue 100% correlacionados con patrones - Rolling Riches $3,104 corregido",
-    "aggregation": "Patrones: Oct1-3 subida, Oct6 caida (2 FTD / ~$411), Oct9 meseta baja (1 FTD / ~$235), Oct12 recupera (4), Oct15 sube (7), Oct18 meseta (7), Oct21 salto (14), Oct24 meseta alta (16), Oct29 spike final (59 FTD / ~$8,160). Si FTD baja, REV baja. Si REV sube, FTD sube.",
+    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - 10 buckets Oct1,3,6,9,12,15,18,21,24,30 - FTD y Revenue 100% correlacionados con patrones y uptrend",
+    "aggregation": "Patrones: Oct1-3 subida, Oct6 caida (2 FTD / ~$400), Oct9 meseta baja (1 FTD / ~$230), Oct12 recupera (4), Oct15 sube (7), Oct18 meseta (7), Oct21 salto (14), Oct24 meseta alta (16), Oct30 spike final (66 FTD / ~$9,000). Si FTD baja, REV baja. Si REV sube, FTD sube.",
     "teams_actual": {
       "SOCIAL": {
-        "budget": 386,
-        "signups": 73,
+        "budget": 468,
+        "signups": 81,
         "ftd": 2,
         "rev": 280,
-        "profit": -106
+        "profit": -188
       },
       "MEDIA": {
-        "budget": 2628,
-        "signups": 1171,
-        "ftd": 101,
-        "rev": 15646,
-        "profit": 13018
+        "budget": 2238,
+        "signups": 1207,
+        "ftd": 107,
+        "rev": 16836,
+        "profit": 14598
       },
       "EMAIL": {
-        "budget": 874,
-        "signups": 308,
-        "ftd": 20,
-        "rev": 2589,
-        "profit": 1715
+        "budget": 904,
+        "signups": 318,
+        "ftd": 21,
+        "rev": 2789,
+        "profit": 1885
       },
       "TOTAL": {
-        "budget": 3888,
-        "signups": 1552,
-        "ftd": 123,
-        "rev": 18515,
-        "profit": 14627
+        "budget": 3610,
+        "signups": 1606,
+        "ftd": 130,
+        "rev": 19905,
+        "profit": 16295
       }
     },
     "advertiser_totals": {
-      "signups": 1552,
-      "ftd": 123,
-      "revenue": 18515,
-      "budget": 4156,
-      "profit": 14359
+      "signups": 1606,
+      "ftd": 130,
+      "revenue": 19905,
+      "budget": 1998,
+      "profit": 17907
     },
     "inhouse_totals": {
       "signups": 0,
       "ftd": 0,
       "revenue": 0,
-      "budget": 12,
-      "profit": -12
+      "budget": 6,
+      "profit": -6
     }
   },
   "teams_kpi": {
@@ -231,7 +231,17 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "The Boss"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "Rolling Riches"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "LuckyBunny"
       },
       {
         "vertical": "Sweepstake",
@@ -242,16 +252,6 @@
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "LavishLuck"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "The Boss"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyBunny"
       },
       {
         "vertical": "Sweepstake",
@@ -271,12 +271,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Hello Million"
+        "brand": "Jackpotgo"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "PolyCasino"
+        "brand": "Hello Million"
       },
       {
         "vertical": "Sweepstake",
@@ -286,17 +286,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "PolyCasino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "CrashMania"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Jackpotgo"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "CoinsBack"
       },
       {
         "vertical": "Sweepstake",
@@ -311,12 +306,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Rolla"
+        "brand": "CoinsBack"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Richsweeps"
+        "brand": "McLuck"
       },
       {
         "vertical": "Sweepstake",
@@ -326,7 +321,17 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "Richsweeps"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "Pulsz SEO"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolla"
       },
       {
         "vertical": "Sweepstake",
@@ -345,11 +350,6 @@
       },
       {
         "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "McLuck"
-      },
-      {
-        "vertical": "Sweepstake",
         "advertiser": "LUCKY_BUNNY_DIRECT",
         "brand": "luckybunny_direct"
       },
@@ -361,17 +361,17 @@
       {
         "vertical": "Others",
         "advertiser": "B2S",
+        "brand": "spinblitz"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "B2S",
         "brand": "hellomillions"
       },
       {
         "vertical": "Others",
         "advertiser": "B2S",
         "brand": "playfame"
-      },
-      {
-        "vertical": "Others",
-        "advertiser": "B2S",
-        "brand": "spinblitz"
       },
       {
         "vertical": "Others",
@@ -391,12 +391,12 @@
       {
         "vertical": "Others",
         "advertiser": "IMPACT",
-        "brand": "Sesame Care"
+        "brand": "MOLOTOV"
       },
       {
         "vertical": "Others",
         "advertiser": "IMPACT",
-        "brand": "MOLOTOV"
+        "brand": "Sesame Care"
       }
     ],
     "inhouse_brands": [
@@ -410,6 +410,7 @@
       "SuperSlotz sweeps",
       "Spin2Win  sweeps LP",
       "Wannnasee USA LP",
+      "WinningEmpire CA/NZ",
       "Pirates LP"
     ]
   },
@@ -419,22 +420,22 @@
       "date_range": "1-1 Oct",
       "teams": {
         "SOCIAL": [
-          12.45,
+          14.58,
+          4,
           1,
-          1,
-          10.81
+          10.65
         ],
         "MEDIA": [
-          84.65,
+          69.67,
           37,
-          4,
-          604.83
+          3,
+          639.48
         ],
         "EMAIL": [
           28.15,
-          11,
+          9,
           2,
-          100.09
+          105.94
         ]
       },
       "advertisers": {
@@ -445,21 +446,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          2,
+          4,
           0,
-          15.46,
-          1.81
+          15.2,
+          0.86
         ],
         "BASHER AGENCY": [
-          6,
+          5,
           2,
-          34.79,
+          34.18,
           0.0
         ],
         "BETMGMPARTNERS": [
           1,
           1,
-          13.91,
+          13.67,
           0.0
         ],
         "AFF 66": [
@@ -475,45 +476,45 @@
           0.0
         ],
         "CHANCED": [
-          3,
           2,
-          179.74,
+          4,
+          176.62,
           0.0
         ],
         "COINSROYALE": [
-          2,
+          1,
           0,
           0.0,
           0.0
         ],
         "ESKHOL_REAL_LONES": [
-          4,
+          6,
           1,
-          80.78,
+          79.39,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          43,
-          13,
-          344.61,
-          132.11
+          39,
+          14,
+          383.76,
+          61.33
         ],
         "LUCKY_BUNNY_DIRECT": [
+          3,
           1,
-          1,
-          28.98,
+          28.5,
           0.0
         ],
         "SPLASH": [
-          0,
           1,
-          17.39,
+          1,
+          17.1,
           0.0
         ],
         "B2S": [
           3,
-          0,
-          0.0,
+          1,
+          7.61,
           0.0
         ],
         "IMPACT": [
@@ -531,10 +532,10 @@
           0.0
         ],
         "Slotornado": [
-          1,
+          3,
           0,
-          15.46,
-          1.81
+          15.2,
+          0.86
         ],
         "7Bit Casino": [
           0,
@@ -593,7 +594,7 @@
         "BetMGM casino": [
           1,
           1,
-          13.91,
+          13.67,
           0.0
         ],
         "Sixty6": [
@@ -611,13 +612,13 @@
         "LuckyZino Sweepstakes Casino": [
           2,
           1,
-          18.55,
+          18.22,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           0,
           1,
-          16.24,
+          15.96,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -627,7 +628,7 @@
           0.0
         ],
         "Sweet Sweeps": [
-          1,
+          0,
           0,
           0.0,
           0.0
@@ -639,19 +640,19 @@
           0.0
         ],
         "Punt": [
-          1,
           0,
-          92.77,
+          2,
+          91.15,
           0.0
         ],
         "Chanced": [
           2,
           2,
-          86.97,
+          85.47,
           0.0
         ],
         "CoinsRoyale": [
-          1,
+          0,
           0,
           0.0,
           0.0
@@ -663,9 +664,9 @@
           0.0
         ],
         "Real Prize(Eskhol)": [
-          3,
+          5,
           1,
-          80.78,
+          79.39,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -674,88 +675,82 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          5,
+        "The Boss": [
+          2,
           1,
-          119.99,
-          65.71
+          71.04,
+          0.0
+        ],
+        "Rolling Riches": [
+          6,
+          2,
+          113.95,
+          37.37
+        ],
+        "LuckyBunny": [
+          3,
+          1,
+          50.14,
+          10.26
         ],
         "Casinio": [
           2,
           1,
-          29.23,
+          32.59,
           0.0
         ],
         "LavishLuck": [
-          3,
+          2,
           1,
-          27.82,
+          27.36,
           0.0
-        ],
-        "The Boss": [
-          4,
-          1,
-          26.28,
-          0.0
-        ],
-        "LuckyBunny": [
-          4,
-          1,
-          51.04,
-          21.27
         ],
         "Baba": [
+          0,
           1,
-          1,
-          17.39,
+          17.1,
           0.0
         ],
         "CardCrush": [
-          4,
+          3,
           1,
-          17.02,
+          16.7,
           0.0
         ],
         "Spinblitz SEO": [
           0,
           1,
-          15.46,
+          15.2,
           0.0
+        ],
+        "Jackpotgo": [
+          4,
+          1,
+          19.38,
+          6.85
         ],
         "Hello Million": [
           1,
           1,
-          5.79,
-          0.0
-        ],
-        "PolyCasino": [
-          1,
-          1,
-          5.02,
+          5.69,
           0.0
         ],
         "TitanTreasure": [
           3,
           1,
-          5.02,
+          4.93,
+          0.0
+        ],
+        "PolyCasino": [
+          1,
+          1,
+          4.93,
           0.0
         ],
         "CrashMania": [
-          0,
           1,
-          4.83,
-          0.0
-        ],
-        "Jackpotgo": [
-          3,
           1,
-          19.72,
-          14.19
-        ],
-        "CoinsBack": [
-          1,
-          0,
-          0.0,
+          4.75,
           0.0
         ],
         "Crown Coins Email": [
@@ -770,14 +765,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          2,
+        "CoinsBack": [
+          1,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          0,
+        "McLuck": [
+          1,
           0,
           0.0,
           0.0
@@ -788,7 +783,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           1,
           0,
           0.0,
@@ -810,24 +817,24 @@
           2,
           0,
           0.0,
-          14.19
-        ],
-        "McLuck": [
-          1,
-          0,
-          0.0,
-          16.75
+          6.85
         ],
         "luckybunny_direct": [
+          3,
           1,
-          1,
-          28.98,
+          28.5,
           0.0
         ],
         "splashcoins": [
-          0,
           1,
-          17.39,
+          1,
+          17.1,
+          0.0
+        ],
+        "spinblitz": [
+          1,
+          1,
+          7.61,
           0.0
         ],
         "hellomillions": [
@@ -837,12 +844,6 @@
           0.0
         ],
         "playfame": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           1,
           0,
           0.0,
@@ -866,13 +867,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -890,7 +891,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 0.4
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.18
       }
     },
     {
@@ -898,22 +900,22 @@
       "date_range": "2-3 Oct",
       "teams": {
         "SOCIAL": [
-          20.91,
+          24.49,
           4,
           1,
-          17.95
+          16.64
         ],
         "MEDIA": [
-          142.22,
+          117.06,
           64,
           6,
-          1002.72
+          1000.12
         ],
         "EMAIL": [
-          47.29,
-          18,
-          3,
-          165.92
+          47.3,
+          16,
+          2,
+          165.68
         ]
       },
       "advertisers": {
@@ -924,21 +926,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          1,
+          5,
           0,
-          25.63,
-          3.05
+          23.76,
+          1.46
         ],
         "BASHER AGENCY": [
           7,
           4,
-          57.66,
+          53.47,
           0.0
         ],
         "BETMGMPARTNERS": [
           2,
           0,
-          23.07,
+          21.39,
           0.0
         ],
         "AFF 66": [
@@ -954,9 +956,9 @@
           0.0
         ],
         "CHANCED": [
-          6,
-          3,
-          297.98,
+          5,
+          1,
+          276.24,
           0.0
         ],
         "COINSROYALE": [
@@ -966,33 +968,33 @@
           0.0
         ],
         "ESKHOL_REAL_LONES": [
-          7,
+          8,
           2,
-          133.94,
+          124.16,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          64,
+          66,
           17,
-          571.32,
-          221.95
+          600.13,
+          103.04
         ],
         "LUCKY_BUNNY_DIRECT": [
-          4,
+          5,
           2,
-          48.07,
+          44.56,
           0.0
         ],
         "SPLASH": [
-          0,
           2,
-          28.84,
+          2,
+          26.73,
           0.0
         ],
         "B2S": [
           5,
           0,
-          0.0,
+          11.89,
           0.0
         ],
         "IMPACT": [
@@ -1010,10 +1012,10 @@
           0.0
         ],
         "Slotornado": [
+          4,
           0,
-          0,
-          25.63,
-          3.05
+          23.76,
+          1.46
         ],
         "7Bit Casino": [
           0,
@@ -1072,7 +1074,7 @@
         "BetMGM casino": [
           2,
           0,
-          23.07,
+          21.39,
           0.0
         ],
         "Sixty6": [
@@ -1090,13 +1092,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           2,
-          30.75,
+          28.51,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           0,
           2,
-          26.91,
+          24.96,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -1118,15 +1120,15 @@
           0.0
         ],
         "Punt": [
-          2,
-          2,
-          153.79,
+          1,
+          1,
+          142.57,
           0.0
         ],
         "Chanced": [
           4,
-          1,
-          144.19,
+          0,
+          133.67,
           0.0
         ],
         "CoinsRoyale": [
@@ -1142,9 +1144,9 @@
           0.0
         ],
         "Real Prize(Eskhol)": [
-          5,
+          6,
           2,
-          133.94,
+          124.16,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -1153,88 +1155,82 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          8,
+        "The Boss": [
+          4,
           2,
-          198.92,
-          110.4
+          111.1,
+          0.0
+        ],
+        "Rolling Riches": [
+          11,
+          2,
+          178.21,
+          62.78
+        ],
+        "LuckyBunny": [
+          4,
+          2,
+          78.41,
+          17.26
         ],
         "Casinio": [
+          4,
           2,
-          2,
-          48.45,
+          50.97,
           0.0
         ],
         "LavishLuck": [
-          6,
+          4,
           2,
-          46.14,
+          42.78,
           0.0
-        ],
-        "The Boss": [
-          6,
-          2,
-          43.58,
-          0.0
-        ],
-        "LuckyBunny": [
-          5,
-          2,
-          84.59,
-          35.73
         ],
         "Baba": [
           2,
           2,
-          28.84,
+          26.73,
           0.0
         ],
         "CardCrush": [
           5,
           2,
-          28.21,
+          26.14,
           0.0
         ],
         "Spinblitz SEO": [
-          0,
           1,
-          25.63,
+          1,
+          23.76,
           0.0
         ],
-        "Hello Million": [
+        "Jackpotgo": [
+          8,
           2,
+          30.29,
+          11.5
+        ],
+        "Hello Million": [
+          1,
           0,
-          9.61,
+          8.9,
+          0.0
+        ],
+        "TitanTreasure": [
+          4,
+          0,
+          7.71,
           0.0
         ],
         "PolyCasino": [
           2,
           0,
-          8.33,
-          0.0
-        ],
-        "TitanTreasure": [
-          6,
-          0,
-          8.33,
+          7.71,
           0.0
         ],
         "CrashMania": [
           0,
           0,
-          8.01,
-          0.0
-        ],
-        "Jackpotgo": [
-          6,
-          2,
-          32.68,
-          23.84
-        ],
-        "CoinsBack": [
-          2,
-          0,
-          0.0,
+          7.42,
           0.0
         ],
         "Crown Coins Email": [
@@ -1249,14 +1245,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
+        "CoinsBack": [
+          2,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          0,
+        "McLuck": [
+          2,
           0,
           0.0,
           0.0
@@ -1267,7 +1263,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          2,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -1289,24 +1297,24 @@
           2,
           0,
           0.0,
-          23.84
-        ],
-        "McLuck": [
-          2,
-          0,
-          0.0,
-          28.14
+          11.5
         ],
         "luckybunny_direct": [
-          4,
+          5,
           2,
-          48.07,
+          44.56,
           0.0
         ],
         "splashcoins": [
-          0,
           2,
-          28.84,
+          2,
+          26.73,
+          0.0
+        ],
+        "spinblitz": [
+          2,
+          0,
+          11.89,
           0.0
         ],
         "hellomillions": [
@@ -1316,12 +1324,6 @@
           0.0
         ],
         "playfame": [
-          2,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           2,
           0,
           0.0,
@@ -1345,13 +1347,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -1369,7 +1371,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 0.65
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.3
       }
     },
     {
@@ -1377,22 +1380,22 @@
       "date_range": "4-6 Oct",
       "teams": {
         "SOCIAL": [
-          20.4,
+          23.9,
           3,
           0,
-          6.36
+          6.28
         ],
         "MEDIA": [
-          138.85,
+          114.28,
           61,
           2,
-          355.42
+          377.2
         ],
         "EMAIL": [
-          46.17,
+          46.16,
           16,
           0,
-          58.81
+          62.48
         ]
       },
       "advertisers": {
@@ -1403,21 +1406,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          3,
+          4,
           0,
-          9.09,
-          2.95
+          8.96,
+          1.43
         ],
         "BASHER AGENCY": [
           5,
           1,
-          20.44,
+          20.16,
           0.0
         ],
         "BETMGMPARTNERS": [
           2,
           0,
-          8.18,
+          8.07,
           0.0
         ],
         "AFF 66": [
@@ -1427,15 +1430,15 @@
           0.0
         ],
         "CARDCRUSH": [
-          0,
+          2,
           0,
           0.0,
           0.0
         ],
         "CHANCED": [
-          7,
+          6,
           0,
-          105.63,
+          104.2,
           0.0
         ],
         "COINSROYALE": [
@@ -1446,32 +1449,32 @@
         ],
         "ESKHOL_REAL_LONES": [
           8,
-          2,
-          47.48,
+          1,
+          46.82,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          55,
+          58,
           5,
-          202.53,
-          216.6
+          226.36,
+          100.6
         ],
         "LUCKY_BUNNY_DIRECT": [
           3,
           0,
-          17.04,
+          16.8,
           0.0
         ],
         "SPLASH": [
-          1,
+          3,
           0,
-          10.22,
+          10.08,
           0.0
         ],
         "B2S": [
           5,
           0,
-          0.0,
+          4.48,
           0.0
         ],
         "IMPACT": [
@@ -1489,10 +1492,10 @@
           0.0
         ],
         "Slotornado": [
-          3,
+          4,
           0,
-          9.09,
-          2.95
+          8.96,
+          1.43
         ],
         "7Bit Casino": [
           0,
@@ -1551,7 +1554,7 @@
         "BetMGM casino": [
           2,
           0,
-          8.18,
+          8.07,
           0.0
         ],
         "Sixty6": [
@@ -1569,13 +1572,13 @@
         "LuckyZino Sweepstakes Casino": [
           0,
           1,
-          10.9,
+          10.75,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           3,
           0,
-          9.54,
+          9.41,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -1591,7 +1594,7 @@
           0.0
         ],
         "cardcrush_direct": [
-          0,
+          2,
           0,
           0.0,
           0.0
@@ -1599,13 +1602,13 @@
         "Punt": [
           3,
           0,
-          54.52,
+          53.77,
           0.0
         ],
         "Chanced": [
-          4,
+          3,
           0,
-          51.11,
+          50.43,
           0.0
         ],
         "CoinsRoyale": [
@@ -1622,8 +1625,8 @@
         ],
         "Real Prize(Eskhol)": [
           6,
-          2,
-          47.48,
+          1,
+          46.82,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -1632,88 +1635,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          3,
+          1,
+          41.89,
+          0.0
+        ],
         "Rolling Riches": [
           9,
           0,
-          70.51,
-          107.77
+          67.22,
+          61.27
+        ],
+        "LuckyBunny": [
+          3,
+          1,
+          29.57,
+          16.85
         ],
         "Casinio": [
-          5,
-          0,
-          17.17,
+          6,
+          1,
+          19.22,
           0.0
         ],
         "LavishLuck": [
           6,
           1,
-          16.36,
+          16.13,
           0.0
-        ],
-        "The Boss": [
-          3,
-          1,
-          15.45,
-          0.0
-        ],
-        "LuckyBunny": [
-          3,
-          2,
-          29.99,
-          34.87
         ],
         "Baba": [
           0,
           0,
-          10.22,
+          10.08,
           0.0
         ],
         "CardCrush": [
           3,
           1,
-          10.0,
+          9.86,
           0.0
         ],
         "Spinblitz SEO": [
           3,
           0,
-          9.09,
-          0.0
-        ],
-        "Hello Million": [
-          1,
-          0,
-          3.41,
-          0.0
-        ],
-        "PolyCasino": [
-          1,
-          0,
-          2.95,
-          0.0
-        ],
-        "TitanTreasure": [
-          4,
-          0,
-          2.95,
-          0.0
-        ],
-        "CrashMania": [
-          0,
-          0,
-          2.84,
+          8.96,
           0.0
         ],
         "Jackpotgo": [
           6,
           0,
-          11.59,
-          23.24
+          11.43,
+          11.24
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          3.36,
+          0.0
+        ],
+        "TitanTreasure": [
+          3,
+          0,
+          2.92,
+          0.0
+        ],
+        "PolyCasino": [
+          3,
+          0,
+          2.92,
+          0.0
+        ],
+        "CrashMania": [
+          0,
+          0,
+          2.8,
           0.0
         ],
         "Crown Coins Email": [
@@ -1728,14 +1725,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          0,
+        "McLuck": [
+          3,
           0,
           0.0,
           0.0
@@ -1746,14 +1743,26 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Spree": [
+        "Rolla": [
           0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Spree": [
+          2,
           0,
           0.0,
           0.0
@@ -1765,27 +1774,27 @@
           0.0
         ],
         "LuckyZino": [
-          1,
+          0,
           0,
           0.0,
-          23.24
-        ],
-        "McLuck": [
-          2,
-          0,
-          0.0,
-          27.48
+          11.24
         ],
         "luckybunny_direct": [
           3,
           0,
-          17.04,
+          16.8,
           0.0
         ],
         "splashcoins": [
-          1,
+          3,
           0,
-          10.22,
+          10.08,
+          0.0
+        ],
+        "spinblitz": [
+          3,
+          0,
+          4.48,
           0.0
         ],
         "hellomillions": [
@@ -1796,12 +1805,6 @@
         ],
         "playfame": [
           2,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          3,
           0,
           0.0,
           0.0
@@ -1824,13 +1827,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -1848,7 +1851,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 0.64
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.3
       }
     },
     {
@@ -1856,22 +1860,22 @@
       "date_range": "7-9 Oct",
       "teams": {
         "SOCIAL": [
-          21.88,
-          3,
+          25.64,
+          4,
           0,
-          3.72
+          3.54
         ],
         "MEDIA": [
-          149.02,
+          122.63,
           67,
           1,
-          207.98
+          212.3
         ],
         "EMAIL": [
-          49.55,
+          49.53,
           18,
           0,
-          34.41
+          35.17
         ]
       },
       "advertisers": {
@@ -1884,19 +1888,19 @@
         "ALL IN AFFILIATES": [
           3,
           0,
-          5.31,
-          3.18
+          5.04,
+          1.54
         ],
         "BASHER AGENCY": [
           4,
           0,
-          11.97,
+          11.34,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          4.79,
+          4.54,
           0.0
         ],
         "AFF 66": [
@@ -1914,7 +1918,7 @@
         "CHANCED": [
           9,
           0,
-          61.82,
+          58.64,
           0.0
         ],
         "COINSROYALE": [
@@ -1926,31 +1930,31 @@
         "ESKHOL_REAL_LONES": [
           6,
           0,
-          27.79,
+          26.35,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          54,
+          58,
           0,
-          118.5,
-          232.48
+          127.41,
+          107.94
         ],
         "LUCKY_BUNNY_DIRECT": [
           3,
           0,
-          9.97,
+          9.46,
           0.0
         ],
         "SPLASH": [
           3,
           0,
-          5.98,
+          5.68,
           0.0
         ],
         "B2S": [
-          1,
+          3,
           0,
-          0.0,
+          2.52,
           0.0
         ],
         "IMPACT": [
@@ -1970,8 +1974,8 @@
         "Slotornado": [
           3,
           0,
-          5.31,
-          3.18
+          5.04,
+          1.54
         ],
         "7Bit Casino": [
           0,
@@ -2030,7 +2034,7 @@
         "BetMGM casino": [
           0,
           0,
-          4.79,
+          4.54,
           0.0
         ],
         "Sixty6": [
@@ -2048,13 +2052,13 @@
         "LuckyZino Sweepstakes Casino": [
           1,
           0,
-          6.39,
+          6.05,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           3,
           0,
-          5.58,
+          5.29,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -2078,13 +2082,13 @@
         "Punt": [
           3,
           0,
-          31.91,
+          30.27,
           0.0
         ],
         "Chanced": [
           6,
           0,
-          29.91,
+          28.37,
           0.0
         ],
         "CoinsRoyale": [
@@ -2102,7 +2106,7 @@
         "Real Prize(Eskhol)": [
           6,
           0,
-          27.79,
+          26.35,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -2111,88 +2115,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          5,
+          0,
+          23.58,
+          0.0
+        ],
         "Rolling Riches": [
           9,
           0,
-          41.26,
-          115.67
+          37.83,
+          65.76
+        ],
+        "LuckyBunny": [
+          6,
+          0,
+          16.65,
+          18.08
         ],
         "Casinio": [
           6,
           0,
-          10.05,
+          10.82,
           0.0
         ],
         "LavishLuck": [
           6,
           0,
-          9.57,
+          9.08,
           0.0
-        ],
-        "The Boss": [
-          4,
-          0,
-          9.05,
-          0.0
-        ],
-        "LuckyBunny": [
-          6,
-          0,
-          17.54,
-          37.42
         ],
         "Baba": [
           0,
           0,
-          5.98,
+          5.68,
           0.0
         ],
         "CardCrush": [
-          4,
+          3,
           0,
-          5.84,
+          5.55,
           0.0
         ],
         "Spinblitz SEO": [
           3,
           0,
-          5.31,
-          0.0
-        ],
-        "Hello Million": [
-          0,
-          0,
-          2.0,
-          0.0
-        ],
-        "PolyCasino": [
-          0,
-          0,
-          1.73,
-          0.0
-        ],
-        "TitanTreasure": [
-          3,
-          0,
-          1.73,
-          0.0
-        ],
-        "CrashMania": [
-          0,
-          0,
-          1.66,
+          5.04,
           0.0
         ],
         "Jackpotgo": [
           7,
           0,
-          6.78,
-          24.95
+          6.43,
+          12.05
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          1.9,
+          0.0
+        ],
+        "TitanTreasure": [
+          3,
+          0,
+          1.64,
+          0.0
+        ],
+        "PolyCasino": [
+          3,
+          0,
+          1.64,
+          0.0
+        ],
+        "CrashMania": [
+          0,
+          0,
+          1.57,
           0.0
         ],
         "Crown Coins Email": [
@@ -2207,14 +2205,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          0,
+        "McLuck": [
+          1,
           0,
           0.0,
           0.0
@@ -2225,7 +2223,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -2247,24 +2257,24 @@
           3,
           0,
           0.0,
-          24.95
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          29.49
+          12.05
         ],
         "luckybunny_direct": [
           3,
           0,
-          9.97,
+          9.46,
           0.0
         ],
         "splashcoins": [
           3,
           0,
-          5.98,
+          5.68,
+          0.0
+        ],
+        "spinblitz": [
+          3,
+          0,
+          2.52,
           0.0
         ],
         "hellomillions": [
@@ -2275,12 +2285,6 @@
         ],
         "playfame": [
           0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          1,
           0,
           0.0,
           0.0
@@ -2303,13 +2307,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -2327,7 +2331,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 0.67
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.33
       }
     },
     {
@@ -2335,22 +2340,22 @@
       "date_range": "10-12 Oct",
       "teams": {
         "SOCIAL": [
-          26.1,
+          30.6,
           6,
           0,
-          10.85
+          10.23
         ],
         "MEDIA": [
-          177.81,
+          146.31,
           78,
           4,
-          606.31
+          615.52
         ],
         "EMAIL": [
-          59.13,
+          59.1,
           21,
           0,
-          100.33
+          101.96
         ]
       },
       "advertisers": {
@@ -2363,19 +2368,19 @@
         "ALL IN AFFILIATES": [
           3,
           0,
-          15.5,
-          3.78
+          14.63,
+          1.83
         ],
         "BASHER AGENCY": [
           6,
           0,
-          34.88,
+          32.9,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          13.95,
+          13.16,
           0.0
         ],
         "AFF 66": [
@@ -2393,7 +2398,7 @@
         "CHANCED": [
           9,
           0,
-          180.2,
+          169.99,
           0.0
         ],
         "COINSROYALE": [
@@ -2405,31 +2410,31 @@
         "ESKHOL_REAL_LONES": [
           9,
           0,
-          81.0,
+          76.41,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          60,
+          61,
           0,
-          345.48,
-          277.38
+          369.35,
+          128.76
         ],
         "LUCKY_BUNNY_DIRECT": [
           6,
           0,
-          29.07,
+          27.42,
           0.0
         ],
         "SPLASH": [
           3,
           0,
-          17.44,
+          16.45,
           0.0
         ],
         "B2S": [
+          1,
           0,
-          0,
-          0.0,
+          7.31,
           0.0
         ],
         "IMPACT": [
@@ -2449,8 +2454,8 @@
         "Slotornado": [
           3,
           0,
-          15.5,
-          3.78
+          14.63,
+          1.83
         ],
         "7Bit Casino": [
           0,
@@ -2509,7 +2514,7 @@
         "BetMGM casino": [
           0,
           0,
-          13.95,
+          13.16,
           0.0
         ],
         "Sixty6": [
@@ -2527,13 +2532,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           0,
-          18.6,
+          17.55,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           3,
           0,
-          16.28,
+          15.35,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -2557,13 +2562,13 @@
         "Punt": [
           3,
           0,
-          93.0,
+          87.74,
           0.0
         ],
         "Chanced": [
           6,
           0,
-          87.2,
+          82.25,
           0.0
         ],
         "CoinsRoyale": [
@@ -2581,7 +2586,7 @@
         "Real Prize(Eskhol)": [
           9,
           0,
-          81.0,
+          76.41,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -2590,88 +2595,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          6,
+          0,
+          68.36,
+          0.0
+        ],
         "Rolling Riches": [
           12,
           0,
-          120.28,
-          138.03
+          109.68,
+          78.45
+        ],
+        "LuckyBunny": [
+          6,
+          0,
+          48.26,
+          21.57
         ],
         "Casinio": [
           6,
           0,
-          29.3,
+          31.37,
           0.0
         ],
         "LavishLuck": [
           6,
           0,
-          27.9,
+          26.31,
           0.0
-        ],
-        "The Boss": [
-          6,
-          0,
-          26.35,
-          0.0
-        ],
-        "LuckyBunny": [
-          6,
-          0,
-          51.15,
-          44.64
         ],
         "Baba": [
           0,
           0,
-          17.44,
+          16.45,
           0.0
         ],
         "CardCrush": [
           6,
           0,
-          17.05,
+          16.09,
           0.0
         ],
         "Spinblitz SEO": [
           3,
           0,
-          15.5,
-          0.0
-        ],
-        "Hello Million": [
-          0,
-          0,
-          5.82,
-          0.0
-        ],
-        "PolyCasino": [
-          0,
-          0,
-          5.04,
-          0.0
-        ],
-        "TitanTreasure": [
-          3,
-          0,
-          5.04,
-          0.0
-        ],
-        "CrashMania": [
-          0,
-          0,
-          4.85,
+          14.63,
           0.0
         ],
         "Jackpotgo": [
           9,
           0,
-          19.76,
-          29.76
+          18.64,
+          14.37
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          5.49,
+          0.0
+        ],
+        "TitanTreasure": [
+          3,
+          0,
+          4.75,
+          0.0
+        ],
+        "PolyCasino": [
+          1,
+          0,
+          4.75,
+          0.0
+        ],
+        "CrashMania": [
+          0,
+          0,
+          4.57,
           0.0
         ],
         "Crown Coins Email": [
@@ -2686,13 +2685,13 @@
           0.0,
           0.0
         ],
-        "Rolla": [
+        "CoinsBack": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "McLuck": [
           0,
           0,
           0.0,
@@ -2704,7 +2703,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -2726,24 +2737,24 @@
           3,
           0,
           0.0,
-          29.76
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          35.19
+          14.37
         ],
         "luckybunny_direct": [
           6,
           0,
-          29.07,
+          27.42,
           0.0
         ],
         "splashcoins": [
           3,
           0,
-          17.44,
+          16.45,
+          0.0
+        ],
+        "spinblitz": [
+          1,
+          0,
+          7.31,
           0.0
         ],
         "hellomillions": [
@@ -2753,12 +2764,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -2782,13 +2787,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -2806,7 +2811,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 0.81
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.39
       }
     },
     {
@@ -2814,22 +2820,22 @@
       "date_range": "13-15 Oct",
       "teams": {
         "SOCIAL": [
-          35.32,
+          41.39,
           6,
           0,
-          17.96
+          16.9
         ],
         "MEDIA": [
-          240.46,
+          197.89,
           106,
           6,
-          1003.23
+          1016.62
         ],
         "EMAIL": [
-          79.97,
+          79.94,
           28,
           0,
-          166.01
+          168.41
         ]
       },
       "advertisers": {
@@ -2840,21 +2846,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          6,
+          3,
           0,
-          25.64,
-          5.13
+          24.15,
+          2.48
         ],
         "BASHER AGENCY": [
           9,
           0,
-          57.72,
+          54.34,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          23.08,
+          21.74,
           0.0
         ],
         "AFF 66": [
@@ -2870,9 +2876,9 @@
           0.0
         ],
         "CHANCED": [
-          12,
+          10,
           0,
-          298.17,
+          280.78,
           0.0
         ],
         "COINSROYALE": [
@@ -2882,33 +2888,33 @@
           0.0
         ],
         "ESKHOL_REAL_LONES": [
-          10,
+          9,
           0,
-          134.01,
+          126.2,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          88,
-          1,
-          571.61,
-          375.12
+          89,
+          0,
+          610.03,
+          174.21
         ],
         "LUCKY_BUNNY_DIRECT": [
           6,
           0,
-          48.09,
+          45.28,
           0.0
         ],
         "SPLASH": [
           3,
           0,
-          28.86,
+          27.17,
           0.0
         ],
         "B2S": [
           0,
           0,
-          0.0,
+          12.07,
           0.0
         ],
         "IMPACT": [
@@ -2926,10 +2932,10 @@
           0.0
         ],
         "Slotornado": [
-          6,
+          3,
           0,
-          25.64,
-          5.13
+          24.15,
+          2.48
         ],
         "7Bit Casino": [
           0,
@@ -2988,7 +2994,7 @@
         "BetMGM casino": [
           0,
           0,
-          23.08,
+          21.74,
           0.0
         ],
         "Sixty6": [
@@ -3006,13 +3012,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           0,
-          30.79,
+          28.98,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           3,
           0,
-          26.93,
+          25.36,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -3036,13 +3042,13 @@
         "Punt": [
           3,
           0,
-          153.9,
+          144.92,
           0.0
         ],
         "Chanced": [
-          9,
+          7,
           0,
-          144.27,
+          135.86,
           0.0
         ],
         "CoinsRoyale": [
@@ -3058,9 +3064,9 @@
           0.0
         ],
         "Real Prize(Eskhol)": [
-          10,
+          9,
           0,
-          134.01,
+          126.2,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -3069,88 +3075,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          9,
+          0,
+          112.92,
+          0.0
+        ],
         "Rolling Riches": [
           15,
-          1,
-          199.03,
-          186.65
+          0,
+          181.14,
+          106.11
+        ],
+        "LuckyBunny": [
+          7,
+          0,
+          79.7,
+          29.18
         ],
         "Casinio": [
           9,
           0,
-          48.47,
+          51.8,
           0.0
         ],
         "LavishLuck": [
           9,
           0,
-          46.16,
+          43.47,
           0.0
-        ],
-        "The Boss": [
-          6,
-          0,
-          43.6,
-          0.0
-        ],
-        "LuckyBunny": [
-          7,
-          0,
-          84.63,
-          60.39
         ],
         "Baba": [
           3,
           0,
-          28.86,
+          27.17,
           0.0
         ],
         "CardCrush": [
           6,
           0,
-          28.2,
+          26.57,
           0.0
         ],
         "Spinblitz SEO": [
           3,
           0,
-          25.64,
-          0.0
-        ],
-        "Hello Million": [
-          0,
-          0,
-          9.62,
-          0.0
-        ],
-        "PolyCasino": [
-          0,
-          0,
-          8.34,
-          0.0
-        ],
-        "TitanTreasure": [
-          6,
-          0,
-          8.34,
-          0.0
-        ],
-        "CrashMania": [
-          3,
-          0,
-          8.02,
+          24.15,
           0.0
         ],
         "Jackpotgo": [
           12,
           0,
-          32.7,
-          40.25
+          30.8,
+          19.46
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          9.06,
+          0.0
+        ],
+        "TitanTreasure": [
+          6,
+          0,
+          7.85,
+          0.0
+        ],
+        "PolyCasino": [
+          0,
+          0,
+          7.85,
+          0.0
+        ],
+        "CrashMania": [
+          1,
+          0,
+          7.55,
           0.0
         ],
         "Crown Coins Email": [
@@ -3165,7 +3165,19 @@
           0.0,
           0.0
         ],
-        "Rolla": [
+        "CoinsBack": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "McLuck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize": [
           0,
           0,
           0.0,
@@ -3177,14 +3189,14 @@
           0.0,
           0.0
         ],
-        "Real Prize": [
-          0,
+        "Pulsz SEO": [
+          3,
           0,
           0.0,
           0.0
         ],
-        "Pulsz SEO": [
-          3,
+        "Rolla": [
+          0,
           0,
           0.0,
           0.0
@@ -3205,24 +3217,24 @@
           3,
           0,
           0.0,
-          40.25
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          47.58
+          19.46
         ],
         "luckybunny_direct": [
           6,
           0,
-          48.09,
+          45.28,
           0.0
         ],
         "splashcoins": [
           3,
           0,
-          28.86,
+          27.17,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          12.07,
           0.0
         ],
         "hellomillions": [
@@ -3232,12 +3244,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -3261,13 +3267,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -3285,7 +3291,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 1.09
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.54
       }
     },
     {
@@ -3293,22 +3300,22 @@
       "date_range": "16-18 Oct",
       "teams": {
         "SOCIAL": [
-          44.26,
+          51.86,
           9,
           0,
-          19.04
+          17.85
         ],
         "MEDIA": [
-          301.4,
-          135,
+          248.05,
+          133,
           6,
-          1064.19
+          1073.57
         ],
         "EMAIL": [
-          100.25,
+          100.19,
           36,
           0,
-          176.09
+          177.85
         ]
       },
       "advertisers": {
@@ -3321,19 +3328,19 @@
         "ALL IN AFFILIATES": [
           6,
           0,
-          27.21,
-          6.42
+          25.51,
+          3.11
         ],
         "BASHER AGENCY": [
-          12,
+          9,
           0,
-          61.22,
+          57.39,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          24.48,
+          22.96,
           0.0
         ],
         "AFF 66": [
@@ -3351,7 +3358,7 @@
         "CHANCED": [
           15,
           0,
-          316.28,
+          296.52,
           0.0
         ],
         "COINSROYALE": [
@@ -3363,31 +3370,31 @@
         "ESKHOL_REAL_LONES": [
           12,
           0,
-          142.16,
+          133.27,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          116,
-          1,
-          606.36,
-          470.25
+          115,
+          0,
+          644.24,
+          218.32
         ],
         "LUCKY_BUNNY_DIRECT": [
           9,
           0,
-          51.01,
+          47.82,
           0.0
         ],
         "SPLASH": [
           3,
           0,
-          30.6,
+          28.69,
           0.0
         ],
         "B2S": [
           0,
           0,
-          0.0,
+          12.75,
           0.0
         ],
         "IMPACT": [
@@ -3407,8 +3414,8 @@
         "Slotornado": [
           6,
           0,
-          27.21,
-          6.42
+          25.51,
+          3.11
         ],
         "7Bit Casino": [
           0,
@@ -3467,7 +3474,7 @@
         "BetMGM casino": [
           0,
           0,
-          24.48,
+          22.96,
           0.0
         ],
         "Sixty6": [
@@ -3485,13 +3492,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           0,
-          32.65,
+          30.61,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
-          6,
+          3,
           0,
-          28.57,
+          26.78,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -3515,13 +3522,13 @@
         "Punt": [
           6,
           0,
-          163.24,
+          153.05,
           0.0
         ],
         "Chanced": [
           9,
           0,
-          153.04,
+          143.47,
           0.0
         ],
         "CoinsRoyale": [
@@ -3539,7 +3546,7 @@
         "Real Prize(Eskhol)": [
           12,
           0,
-          142.16,
+          133.27,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -3548,92 +3555,86 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          12,
+          0,
+          119.25,
+          0.0
+        ],
         "Rolling Riches": [
-          21,
-          1,
-          211.12,
-          233.97
+          19,
+          0,
+          191.3,
+          132.99
+        ],
+        "LuckyBunny": [
+          9,
+          0,
+          84.18,
+          36.57
         ],
         "Casinio": [
-          10,
+          12,
           0,
-          51.42,
+          54.71,
           0.0
         ],
         "LavishLuck": [
           12,
           0,
-          48.98,
+          45.91,
           0.0
-        ],
-        "The Boss": [
-          9,
-          0,
-          46.25,
-          0.0
-        ],
-        "LuckyBunny": [
-          9,
-          0,
-          89.77,
-          75.7
         ],
         "Baba": [
           3,
           0,
-          30.6,
+          28.69,
           0.0
         ],
         "CardCrush": [
           9,
           0,
-          29.92,
+          28.06,
           0.0
         ],
         "Spinblitz SEO": [
-          6,
-          0,
-          27.21,
-          0.0
-        ],
-        "Hello Million": [
-          0,
-          0,
-          10.19,
-          0.0
-        ],
-        "PolyCasino": [
-          0,
-          0,
-          8.85,
-          0.0
-        ],
-        "TitanTreasure": [
-          6,
-          0,
-          8.85,
-          0.0
-        ],
-        "CrashMania": [
           3,
           0,
-          8.51,
+          25.51,
           0.0
         ],
         "Jackpotgo": [
           15,
           0,
-          34.69,
-          50.47
+          32.52,
+          24.38
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          9.56,
+          0.0
+        ],
+        "TitanTreasure": [
+          6,
+          0,
+          8.29,
+          0.0
+        ],
+        "PolyCasino": [
+          0,
+          0,
+          8.29,
+          0.0
+        ],
+        "CrashMania": [
+          3,
+          0,
+          7.97,
           0.0
         ],
         "Crown Coins Email": [
-          1,
+          0,
           0,
           0.0,
           0.0
@@ -3644,14 +3645,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          3,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          3,
+        "McLuck": [
+          0,
           0,
           0.0,
           0.0
@@ -3662,7 +3663,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           3,
           0,
           0.0,
@@ -3684,24 +3697,24 @@
           3,
           0,
           0.0,
-          50.47
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          59.64
+          24.38
         ],
         "luckybunny_direct": [
           9,
           0,
-          51.01,
+          47.82,
           0.0
         ],
         "splashcoins": [
           3,
           0,
-          30.6,
+          28.69,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          12.75,
           0.0
         ],
         "hellomillions": [
@@ -3711,12 +3724,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -3740,13 +3747,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -3764,7 +3771,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 1.38
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.66
       }
     },
     {
@@ -3772,22 +3780,22 @@
       "date_range": "19-21 Oct",
       "teams": {
         "SOCIAL": [
-          49.73,
+          58.27,
           9,
           0,
-          32.46
+          31.37
         ],
         "MEDIA": [
-          338.66,
-          152,
+          278.71,
+          150,
           11,
-          1814.02
+          1886.48
         ],
         "EMAIL": [
-          112.63,
+          112.57,
           39,
           3,
-          300.17
+          312.51
         ]
       },
       "advertisers": {
@@ -3800,19 +3808,19 @@
         "ALL IN AFFILIATES": [
           6,
           0,
-          46.38,
-          7.22
+          44.82,
+          3.49
         ],
         "BASHER AGENCY": [
           12,
           0,
-          104.35,
+          100.85,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          41.74,
+          40.34,
           0.0
         ],
         "AFF 66": [
@@ -3828,9 +3836,9 @@
           0.0
         ],
         "CHANCED": [
-          18,
-          5,
-          539.13,
+          17,
+          4,
+          521.03,
           0.0
         ],
         "COINSROYALE": [
@@ -3842,31 +3850,31 @@
         "ESKHOL_REAL_LONES": [
           15,
           0,
-          242.32,
+          234.19,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          126,
+          131,
           3,
-          1033.63,
-          528.33
+          1132.08,
+          245.34
         ],
         "LUCKY_BUNNY_DIRECT": [
           9,
           0,
-          86.96,
+          84.03,
           0.0
         ],
         "SPLASH": [
           3,
           0,
-          52.18,
+          50.42,
           0.0
         ],
         "B2S": [
           0,
           0,
-          0.0,
+          22.41,
           0.0
         ],
         "IMPACT": [
@@ -3886,8 +3894,8 @@
         "Slotornado": [
           6,
           0,
-          46.38,
-          7.22
+          44.82,
+          3.49
         ],
         "7Bit Casino": [
           0,
@@ -3946,7 +3954,7 @@
         "BetMGM casino": [
           0,
           0,
-          41.74,
+          40.34,
           0.0
         ],
         "Sixty6": [
@@ -3964,13 +3972,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           0,
-          55.65,
+          53.79,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           6,
           0,
-          48.7,
+          47.06,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -3993,14 +4001,14 @@
         ],
         "Punt": [
           6,
-          3,
-          278.26,
+          2,
+          268.92,
           0.0
         ],
         "Chanced": [
-          12,
+          11,
           2,
-          260.87,
+          252.11,
           0.0
         ],
         "CoinsRoyale": [
@@ -4018,7 +4026,7 @@
         "Real Prize(Eskhol)": [
           15,
           0,
-          242.32,
+          234.19,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -4027,88 +4035,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          12,
+          0,
+          209.53,
+          0.0
+        ],
         "Rolling Riches": [
           21,
           3,
-          359.89,
-          262.89
+          336.15,
+          149.44
+        ],
+        "LuckyBunny": [
+          11,
+          0,
+          147.92,
+          41.1
         ],
         "Casinio": [
           12,
           0,
-          87.65,
+          96.14,
           0.0
         ],
         "LavishLuck": [
           12,
           0,
-          83.48,
+          80.68,
           0.0
-        ],
-        "The Boss": [
-          9,
-          0,
-          78.84,
-          0.0
-        ],
-        "LuckyBunny": [
-          9,
-          0,
-          153.05,
-          85.05
         ],
         "Baba": [
           3,
           0,
-          52.18,
+          50.42,
           0.0
         ],
         "CardCrush": [
           9,
           0,
-          51.01,
+          49.31,
           0.0
         ],
         "Spinblitz SEO": [
           6,
           0,
-          46.38,
-          0.0
-        ],
-        "Hello Million": [
-          0,
-          0,
-          17.4,
-          0.0
-        ],
-        "PolyCasino": [
-          0,
-          0,
-          15.07,
-          0.0
-        ],
-        "TitanTreasure": [
-          9,
-          0,
-          15.07,
-          0.0
-        ],
-        "CrashMania": [
-          3,
-          0,
-          14.49,
+          44.82,
           0.0
         ],
         "Jackpotgo": [
           18,
           0,
-          59.12,
-          56.69
+          57.15,
+          27.4
         ],
-        "CoinsBack": [
+        "Hello Million": [
           0,
           0,
-          0.0,
+          16.81,
+          0.0
+        ],
+        "TitanTreasure": [
+          9,
+          0,
+          14.57,
+          0.0
+        ],
+        "PolyCasino": [
+          0,
+          0,
+          14.57,
+          0.0
+        ],
+        "CrashMania": [
+          3,
+          0,
+          14.01,
           0.0
         ],
         "Crown Coins Email": [
@@ -4123,14 +4125,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          3,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          3,
+        "McLuck": [
+          0,
           0,
           0.0,
           0.0
@@ -4141,7 +4143,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           3,
           0,
           0.0,
@@ -4163,24 +4177,24 @@
           3,
           0,
           0.0,
-          56.69
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          67.01
+          27.4
         ],
         "luckybunny_direct": [
           9,
           0,
-          86.96,
+          84.03,
           0.0
         ],
         "splashcoins": [
           3,
           0,
-          52.18,
+          50.42,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          22.41,
           0.0
         ],
         "hellomillions": [
@@ -4190,12 +4204,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -4219,13 +4227,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -4243,7 +4251,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 1.55
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.75
       }
     },
     {
@@ -4251,22 +4260,22 @@
       "date_range": "22-24 Oct",
       "teams": {
         "SOCIAL": [
-          57.7,
+          67.61,
           12,
           0,
-          37.78
+          35.78
         ],
         "MEDIA": [
-          392.84,
+          323.29,
           175,
           13,
-          2110.9
+          2151.68
         ],
         "EMAIL": [
-          130.65,
+          130.59,
           45,
           3,
-          349.3
+          356.44
         ]
       },
       "advertisers": {
@@ -4277,21 +4286,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          7,
+          6,
           0,
-          53.97,
-          8.37
+          51.12,
+          4.04
         ],
         "BASHER AGENCY": [
           12,
           0,
-          121.42,
+          115.02,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          48.58,
+          46.0,
           0.0
         ],
         "AFF 66": [
@@ -4309,7 +4318,7 @@
         "CHANCED": [
           18,
           6,
-          627.37,
+          594.27,
           0.0
         ],
         "COINSROYALE": [
@@ -4321,31 +4330,31 @@
         "ESKHOL_REAL_LONES": [
           18,
           1,
-          281.97,
+          267.1,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          152,
-          4,
-          1202.79,
-          612.87
+          151,
+          5,
+          1291.19,
+          284.57
         ],
         "LUCKY_BUNNY_DIRECT": [
           12,
           0,
-          101.19,
+          95.85,
           0.0
         ],
         "SPLASH": [
-          4,
+          3,
           0,
-          60.71,
+          57.51,
           0.0
         ],
         "B2S": [
           0,
           0,
-          0.0,
+          25.55,
           0.0
         ],
         "IMPACT": [
@@ -4363,10 +4372,10 @@
           0.0
         ],
         "Slotornado": [
-          7,
+          6,
           0,
-          53.97,
-          8.37
+          51.12,
+          4.04
         ],
         "7Bit Casino": [
           0,
@@ -4425,7 +4434,7 @@
         "BetMGM casino": [
           0,
           0,
-          48.58,
+          46.0,
           0.0
         ],
         "Sixty6": [
@@ -4443,13 +4452,13 @@
         "LuckyZino Sweepstakes Casino": [
           3,
           0,
-          64.76,
+          61.35,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
           6,
           0,
-          56.66,
+          53.67,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -4473,13 +4482,13 @@
         "Punt": [
           6,
           3,
-          323.8,
+          306.72,
           0.0
         ],
         "Chanced": [
           12,
           3,
-          303.57,
+          287.55,
           0.0
         ],
         "CoinsRoyale": [
@@ -4497,7 +4506,7 @@
         "Real Prize(Eskhol)": [
           18,
           1,
-          281.97,
+          267.1,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -4506,88 +4515,82 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          15,
+          1,
+          238.98,
+          0.0
+        ],
         "Rolling Riches": [
-          27,
+          24,
           3,
-          418.78,
-          304.95
+          383.41,
+          173.34
+        ],
+        "LuckyBunny": [
+          12,
+          1,
+          168.7,
+          47.67
         ],
         "Casinio": [
           15,
           0,
-          102.0,
+          109.66,
           0.0
         ],
         "LavishLuck": [
           15,
           0,
-          97.14,
+          92.02,
           0.0
-        ],
-        "The Boss": [
-          12,
-          0,
-          91.74,
-          0.0
-        ],
-        "LuckyBunny": [
-          12,
-          1,
-          178.1,
-          98.65
         ],
         "Baba": [
           3,
           0,
-          60.71,
+          57.51,
           0.0
         ],
         "CardCrush": [
           12,
           0,
-          59.37,
+          56.23,
           0.0
         ],
         "Spinblitz SEO": [
           6,
           0,
-          53.97,
+          51.12,
           0.0
+        ],
+        "Jackpotgo": [
+          19,
+          0,
+          65.17,
+          31.78
         ],
         "Hello Million": [
-          1,
+          3,
           0,
-          20.23,
-          0.0
-        ],
-        "PolyCasino": [
-          1,
-          0,
-          17.54,
+          19.17,
           0.0
         ],
         "TitanTreasure": [
           9,
           0,
-          17.54,
+          16.62,
+          0.0
+        ],
+        "PolyCasino": [
+          0,
+          0,
+          16.62,
           0.0
         ],
         "CrashMania": [
           3,
           0,
-          16.86,
-          0.0
-        ],
-        "Jackpotgo": [
-          21,
-          0,
-          68.81,
-          65.77
-        ],
-        "CoinsBack": [
-          0,
-          0,
-          0.0,
+          15.98,
           0.0
         ],
         "Crown Coins Email": [
@@ -4602,14 +4605,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          3,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          3,
+        "McLuck": [
+          0,
           0,
           0.0,
           0.0
@@ -4620,7 +4623,19 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           3,
           0,
           0.0,
@@ -4642,24 +4657,24 @@
           3,
           0,
           0.0,
-          65.77
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          77.73
+          31.78
         ],
         "luckybunny_direct": [
           12,
           0,
-          101.19,
+          95.85,
           0.0
         ],
         "splashcoins": [
-          4,
+          3,
           0,
-          60.71,
+          57.51,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          25.55,
           0.0
         ],
         "hellomillions": [
@@ -4669,12 +4684,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -4698,13 +4707,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -4722,30 +4731,31 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 1.8
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 0.87
       }
     },
     {
-      "date": "2026-10-29",
-      "date_range": "25-29 Oct",
+      "date": "2026-10-30",
+      "date_range": "25-30 Oct",
       "teams": {
         "SOCIAL": [
-          97.25,
-          20,
+          129.66,
+          24,
           0,
-          123.07
+          130.76
         ],
         "MEDIA": [
-          662.09,
-          296,
-          48,
-          6876.4
+          620.11,
+          336,
+          55,
+          7863.03
         ],
         "EMAIL": [
-          220.21,
-          76,
-          9,
-          1137.87
+          250.47,
+          90,
+          11,
+          1302.56
         ]
       },
       "advertisers": {
@@ -4756,21 +4766,21 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          15,
+          12,
           0,
-          175.81,
-          14.09
+          186.81,
+          7.76
         ],
         "BASHER AGENCY": [
-          20,
+          24,
           0,
-          395.55,
+          420.35,
           0.0
         ],
         "BETMGMPARTNERS": [
           0,
           0,
-          158.22,
+          168.13,
           0.0
         ],
         "AFF 66": [
@@ -4786,45 +4796,45 @@
           0.0
         ],
         "CHANCED": [
-          30,
-          15,
-          2043.68,
+          36,
+          16,
+          2171.71,
           0.0
         ],
         "COINSROYALE": [
-          5,
+          6,
           0,
           0.0,
           0.0
         ],
         "ESKHOL_REAL_LONES": [
           30,
-          5,
-          918.55,
+          6,
+          976.11,
           0.0
         ],
         "GAMETIME DIGITAL": [
-          260,
-          20,
-          3918.17,
-          1032.91
+          295,
+          26,
+          4718.45,
+          545.89
         ],
         "LUCKY_BUNNY_DIRECT": [
-          20,
+          18,
           3,
-          329.62,
+          350.28,
           0.0
         ],
         "SPLASH": [
-          10,
+          6,
           0,
-          197.78,
+          210.17,
           0.0
         ],
         "B2S": [
           0,
           0,
-          0.0,
+          93.41,
           0.0
         ],
         "IMPACT": [
@@ -4842,10 +4852,10 @@
           0.0
         ],
         "Slotornado": [
-          15,
+          12,
           0,
-          175.81,
-          14.09
+          186.81,
+          7.76
         ],
         "7Bit Casino": [
           0,
@@ -4904,7 +4914,7 @@
         "BetMGM casino": [
           0,
           0,
-          158.22,
+          168.13,
           0.0
         ],
         "Sixty6": [
@@ -4920,15 +4930,15 @@
           0.0
         ],
         "LuckyZino Sweepstakes Casino": [
-          5,
+          6,
           0,
-          210.96,
+          224.19,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
-          10,
+          12,
           0,
-          184.59,
+          196.16,
           0.0
         ],
         "Baba Sweepstakes Casino": [
@@ -4938,7 +4948,7 @@
           0.0
         ],
         "Sweet Sweeps": [
-          5,
+          6,
           0,
           0.0,
           0.0
@@ -4950,19 +4960,19 @@
           0.0
         ],
         "Punt": [
-          10,
+          12,
           8,
-          1054.81,
+          1120.89,
           0.0
         ],
         "Chanced": [
-          20,
-          7,
-          988.87,
+          24,
+          8,
+          1050.82,
           0.0
         ],
         "CoinsRoyale": [
-          5,
+          6,
           0,
           0.0,
           0.0
@@ -4975,8 +4985,8 @@
         ],
         "Real Prize(Eskhol)": [
           30,
-          5,
-          918.55,
+          6,
+          976.11,
           0.0
         ],
         "LoneStar sweepstake casino": [
@@ -4985,92 +4995,86 @@
           0.0,
           0.0
         ],
+        "The Boss": [
+          30,
+          6,
+          873.35,
+          0.0
+        ],
         "Rolling Riches": [
-          45,
+          48,
           10,
-          1364.22,
-          513.96
+          1401.11,
+          332.49
+        ],
+        "LuckyBunny": [
+          24,
+          6,
+          616.47,
+          91.46
         ],
         "Casinio": [
           25,
-          5,
-          332.26,
+          4,
+          400.72,
           0.0
         ],
         "LavishLuck": [
-          25,
+          30,
           0,
-          316.45,
+          336.26,
           0.0
-        ],
-        "The Boss": [
-          20,
-          0,
-          298.86,
-          0.0
-        ],
-        "LuckyBunny": [
-          20,
-          5,
-          580.14,
-          166.28
         ],
         "Baba": [
-          5,
+          6,
           0,
-          197.78,
+          210.17,
           0.0
         ],
         "CardCrush": [
-          20,
+          24,
           0,
-          193.38,
+          205.49,
           0.0
         ],
         "Spinblitz SEO": [
-          10,
+          12,
           0,
-          175.81,
-          0.0
-        ],
-        "Hello Million": [
-          5,
-          0,
-          65.93,
-          0.0
-        ],
-        "PolyCasino": [
-          5,
-          0,
-          57.13,
-          0.0
-        ],
-        "TitanTreasure": [
-          15,
-          0,
-          57.13,
-          0.0
-        ],
-        "CrashMania": [
-          5,
-          0,
-          54.93,
+          186.81,
           0.0
         ],
         "Jackpotgo": [
-          35,
+          36,
           0,
-          224.15,
-          110.84
+          238.19,
+          60.97
         ],
-        "CoinsBack": [
+        "Hello Million": [
+          6,
+          0,
+          70.06,
+          0.0
+        ],
+        "TitanTreasure": [
+          18,
+          0,
+          60.72,
+          0.0
+        ],
+        "PolyCasino": [
           0,
           0,
-          0.0,
+          60.72,
+          0.0
+        ],
+        "CrashMania": [
+          6,
+          0,
+          58.38,
           0.0
         ],
         "Crown Coins Email": [
-          5,
+          6,
           0,
           0.0,
           0.0
@@ -5081,14 +5085,14 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          5,
+        "CoinsBack": [
+          0,
           0,
           0.0,
           0.0
         ],
-        "Richsweeps": [
-          5,
+        "McLuck": [
+          0,
           0,
           0.0,
           0.0
@@ -5099,8 +5103,20 @@
           0.0,
           0.0
         ],
+        "Richsweeps": [
+          6,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
-          5,
+          6,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
+          6,
           0,
           0.0,
           0.0
@@ -5118,27 +5134,27 @@
           0.0
         ],
         "LuckyZino": [
-          5,
+          6,
           0,
           0.0,
-          110.84
-        ],
-        "McLuck": [
-          0,
-          0,
-          0.0,
-          130.99
+          60.97
         ],
         "luckybunny_direct": [
-          20,
+          18,
           3,
-          329.62,
+          350.28,
           0.0
         ],
         "splashcoins": [
-          10,
+          6,
           0,
-          197.78,
+          210.17,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          93.41,
           0.0
         ],
         "hellomillions": [
@@ -5148,12 +5164,6 @@
           0.0
         ],
         "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
           0,
           0,
           0.0,
@@ -5177,13 +5187,13 @@
           0.0,
           0.0
         ],
-        "Sesame Care": [
+        "MOLOTOV": [
           0,
           0,
           0.0,
           0.0
         ],
-        "MOLOTOV": [
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -5201,7 +5211,8 @@
         "SuperSlotz sweeps": 0.0,
         "Spin2Win  sweeps LP": 0.0,
         "Wannnasee USA LP": 0.0,
-        "Pirates LP": 3.01
+        "WinningEmpire CA/NZ": 0.0,
+        "Pirates LP": 1.68
       }
     }
   ]
