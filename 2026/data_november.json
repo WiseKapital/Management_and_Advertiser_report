@@ -8,8 +8,8 @@
     "days_in_month": 30,
     "days_elapsed": 6,
     "is_month_closed": false,
-    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - Daily 01-06 Nov - 6 dias - FTD/Revenue correlacionados - Nov6 dip",
-    "aggregation": "Nov1 15/1/$108.01 inicio, Nov2 20/1/$130 meseta, Nov3 25/1/$150 subida leve, Nov4 30/2/$200 salto, Nov5 30/2/$250 meseta alta, Nov6 25/1/$240 caida (FTD 2->1, REV 250->240).",
+    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - Daily 01-06 Nov - 6 dias - FTD/Revenue correlacionados - Real Prize eliminado",
+    "aggregation": "Nov1 15/1/$108 inicio, Nov2 20/1/$130 meseta, Nov3 25/1/$150 subida leve, Nov4 30/2/$200 salto, Nov5 30/1/$160 caida (FTD 2->1, REV 200->160), Nov6 25/1/$140 caida leve. Punt 9, Real Prize eliminado.",
     "teams_actual": {
       "SOCIAL": {
         "budget": 281,
@@ -42,10 +42,10 @@
     },
     "advertiser_totals": {
       "signups": 145,
-      "ftd": 8,
-      "revenue": 1078.01,
+      "ftd": 7,
+      "revenue": 888.01,
       "budget": 270,
-      "profit": 808.01
+      "profit": 618.01
     },
     "inhouse_totals": {
       "signups": 0,
@@ -53,7 +53,8 @@
       "revenue": 0,
       "budget": 0,
       "profit": 0
-    }
+    },
+    "correction_note": "En tu tabla el TOTAL dice PROFIT $808.01 pero $888 - $270 = $618.01. Corregido a $618.01. Real Prize(Eskhol) $190 eliminado, Punt 9 (antes 6)."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -176,11 +177,6 @@
         "vertical": "Sweepstake",
         "advertiser": "COINSROYALE",
         "brand": "Coins Royale sweeps"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "ESKHOL_REAL_LONES",
-        "brand": "Real Prize(Eskhol)"
       },
       {
         "vertical": "Sweepstake",
@@ -337,13 +333,13 @@
           36.22,
           7,
           1,
-          31.52
+          42.57
         ],
         "EMAIL": [
           19.35,
           7,
           0,
-          48.48
+          65.43
         ]
       },
       "advertisers": {
@@ -384,7 +380,7 @@
           0.0
         ],
         "CHANCED": [
-          3,
+          2,
           0,
           0.0,
           0.0
@@ -397,20 +393,20 @@
         ],
         "ESKHOL_REAL_LONES": [
           1,
-          1,
-          19.04,
+          0,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           15,
           4,
-          43.91,
+          53.28,
           12.41
         ],
         "LUCKY_BUNNY_DIRECT": [
           1,
           1,
-          45.08,
+          54.73,
           0.0
         ],
         "SPLASH": [
@@ -500,7 +496,7 @@
           0.0
         ],
         "Punt": [
-          1,
+          0,
           0,
           0.0,
           0.0
@@ -517,12 +513,6 @@
           0.0,
           15.53
         ],
-        "Real Prize(Eskhol)": [
-          0,
-          1,
-          19.04,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           1,
           0,
@@ -532,19 +522,19 @@
         "LavishLuck": [
           2,
           1,
-          18.04,
+          21.89,
           0.0
         ],
         "The Boss": [
           0,
           1,
-          17.04,
+          20.67,
           0.0
         ],
         "Casinio": [
           2,
           1,
-          8.82,
+          10.71,
           0.0
         ],
         "Mega Spinz": [
@@ -622,7 +612,7 @@
         "luckybunny_direct": [
           1,
           1,
-          45.08,
+          54.73,
           0.0
         ],
         "splashcoins": [
@@ -702,14 +692,14 @@
         "MEDIA": [
           48.28,
           9,
-          1,
-          43.36
+          0,
+          51.24
         ],
         "EMAIL": [
           25.79,
           7,
           1,
-          66.64
+          78.76
         ]
       },
       "advertisers": {
@@ -764,19 +754,19 @@
         "ESKHOL_REAL_LONES": [
           1,
           0,
-          22.91,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           14,
           0,
-          52.82,
+          64.12,
           16.55
         ],
         "LUCKY_BUNNY_DIRECT": [
           1,
-          0,
-          54.27,
+          1,
+          65.88,
           0.0
         ],
         "SPLASH": [
@@ -883,12 +873,6 @@
           0.0,
           20.69
         ],
-        "Real Prize(Eskhol)": [
-          0,
-          0,
-          22.91,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           1,
           0,
@@ -898,19 +882,19 @@
         "LavishLuck": [
           4,
           0,
-          21.71,
+          26.35,
           0.0
         ],
         "The Boss": [
           1,
           0,
-          20.5,
+          24.89,
           0.0
         ],
         "Casinio": [
           2,
           0,
-          10.61,
+          12.88,
           0.0
         ],
         "Mega Spinz": [
@@ -987,8 +971,8 @@
         ],
         "luckybunny_direct": [
           1,
-          0,
-          54.27,
+          1,
+          65.88,
           0.0
         ],
         "splashcoins": [
@@ -1069,13 +1053,13 @@
           60.34,
           11,
           0,
-          55.18
+          59.12
         ],
         "EMAIL": [
           32.24,
           9,
           1,
-          84.82
+          90.88
         ]
       },
       "advertisers": {
@@ -1116,7 +1100,7 @@
           0.0
         ],
         "CHANCED": [
-          2,
+          3,
           0,
           0.0,
           0.0
@@ -1130,19 +1114,19 @@
         "ESKHOL_REAL_LONES": [
           0,
           0,
-          26.44,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           15,
           0,
-          60.94,
+          73.99,
           20.69
         ],
         "LUCKY_BUNNY_DIRECT": [
           2,
           0,
-          62.62,
+          76.01,
           0.0
         ],
         "SPLASH": [
@@ -1232,7 +1216,7 @@
           0.0
         ],
         "Punt": [
-          1,
+          2,
           0,
           0.0,
           0.0
@@ -1249,12 +1233,6 @@
           0.0,
           25.86
         ],
-        "Real Prize(Eskhol)": [
-          0,
-          0,
-          26.44,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           0,
           0,
@@ -1264,19 +1242,19 @@
         "LavishLuck": [
           5,
           0,
-          25.05,
+          30.41,
           0.0
         ],
         "The Boss": [
           1,
           0,
-          23.65,
+          28.72,
           0.0
         ],
         "Casinio": [
           2,
           0,
-          12.24,
+          14.86,
           0.0
         ],
         "Mega Spinz": [
@@ -1354,7 +1332,7 @@
         "luckybunny_direct": [
           2,
           0,
-          62.62,
+          76.01,
           0.0
         ],
         "splashcoins": [
@@ -1434,14 +1412,14 @@
         "MEDIA": [
           72.41,
           13,
-          0,
-          70.95
+          1,
+          78.83
         ],
         "EMAIL": [
           38.69,
           11,
           1,
-          109.05
+          121.17
         ]
       },
       "advertisers": {
@@ -1482,7 +1460,7 @@
           0.0
         ],
         "CHANCED": [
-          2,
+          3,
           0,
           0.0,
           0.0
@@ -1494,21 +1472,21 @@
           31.03
         ],
         "ESKHOL_REAL_LONES": [
-          1,
           0,
-          35.25,
+          0,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           16,
           0,
-          81.26,
+          98.65,
           24.83
         ],
         "LUCKY_BUNNY_DIRECT": [
           2,
           1,
-          83.49,
+          101.35,
           0.0
         ],
         "SPLASH": [
@@ -1598,7 +1576,7 @@
           0.0
         ],
         "Punt": [
-          1,
+          2,
           0,
           0.0,
           0.0
@@ -1615,12 +1593,6 @@
           0.0,
           31.03
         ],
-        "Real Prize(Eskhol)": [
-          1,
-          0,
-          35.25,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           0,
           0,
@@ -1630,19 +1602,19 @@
         "LavishLuck": [
           6,
           0,
-          33.39,
+          40.54,
           0.0
         ],
         "The Boss": [
           1,
           0,
-          31.54,
+          38.29,
           0.0
         ],
         "Casinio": [
           2,
           0,
-          16.33,
+          19.82,
           0.0
         ],
         "Mega Spinz": [
@@ -1720,7 +1692,7 @@
         "luckybunny_direct": [
           2,
           1,
-          83.49,
+          101.35,
           0.0
         ],
         "splashcoins": [
@@ -1801,13 +1773,13 @@
           72.41,
           13,
           0,
-          78.83
+          63.06
         ],
         "EMAIL": [
           38.69,
           11,
           1,
-          121.17
+          96.94
         ]
       },
       "advertisers": {
@@ -1848,7 +1820,7 @@
           0.0
         ],
         "CHANCED": [
-          2,
+          3,
           0,
           0.0,
           0.0
@@ -1860,21 +1832,21 @@
           31.03
         ],
         "ESKHOL_REAL_LONES": [
-          1,
           0,
-          44.06,
+          0,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           16,
           0,
-          101.57,
+          78.92,
           24.83
         ],
         "LUCKY_BUNNY_DIRECT": [
           2,
-          1,
-          104.36,
+          0,
+          81.08,
           0.0
         ],
         "SPLASH": [
@@ -1964,7 +1936,7 @@
           0.0
         ],
         "Punt": [
-          1,
+          2,
           0,
           0.0,
           0.0
@@ -1981,12 +1953,6 @@
           0.0,
           31.03
         ],
-        "Real Prize(Eskhol)": [
-          1,
-          0,
-          44.06,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           0,
           0,
@@ -1996,19 +1962,19 @@
         "LavishLuck": [
           6,
           0,
-          41.74,
+          32.43,
           0.0
         ],
         "The Boss": [
           1,
           0,
-          39.42,
+          30.63,
           0.0
         ],
         "Casinio": [
           2,
           0,
-          20.41,
+          15.86,
           0.0
         ],
         "Mega Spinz": [
@@ -2085,8 +2051,8 @@
         ],
         "luckybunny_direct": [
           2,
-          1,
-          104.36,
+          0,
+          81.08,
           0.0
         ],
         "splashcoins": [
@@ -2167,13 +2133,13 @@
           60.34,
           11,
           0,
-          70.16
+          55.18
         ],
         "EMAIL": [
           32.24,
           9,
           1,
-          107.84
+          84.82
         ]
       },
       "advertisers": {
@@ -2214,7 +2180,7 @@
           0.0
         ],
         "CHANCED": [
-          2,
+          3,
           0,
           0.0,
           0.0
@@ -2226,21 +2192,21 @@
           25.86
         ],
         "ESKHOL_REAL_LONES": [
-          1,
           0,
-          42.3,
+          0,
+          0.0,
           0.0
         ],
         "GAMETIME DIGITAL": [
           15,
           0,
-          97.51,
+          69.05,
           20.69
         ],
         "LUCKY_BUNNY_DIRECT": [
           2,
           0,
-          100.18,
+          70.95,
           0.0
         ],
         "SPLASH": [
@@ -2330,7 +2296,7 @@
           0.0
         ],
         "Punt": [
-          1,
+          2,
           0,
           0.0,
           0.0
@@ -2347,12 +2313,6 @@
           0.0,
           25.86
         ],
-        "Real Prize(Eskhol)": [
-          1,
-          0,
-          42.3,
-          0.0
-        ],
         "LoneStar sweepstake casino": [
           0,
           0,
@@ -2362,19 +2322,19 @@
         "LavishLuck": [
           5,
           0,
-          40.07,
+          28.38,
           0.0
         ],
         "The Boss": [
           1,
           0,
-          37.85,
+          26.8,
           0.0
         ],
         "Casinio": [
           2,
           0,
-          19.59,
+          13.87,
           0.0
         ],
         "Mega Spinz": [
@@ -2452,7 +2412,7 @@
         "luckybunny_direct": [
           2,
           0,
-          100.18,
+          70.95,
           0.0
         ],
         "splashcoins": [
