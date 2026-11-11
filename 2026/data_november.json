@@ -8,9 +8,9 @@
     "days_in_month": 30,
     "days_elapsed": 11,
     "is_month_closed": false,
-    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,27,30 (31 dias: 1,3,6,9,12,15,18,21,24,27,30,31)",
-    "aggregation": "CORREGIDO V3: Bucket 10-11 ahora con fecha 2026-11-11 (no 12) para que el dashboard lo sume. Total MTD = 1275/304/15/2033. Antes el dashboard sumaba solo 1+3+6+9 = 944/225/10/1430 porque filtraba el bucket 12 por fecha > date_to. Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 11 (10-11): 79/5/603.01.",
-    "bucket_rule": "Bucket label = ultimo dia del bucket. Nov 30 dias = 11 buckets: 1,3,6,9,12,15,18,21,24,27,30. Bucket 1 = solo dia 1. Bucket 3 = dias 2-3. Resto = 3 dias. CORRECCION CRITICA: si el corte termina antes del fin del bucket (ej. corte 01-11, bucket 10-12), la fecha del bucket se pone en el ultimo dia del corte (2026-11-11) no en 2026-11-12, para que el dashboard no lo filtre por date_to y si sume el bucket.",
+    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,11,15,18,21,24,27,30 (corte 01-11, bucket 10-11 fecha 11)",
+    "aggregation": "Bucket 1 (Nov 1): 28/1/220. Bucket 3 (Nov 2-3): 52/2/310. Bucket 6 (Nov 4-6): 80/4/480 pico. Bucket 9 (Nov 7-9): 65/3/420 caida. Bucket 11 (Nov 10-11): 79/5/603.01 pico final. Buckets 15-30 en 0.",
+    "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-11: buckets 1,3,6,9,11. Bucket 10-11 fecha 2026-11-11 (no 12) para que dashboard lo sume por date_to. Mes 30 dias completo = 1,3,6,9,12,15,18,21,24,27,30.",
     "teams_actual": {
       "SOCIAL": {
         "budget": 423,
@@ -55,7 +55,24 @@
       "budget": 0,
       "profit": 0
     },
-    "correction_note": "V3: Fix fecha bucket 10-11 de 2026-11-12 a 2026-11-11. Dashboard filtra daily_records por date <= date_to, por eso antes MTD salia 944/225/10/1430 (solo 1+3+6+9). Ahora MTD = 1275/304/15/2033 cuadra. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120)."
+    "vertical_totals": {
+      "Casino": {
+        "signups": 6,
+        "ftd": 0,
+        "revenue": 0
+      },
+      "Sweepstake": {
+        "signups": 298,
+        "ftd": 15,
+        "revenue": 2033.01
+      },
+      "Others": {
+        "signups": 0,
+        "ftd": 0,
+        "revenue": 0
+      }
+    },
+    "correction_note": "V4: Verticales corregidos segun tabla de este corte: Rivo Casino (antes Others). hellomillions, playfame, spinblitz, Fortuneplay, Coins Royale Las Vegas, Lucky.Me, RoxyMoxy Sweepstake (antes Others). Solo Others queda IMPACT Borrowell/Freecash/MOLOTOV 0. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120). Bucket 10-11 fecha 11 para total 1275/304/15/2033."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -290,42 +307,42 @@
         "brand": "splashcoins"
       },
       {
-        "vertical": "Others",
+        "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
         "brand": "Rivo"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "B2S",
         "brand": "hellomillions"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "B2S",
         "brand": "playfame"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "B2S",
         "brand": "spinblitz"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "BASHER AGENCY",
         "brand": "Fortuneplay"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "COINSROYALE",
         "brand": "Coins Royale Las Vegas"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "Lucky.Me"
       },
       {
-        "vertical": "Others",
+        "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "RoxyMoxy"
       },
