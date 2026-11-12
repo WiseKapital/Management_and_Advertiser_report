@@ -4,49 +4,49 @@
     "year": 2026,
     "month_key": "2026-11",
     "date_from": "2026-11-01",
-    "date_to": "2026-11-11",
+    "date_to": "2026-11-12",
     "days_in_month": 30,
-    "days_elapsed": 11,
+    "days_elapsed": 12,
     "is_month_closed": false,
-    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,11,15,18,21,24,27,30 (corte 01-11, bucket 10-11 fecha 11)",
-    "aggregation": "Bucket 1 (Nov 1): 28/1/220. Bucket 3 (Nov 2-3): 52/2/310. Bucket 6 (Nov 4-6): 80/4/480 pico. Bucket 9 (Nov 7-9): 65/3/420 caida. Bucket 11 (Nov 10-11): 79/5/603.01 pico final. Buckets 15-30 en 0.",
-    "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-11: buckets 1,3,6,9,11. Bucket 10-11 fecha 2026-11-11 (no 12) para que dashboard lo sume por date_to. Mes 30 dias completo = 1,3,6,9,12,15,18,21,24,27,30.",
+    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,27,30",
+    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480 pico. Bucket 9: 65/3/420 caida. Bucket 12 (Nov 10-12): 115/5/603.01 pico final (+36 regs vs 01-11, mismo FTD/Rev: dia 12 trajo signups sin conversion). Buckets 15-30 en 0.",
+    "bucket_rule": "Bucket label = ultimo dia del bucket. Nov 30 dias = 11 buckets: 1,3,6,9,12,15,18,21,24,27,30. Bucket 1 = solo dia 1. Bucket 3 = dias 2-3. Resto = 3 dias. Corte 01-12: bucket 12 fecha 2026-11-12 = date_to, si se suma.",
     "teams_actual": {
       "SOCIAL": {
-        "budget": 423,
-        "signups": 58,
+        "budget": 454,
+        "signups": 62,
         "ftd": 2,
         "rev": 270,
-        "profit": -153
+        "profit": -184
       },
       "MEDIA": {
         "budget": 510,
-        "signups": 140,
+        "signups": 150,
         "ftd": 7,
         "rev": 1100,
         "profit": 590
       },
       "EMAIL": {
-        "budget": 342,
-        "signups": 106,
+        "budget": 374,
+        "signups": 128,
         "ftd": 6,
         "rev": 663,
-        "profit": 321
+        "profit": 289
       },
       "TOTAL": {
-        "budget": 1275,
-        "signups": 304,
+        "budget": 1338,
+        "signups": 340,
         "ftd": 15,
         "rev": 2033,
-        "profit": 758
+        "profit": 695
       }
     },
     "advertiser_totals": {
-      "signups": 304,
+      "signups": 340,
       "ftd": 15,
       "revenue": 2033.01,
-      "budget": 390,
-      "profit": 1643.01
+      "budget": 510,
+      "profit": 1523.01
     },
     "inhouse_totals": {
       "signups": 0,
@@ -57,12 +57,12 @@
     },
     "vertical_totals": {
       "Casino": {
-        "signups": 6,
+        "signups": 9,
         "ftd": 0,
         "revenue": 0
       },
       "Sweepstake": {
-        "signups": 298,
+        "signups": 331,
         "ftd": 15,
         "revenue": 2033.01
       },
@@ -72,7 +72,7 @@
         "revenue": 0
       }
     },
-    "correction_note": "V4: Verticales corregidos segun tabla de este corte: Rivo Casino (antes Others). hellomillions, playfame, spinblitz, Fortuneplay, Coins Royale Las Vegas, Lucky.Me, RoxyMoxy Sweepstake (antes Others). Solo Others queda IMPACT Borrowell/Freecash/MOLOTOV 0. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120). Bucket 10-11 fecha 11 para total 1275/304/15/2033."
+    "correction_note": "V 01-12: Total filas cuadra 340/15/2033.01. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120), por eso profit correcto 1523.01 (tabla dice 1461.01). Nuevo MegaBonanza Sweepstake/OTHERS 0/0/0 budget 120 profit -120. Nuevo Sesame Care Others 0. Coins Royale Las Vegas ya no aparece en este corte."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -118,6 +118,7 @@
       "GAMETIME DIGITAL",
       "IMPACT",
       "LUCKY_BUNNY_DIRECT",
+      "OTHERS",
       "SPLASH"
     ],
     "advertiser_report_catalog": [
@@ -144,6 +145,11 @@
       {
         "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
+        "brand": "Rivo"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
         "brand": "Smash Casino"
       },
       {
@@ -164,7 +170,27 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "B2S",
+        "brand": "hellomillions"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "B2S",
+        "brand": "playfame"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "B2S",
         "brand": "mcluck"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "B2S",
+        "brand": "spinblitz"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "BASHER AGENCY",
+        "brand": "Fortuneplay"
       },
       {
         "vertical": "Sweepstake",
@@ -239,6 +265,16 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "Lucky.Me"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "RoxyMoxy"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "LuckyBunny"
       },
       {
@@ -269,11 +305,6 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Rolla"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
         "brand": "Hello Million"
       },
       {
@@ -285,6 +316,11 @@
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "Richsweeps"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolla"
       },
       {
         "vertical": "Sweepstake",
@@ -303,48 +339,13 @@
       },
       {
         "vertical": "Sweepstake",
+        "advertiser": "OTHERS",
+        "brand": "MegaBonanza"
+      },
+      {
+        "vertical": "Sweepstake",
         "advertiser": "SPLASH",
         "brand": "splashcoins"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Rivo"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "B2S",
-        "brand": "hellomillions"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "B2S",
-        "brand": "playfame"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "B2S",
-        "brand": "spinblitz"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "BASHER AGENCY",
-        "brand": "Fortuneplay"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "COINSROYALE",
-        "brand": "Coins Royale Las Vegas"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Lucky.Me"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "RoxyMoxy"
       },
       {
         "vertical": "Others",
@@ -360,6 +361,11 @@
         "vertical": "Others",
         "advertiser": "IMPACT",
         "brand": "MOLOTOV"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "Sesame Care"
       }
     ],
     "inhouse_brands": [
@@ -472,6 +478,12 @@
           0.0
         ],
         "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "OTHERS": [
           0,
           0,
           0.0,
@@ -731,12 +743,6 @@
           0.0,
           0.0
         ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Lucky.Me": [
           1,
           0,
@@ -762,6 +768,18 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -877,6 +895,12 @@
           0.0
         ],
         "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "OTHERS": [
           0,
           0,
           0.0,
@@ -1136,12 +1160,6 @@
           0.0,
           0.0
         ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Lucky.Me": [
           2,
           0,
@@ -1167,6 +1185,18 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -1282,6 +1312,12 @@
           0.0
         ],
         "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "OTHERS": [
           0,
           0,
           0.0,
@@ -1541,12 +1577,6 @@
           0.0,
           0.0
         ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Lucky.Me": [
           2,
           0,
@@ -1572,6 +1602,18 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -1687,6 +1729,12 @@
           0.0
         ],
         "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "OTHERS": [
           0,
           0,
           0.0,
@@ -1946,12 +1994,6 @@
           0.0,
           0.0
         ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Lucky.Me": [
           2,
           0,
@@ -1981,6 +2023,18 @@
           0,
           0.0,
           0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -1994,26 +2048,26 @@
       }
     },
     {
-      "date": "2026-11-11",
-      "date_range": "Nov 10-11",
-      "bucket_end": 11,
-      "days_in_bucket": 2,
+      "date": "2026-11-12",
+      "date_range": "Nov 10-12",
+      "bucket_end": 12,
+      "days_in_bucket": 3,
       "teams": {
         "SOCIAL": [
-          110.03,
-          16,
+          141.03,
+          20,
           1,
           80.08
         ],
         "MEDIA": [
           132.53,
-          36,
+          46,
           2,
           326.27
         ],
         "EMAIL": [
-          88.87,
-          27,
+          120.87,
+          49,
           2,
           196.65
         ]
@@ -2026,13 +2080,13 @@
           0.0
         ],
         "ALL IN AFFILIATES": [
-          1,
+          4,
           0,
           0.0,
           0.0
         ],
         "BASHER AGENCY": [
-          14,
+          15,
           0,
           0.0,
           0.0
@@ -2050,13 +2104,13 @@
           0.0
         ],
         "CARDCRUSH": [
-          8,
+          19,
           0,
           0.0,
           0.0
         ],
         "CHANCED": [
-          5,
+          6,
           0,
           0.0,
           0.0
@@ -2074,16 +2128,22 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          43,
+          61,
           4,
           469.54,
           62.37
         ],
         "LUCKY_BUNNY_DIRECT": [
-          5,
+          7,
           1,
           133.47,
           0.0
+        ],
+        "OTHERS": [
+          0,
+          0,
+          0.0,
+          120.0
         ],
         "SPLASH": [
           0,
@@ -2112,13 +2172,19 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
+          2,
           0,
           0.0,
           0.0
         ],
         "Ice Casino": [
-          1,
+          2,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rivo": [
+          0,
           0,
           0.0,
           0.0
@@ -2147,8 +2213,32 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
           1,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
+          2,
           0,
           0.0,
           0.0
@@ -2166,13 +2256,13 @@
           0.0
         ],
         "cardcrush_direct": [
-          8,
+          19,
           0,
           0.0,
           0.0
         ],
         "Chanced": [
-          3,
+          4,
           0,
           0.0,
           0.0
@@ -2208,19 +2298,19 @@
           0.0
         ],
         "Pulsz SEO": [
-          1,
+          4,
           0,
           59.32,
           0.0
         ],
         "LavishLuck": [
-          8,
+          16,
           0,
           53.39,
           0.0
         ],
         "Casinio": [
-          8,
+          9,
           0,
           67.63,
           0.0
@@ -2237,14 +2327,26 @@
           38.56,
           0.0
         ],
+        "Lucky.Me": [
+          4,
+          1,
+          37.08,
+          0.0
+        ],
+        "RoxyMoxy": [
+          3,
+          1,
+          35.59,
+          0.0
+        ],
         "LuckyBunny": [
-          7,
+          9,
           0,
           38.56,
           0.0
         ],
         "Rolling Riches": [
-          7,
+          8,
           1,
           88.98,
           62.37
@@ -2273,12 +2375,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -2297,6 +2393,12 @@
           0.0,
           0.0
         ],
+        "Rolla": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Spinblitz SEO": [
           0,
           0,
@@ -2310,63 +2412,21 @@
           0.0
         ],
         "luckybunny_direct": [
-          5,
+          7,
           1,
           133.47,
           0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          120.0
         ],
         "splashcoins": [
           0,
           0,
           0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          1,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          2,
-          1,
-          37.08,
-          0.0
-        ],
-        "RoxyMoxy": [
-          2,
-          1,
-          35.59,
           0.0
         ],
         "Borrowell": [
@@ -2382,6 +2442,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -2430,25 +2496,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -2484,19 +2550,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -2528,6 +2600,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -2552,7 +2630,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -2642,6 +2744,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -2678,12 +2792,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -2697,6 +2805,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -2720,55 +2834,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -2787,6 +2859,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -2835,25 +2913,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -2889,19 +2967,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -2933,6 +3017,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -2957,7 +3047,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -3047,6 +3161,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -3083,12 +3209,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -3102,6 +3222,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -3125,55 +3251,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3192,6 +3276,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -3240,25 +3330,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -3294,19 +3384,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -3338,6 +3434,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -3362,7 +3464,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -3452,6 +3578,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -3488,12 +3626,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -3507,6 +3639,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -3530,55 +3668,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3597,6 +3693,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -3645,25 +3747,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -3699,19 +3801,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -3743,6 +3851,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -3767,7 +3881,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -3857,6 +3995,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -3893,12 +4043,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -3912,6 +4056,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -3935,55 +4085,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4002,6 +4110,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -4050,25 +4164,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -4104,19 +4218,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -4148,6 +4268,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -4172,7 +4298,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -4262,6 +4412,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -4298,12 +4460,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -4317,6 +4473,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -4340,55 +4502,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4407,6 +4527,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
@@ -4455,25 +4581,25 @@
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "B2S": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
           0,
           0,
           0.0,
@@ -4509,19 +4635,25 @@
           0.0,
           0.0
         ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LUCKY_BUNNY_DIRECT": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SPLASH": [
+        "OTHERS": [
           0,
           0,
           0.0,
           0.0
         ],
-        "IMPACT": [
+        "SPLASH": [
           0,
           0,
           0.0,
@@ -4553,6 +4685,12 @@
           0.0,
           0.0
         ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Smash Casino": [
           0,
           0,
@@ -4577,7 +4715,31 @@
           0.0,
           0.0
         ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
           0,
           0,
           0.0,
@@ -4667,6 +4829,18 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "LuckyBunny": [
           0,
           0,
@@ -4703,12 +4877,6 @@
           0.0,
           0.0
         ],
-        "Rolla": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Hello Million": [
           0,
           0,
@@ -4722,6 +4890,12 @@
           0.0
         ],
         "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
           0,
           0,
           0.0,
@@ -4745,55 +4919,13 @@
           0.0,
           0.0
         ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "splashcoins": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rivo": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "hellomillions": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "spinblitz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Fortuneplay": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Coins Royale Las Vegas": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4812,6 +4944,12 @@
           0.0
         ],
         "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
           0,
           0,
           0.0,
