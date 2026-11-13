@@ -9,44 +9,44 @@
     "days_elapsed": 12,
     "is_month_closed": false,
     "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,27,30",
-    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480 pico. Bucket 9: 65/3/420 caida. Bucket 12 (Nov 10-12): 115/5/603.01 pico final (+36 regs vs 01-11, mismo FTD/Rev: dia 12 trajo signups sin conversion). Buckets 15-30 en 0.",
-    "bucket_rule": "Bucket label = ultimo dia del bucket. Nov 30 dias = 11 buckets: 1,3,6,9,12,15,18,21,24,27,30. Bucket 1 = solo dia 1. Bucket 3 = dias 2-3. Resto = 3 dias. Corte 01-12: bucket 12 fecha 2026-11-12 = date_to, si se suma.",
+    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480 pico. Bucket 9: 65/3/420 caida. Bucket 12 (Nov 10-12): 132/6/728.01 pico final (+17 regs, +1 FTD, +125 Rev vs 01-12 V1 por CrashMania 1/125). Buckets 15-30 en 0.",
+    "bucket_rule": "Bucket label = ultimo dia del bucket. Nov 30 dias = 11 buckets: 1,3,6,9,12,15,18,21,24,27,30. Bucket 1 = solo dia 1. Bucket 3 = dias 2-3. Resto = 3 dias. Corte 01-12: bucket 12 fecha 2026-11-12 = date_to.",
     "teams_actual": {
       "SOCIAL": {
-        "budget": 454,
-        "signups": 62,
+        "budget": 507,
+        "signups": 65,
         "ftd": 2,
         "rev": 270,
-        "profit": -184
+        "profit": -237
       },
       "MEDIA": {
         "budget": 510,
-        "signups": 150,
+        "signups": 160,
         "ftd": 7,
         "rev": 1100,
         "profit": 590
       },
       "EMAIL": {
-        "budget": 374,
-        "signups": 128,
-        "ftd": 6,
-        "rev": 663,
-        "profit": 289
+        "budget": 405,
+        "signups": 132,
+        "ftd": 7,
+        "rev": 788,
+        "profit": 383
       },
       "TOTAL": {
-        "budget": 1338,
-        "signups": 340,
-        "ftd": 15,
-        "rev": 2033,
-        "profit": 695
+        "budget": 1422,
+        "signups": 357,
+        "ftd": 16,
+        "rev": 2158,
+        "profit": 736
       }
     },
     "advertiser_totals": {
-      "signups": 340,
-      "ftd": 15,
-      "revenue": 2033.01,
+      "signups": 357,
+      "ftd": 16,
+      "revenue": 2158.01,
       "budget": 510,
-      "profit": 1523.01
+      "profit": 1648.01
     },
     "inhouse_totals": {
       "signups": 0,
@@ -62,17 +62,17 @@
         "revenue": 0
       },
       "Sweepstake": {
-        "signups": 331,
-        "ftd": 15,
-        "revenue": 2033.01
+        "signups": 347,
+        "ftd": 16,
+        "revenue": 2158.01
       },
       "Others": {
-        "signups": 0,
+        "signups": 1,
         "ftd": 0,
         "revenue": 0
       }
     },
-    "correction_note": "V 01-12: Total filas cuadra 340/15/2033.01. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120), por eso profit correcto 1523.01 (tabla dice 1461.01). Nuevo MegaBonanza Sweepstake/OTHERS 0/0/0 budget 120 profit -120. Nuevo Sesame Care Others 0. Coins Royale Las Vegas ya no aparece en este corte."
+    "correction_note": "V2 01-12: Total filas cuadra 357/16/2158.01. CrashMania ahora 2/1/125 (antes 2/0/0) +1 FTD +125 Rev. Nuevo WowVegas Others 1. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120), por eso profit correcto 1648.01 (tabla TOTAL dice 1648, filas suman 1586.01 si usas profits erroneos de filas). MegaBonanza 0/0/0 budget 120 profit -120."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -130,17 +130,17 @@
       {
         "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
+        "brand": "Ice Casino"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
         "brand": "Casino Smartlink"
       },
       {
         "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
         "brand": "7Bit Casino"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
-        "brand": "Ice Casino"
       },
       {
         "vertical": "Casino",
@@ -160,12 +160,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "AFF 66",
-        "brand": "Sixty6"
+        "brand": "SweepJungle"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "AFF 66",
-        "brand": "SweepJungle"
+        "brand": "Sixty6"
       },
       {
         "vertical": "Sweepstake",
@@ -270,6 +270,11 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "CrashMania"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "RoxyMoxy"
       },
       {
@@ -290,7 +295,7 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "CrashMania"
+        "brand": "Baba"
       },
       {
         "vertical": "Sweepstake",
@@ -300,17 +305,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Baba"
+        "brand": "LuckyZino"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "Hello Million"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyZino"
       },
       {
         "vertical": "Sweepstake",
@@ -325,12 +325,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Spinblitz SEO"
+        "brand": "TitanTreasure"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "TitanTreasure"
+        "brand": "Spinblitz SEO"
       },
       {
         "vertical": "Sweepstake",
@@ -346,6 +346,11 @@
         "vertical": "Sweepstake",
         "advertiser": "SPLASH",
         "brand": "splashcoins"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "WowVegas"
       },
       {
         "vertical": "Others",
@@ -784,6 +789,12 @@
           0,
           0.0,
           0.0
+        ],
+        "WowVegas": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -1197,6 +1208,12 @@
           0.0
         ],
         "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -1618,6 +1635,12 @@
           0,
           0.0,
           0.0
+        ],
+        "WowVegas": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -2035,6 +2058,12 @@
           0,
           0.0,
           0.0
+        ],
+        "WowVegas": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -2054,22 +2083,22 @@
       "days_in_bucket": 3,
       "teams": {
         "SOCIAL": [
-          141.03,
-          20,
+          194.03,
+          23,
           1,
           80.08
         ],
         "MEDIA": [
           132.53,
-          46,
+          56,
           2,
           326.27
         ],
         "EMAIL": [
-          120.87,
-          49,
-          2,
-          196.65
+          151.87,
+          53,
+          3,
+          321.66
         ]
       },
       "advertisers": {
@@ -2086,7 +2115,7 @@
           0.0
         ],
         "BASHER AGENCY": [
-          15,
+          16,
           0,
           0.0,
           0.0
@@ -2104,7 +2133,7 @@
           0.0
         ],
         "CARDCRUSH": [
-          19,
+          20,
           0,
           0.0,
           0.0
@@ -2128,9 +2157,9 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          61,
-          4,
-          469.54,
+          76,
+          5,
+          594.54,
           62.37
         ],
         "LUCKY_BUNNY_DIRECT": [
@@ -2165,6 +2194,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          2,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -2172,12 +2207,6 @@
           0.0
         ],
         "7Bit Casino": [
-          2,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           2,
           0,
           0.0,
@@ -2201,13 +2230,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -2244,7 +2273,7 @@
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
-          12,
+          13,
           0,
           0.0,
           0.0
@@ -2256,7 +2285,7 @@
           0.0
         ],
         "cardcrush_direct": [
-          19,
+          20,
           0,
           0.0,
           0.0
@@ -2310,13 +2339,13 @@
           0.0
         ],
         "Casinio": [
-          9,
+          11,
           0,
           67.63,
           0.0
         ],
         "The Boss": [
-          2,
+          4,
           0,
           50.42,
           0.0
@@ -2328,9 +2357,15 @@
           0.0
         ],
         "Lucky.Me": [
-          4,
+          6,
           1,
           37.08,
+          0.0
+        ],
+        "CrashMania": [
+          1,
+          1,
+          125.0,
           0.0
         ],
         "RoxyMoxy": [
@@ -2340,13 +2375,13 @@
           0.0
         ],
         "LuckyBunny": [
-          9,
+          11,
           0,
           38.56,
           0.0
         ],
         "Rolling Riches": [
-          8,
+          14,
           1,
           88.98,
           62.37
@@ -2357,7 +2392,7 @@
           0.01,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           1,
           0,
           0.0,
@@ -2369,19 +2404,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
-          1,
+        "LuckyZino": [
+          0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -2399,13 +2428,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -2425,6 +2454,12 @@
         ],
         "splashcoins": [
           0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
+          1,
           0,
           0.0,
           0.0
@@ -2582,6 +2617,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -2589,12 +2630,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -2618,13 +2653,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -2750,6 +2785,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -2774,7 +2815,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -2786,19 +2827,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -2816,13 +2851,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -2841,6 +2876,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -2999,6 +3040,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3006,12 +3053,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3035,13 +3076,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -3167,6 +3208,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -3191,7 +3238,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -3203,19 +3250,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -3233,13 +3274,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -3258,6 +3299,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -3416,6 +3463,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3423,12 +3476,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3452,13 +3499,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -3584,6 +3631,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -3608,7 +3661,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -3620,19 +3673,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -3650,13 +3697,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -3675,6 +3722,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -3833,6 +3886,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3840,12 +3899,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3869,13 +3922,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -4001,6 +4054,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -4025,7 +4084,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -4037,19 +4096,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -4067,13 +4120,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -4092,6 +4145,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -4250,6 +4309,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -4257,12 +4322,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -4286,13 +4345,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -4418,6 +4477,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -4442,7 +4507,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -4454,19 +4519,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -4484,13 +4543,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -4509,6 +4568,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
@@ -4667,6 +4732,12 @@
           0.0,
           0.0
         ],
+        "Ice Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Casino Smartlink": [
           0,
           0,
@@ -4674,12 +4745,6 @@
           0.0
         ],
         "7Bit Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Ice Casino": [
           0,
           0,
           0.0,
@@ -4703,13 +4768,13 @@
           0.0,
           0.0
         ],
-        "Sixty6": [
+        "SweepJungle": [
           0,
           0,
           0.0,
           0.0
         ],
-        "SweepJungle": [
+        "Sixty6": [
           0,
           0,
           0.0,
@@ -4835,6 +4900,12 @@
           0.0,
           0.0
         ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
@@ -4859,7 +4930,7 @@
           0.0,
           0.0
         ],
-        "CrashMania": [
+        "Baba": [
           0,
           0,
           0.0,
@@ -4871,19 +4942,13 @@
           0.0,
           0.0
         ],
-        "Baba": [
+        "LuckyZino": [
           0,
           0,
           0.0,
           0.0
         ],
         "Hello Million": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -4901,13 +4966,13 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
+        "TitanTreasure": [
           0,
           0,
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Spinblitz SEO": [
           0,
           0,
           0.0,
@@ -4926,6 +4991,12 @@
           0.0
         ],
         "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
           0,
           0,
           0.0,
