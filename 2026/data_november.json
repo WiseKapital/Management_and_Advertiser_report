@@ -4,49 +4,49 @@
     "year": 2026,
     "month_key": "2026-11",
     "date_from": "2026-11-01",
-    "date_to": "2026-11-12",
+    "date_to": "2026-11-17",
     "days_in_month": 30,
-    "days_elapsed": 12,
+    "days_elapsed": 17,
     "is_month_closed": false,
-    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,27,30",
-    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480 pico. Bucket 9: 65/3/420 caida. Bucket 12 (Nov 10-12): 132/6/728.01 pico final (+17 regs, +1 FTD, +125 Rev vs 01-12 V1 por CrashMania 1/125). Buckets 15-30 en 0.",
-    "bucket_rule": "Bucket label = ultimo dia del bucket. Nov 30 dias = 11 buckets: 1,3,6,9,12,15,18,21,24,27,30. Bucket 1 = solo dia 1. Bucket 3 = dias 2-3. Resto = 3 dias. Corte 01-12: bucket 12 fecha 2026-11-12 = date_to.",
+    "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,17,18,21,24,27,30",
+    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 12: 132/6/728.01. Bucket 15 (Nov 13-15): 50/6/890. Bucket 17 (Nov 16-17, 2 dias parcial, fecha 17=date_to): 62/9/1108 pico final. Buckets 18-30 en 0. Inhouse 9 marcas en 0.",
+    "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-17: buckets 1,3,6,9,12,15 son completos, bucket 17 es parcial Nov 16-17 (2 dias) fechado 2026-11-17 = date_to, si se suma. Bucket 18 = solo dia 18 para no solapar. Resto 21,24,27,30 completos en 0.",
     "teams_actual": {
       "SOCIAL": {
-        "budget": 507,
-        "signups": 65,
-        "ftd": 2,
-        "rev": 270,
-        "profit": -237
+        "budget": 653,
+        "signups": 83,
+        "ftd": 3,
+        "rev": 410,
+        "profit": -243
       },
       "MEDIA": {
-        "budget": 510,
-        "signups": 160,
-        "ftd": 7,
-        "rev": 1100,
-        "profit": 590
+        "budget": 740,
+        "signups": 213,
+        "ftd": 16,
+        "rev": 2345,
+        "profit": 1605
       },
       "EMAIL": {
-        "budget": 405,
-        "signups": 132,
-        "ftd": 7,
-        "rev": 788,
-        "profit": 383
+        "budget": 529,
+        "signups": 173,
+        "ftd": 12,
+        "rev": 1401,
+        "profit": 872
       },
       "TOTAL": {
-        "budget": 1422,
-        "signups": 357,
-        "ftd": 16,
-        "rev": 2158,
-        "profit": 736
+        "budget": 1922,
+        "signups": 469,
+        "ftd": 31,
+        "rev": 4156,
+        "profit": 2234
       }
     },
     "advertiser_totals": {
-      "signups": 357,
-      "ftd": 16,
-      "revenue": 2158.01,
-      "budget": 510,
-      "profit": 1648.01
+      "signups": 469,
+      "ftd": 31,
+      "revenue": 4156.01,
+      "budget": 740,
+      "profit": 3416.01
     },
     "inhouse_totals": {
       "signups": 0,
@@ -57,22 +57,22 @@
     },
     "vertical_totals": {
       "Casino": {
-        "signups": 9,
+        "signups": 18,
         "ftd": 0,
         "revenue": 0
       },
       "Sweepstake": {
-        "signups": 347,
-        "ftd": 16,
-        "revenue": 2158.01
+        "signups": 449,
+        "ftd": 31,
+        "revenue": 4156.01
       },
       "Others": {
-        "signups": 1,
+        "signups": 2,
         "ftd": 0,
         "revenue": 0
       }
     },
-    "correction_note": "V2 01-12: Total filas cuadra 357/16/2158.01. CrashMania ahora 2/1/125 (antes 2/0/0) +1 FTD +125 Rev. Nuevo WowVegas Others 1. Casinio profit 228 (tabla 176), LuckyBunny profit 130 (tabla 120), por eso profit correcto 1648.01 (tabla TOTAL dice 1648, filas suman 1586.01 si usas profits erroneos de filas). MegaBonanza 0/0/0 budget 120 profit -120."
+    "correction_note": "V2 01-17: Mismo total 469/31/4156.01 que V1. Solo cambia Inhouse: ahora 9 marcas, se agregan Royalzclub sweeps 0 y Winning4Fun Spins 0 (ambas en 0). Casinio profit 456 (tabla 352), LuckyBunny profit 130 (tabla 120), profit correcto 3416.01."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -130,17 +130,17 @@
       {
         "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
-        "brand": "Ice Casino"
-      },
-      {
-        "vertical": "Casino",
-        "advertiser": "ALL IN AFFILIATES",
         "brand": "Casino Smartlink"
       },
       {
         "vertical": "Casino",
         "advertiser": "ALL IN AFFILIATES",
         "brand": "7Bit Casino"
+      },
+      {
+        "vertical": "Casino",
+        "advertiser": "ALL IN AFFILIATES",
+        "brand": "Ice Casino"
       },
       {
         "vertical": "Casino",
@@ -175,12 +175,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "B2S",
-        "brand": "playfame"
+        "brand": "mcluck"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "B2S",
-        "brand": "mcluck"
+        "brand": "playfame"
       },
       {
         "vertical": "Sweepstake",
@@ -210,12 +210,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "CHANCED",
-        "brand": "Chanced"
+        "brand": "Punt"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "CHANCED",
-        "brand": "Punt"
+        "brand": "Chanced"
       },
       {
         "vertical": "Sweepstake",
@@ -240,17 +240,27 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
+        "brand": "Lucky.Me"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Rolling Riches"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Casinio"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
         "brand": "Pulsz SEO"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "LavishLuck"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Casinio"
       },
       {
         "vertical": "Sweepstake",
@@ -265,17 +275,7 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Lucky.Me"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
         "brand": "CrashMania"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "RoxyMoxy"
       },
       {
         "vertical": "Sweepstake",
@@ -285,17 +285,7 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Rolling Riches"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Mega Spinz"
-      },
-      {
-        "vertical": "Sweepstake",
-        "advertiser": "GAMETIME DIGITAL",
-        "brand": "Baba"
+        "brand": "RoxyMoxy"
       },
       {
         "vertical": "Sweepstake",
@@ -305,7 +295,7 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "LuckyZino"
+        "brand": "Mega Spinz"
       },
       {
         "vertical": "Sweepstake",
@@ -315,7 +305,12 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "Richsweeps"
+        "brand": "LuckyZino"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Baba"
       },
       {
         "vertical": "Sweepstake",
@@ -325,12 +320,17 @@
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
-        "brand": "TitanTreasure"
+        "brand": "Richsweeps"
       },
       {
         "vertical": "Sweepstake",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "Spinblitz SEO"
+      },
+      {
+        "vertical": "Sweepstake",
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "TitanTreasure"
       },
       {
         "vertical": "Sweepstake",
@@ -349,18 +349,28 @@
       },
       {
         "vertical": "Others",
+        "advertiser": "BASHER AGENCY",
+        "brand": "Spin Grande"
+      },
+      {
+        "vertical": "Others",
         "advertiser": "GAMETIME DIGITAL",
         "brand": "WowVegas"
       },
       {
         "vertical": "Others",
-        "advertiser": "IMPACT",
-        "brand": "Borrowell"
+        "advertiser": "GAMETIME DIGITAL",
+        "brand": "Pulsz"
       },
       {
         "vertical": "Others",
         "advertiser": "IMPACT",
         "brand": "Freecash"
+      },
+      {
+        "vertical": "Others",
+        "advertiser": "IMPACT",
+        "brand": "Borrowell"
       },
       {
         "vertical": "Others",
@@ -380,7 +390,9 @@
       "Wannnasee USA LP",
       "SuperSlotz sweeps",
       "Sweepzkings",
-      "WinningEmpire CA/NZ"
+      "WinningEmpire CA/NZ",
+      "Royalzclub sweeps",
+      "Winning4Fun Spins"
     ]
   },
   "daily_records": [
@@ -795,6 +807,18 @@
           0,
           0.0,
           0.0
+        ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -804,7 +828,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -1218,6 +1244,18 @@
           0,
           0.0,
           0.0
+        ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -1227,7 +1265,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -1641,6 +1681,18 @@
           0,
           0.0,
           0.0
+        ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -1650,7 +1702,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -2064,6 +2118,18 @@
           0,
           0.0,
           0.0
+        ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -2073,7 +2139,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -2487,6 +2555,18 @@
           0,
           0.0,
           0.0
+        ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          0.0
         ]
       },
       "inhouse": {
@@ -2496,7 +2576,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -2506,22 +2588,22 @@
       "days_in_bucket": 3,
       "teams": {
         "SOCIAL": [
-          0.0,
+          65.0,
+          8,
           0,
-          0,
-          0.0
+          60.0
         ],
         "MEDIA": [
-          0.0,
-          0,
-          0,
-          0.0
+          105.0,
+          24,
+          4,
+          550.0
         ],
         "EMAIL": [
-          0.0,
-          0,
-          0,
-          0.0
+          55.0,
+          18,
+          2,
+          280.0
         ]
       },
       "advertisers": {
@@ -2531,38 +2613,38 @@
           0.0,
           0.0
         ],
+        "ALL IN AFFILIATES": [
+          4,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
+          3,
+          1,
+          130.0,
+          0.0
+        ],
         "AFF 66": [
           0,
           0,
           0.0,
           0.0
         ],
-        "ALL IN AFFILIATES": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "B2S": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "BASHER AGENCY": [
-          0,
+          2,
           0,
           0.0,
           0.0
         ],
         "CARDCRUSH": [
-          0,
+          9,
           0,
           0.0,
           0.0
         ],
         "CHANCED": [
-          0,
+          5,
           0,
           0.0,
           0.0
@@ -2580,19 +2662,13 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "IMPACT": [
-          0,
-          0,
-          0.0,
-          0.0
+          27,
+          5,
+          760.0,
+          100.0
         ],
         "LUCKY_BUNNY_DIRECT": [
-          0,
+          1,
           0,
           0.0,
           0.0
@@ -2608,16 +2684,16 @@
           0,
           0.0,
           0.0
-        ]
-      },
-      "advertiser_report": {
-        "Acebet": [
+        ],
+        "IMPACT": [
           0,
           0,
           0.0,
           0.0
-        ],
-        "Ice Casino": [
+        ]
+      },
+      "advertiser_report": {
+        "Acebet": [
           0,
           0,
           0.0,
@@ -2630,7 +2706,13 @@
           0.0
         ],
         "7Bit Casino": [
+          3,
           0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
+          1,
           0,
           0.0,
           0.0
@@ -2671,32 +2753,32 @@
           0.0,
           0.0
         ],
-        "playfame": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "spinblitz": [
+        "playfame": [
+          1,
           0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          1,
           0,
           0.0,
           0.0
         ],
         "Fortuneplay": [
-          0,
-          0,
-          0.0,
+          2,
+          1,
+          130.0,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
-          0,
+          1,
           0,
           0.0,
           0.0
@@ -2708,19 +2790,19 @@
           0.0
         ],
         "cardcrush_direct": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Chanced": [
-          0,
+          9,
           0,
           0.0,
           0.0
         ],
         "Punt": [
+          2,
           0,
+          0.0,
+          0.0
+        ],
+        "Chanced": [
+          3,
           0,
           0.0,
           0.0
@@ -2749,37 +2831,43 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          6,
+          2,
+          250.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          7,
+          2,
+          396.0,
+          50.0
+        ],
+        "Casinio": [
+          1,
+          1,
+          114.0,
+          0.0
+        ],
         "Pulsz SEO": [
-          0,
+          1,
           0,
           0.0,
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
-          0,
+          3,
           0,
           0.0,
           0.0
         ],
         "The Boss": [
-          0,
+          3,
           0,
           0.0,
           0.0
         ],
         "PolyCasino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Lucky.Me": [
           0,
           0,
           0.0,
@@ -2791,43 +2879,25 @@
           0.0,
           0.0
         ],
+        "LuckyBunny": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
         "RoxyMoxy": [
           0,
           0,
           0.0,
           0.0
         ],
-        "LuckyBunny": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Rolling Riches": [
-          0,
+        "CardCrush": [
+          1,
           0,
           0.0,
           0.0
         ],
         "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "CardCrush": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "LuckyZino": [
           0,
           0,
           0.0,
@@ -2839,14 +2909,32 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
           0.0
         ],
         "Rolla": [
+          1,
           0,
+          0.0,
+          0.0
+        ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Spinblitz SEO": [
+          1,
           0,
           0.0,
           0.0
@@ -2857,14 +2945,8 @@
           0.0,
           0.0
         ],
-        "Spinblitz SEO": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "luckybunny_direct": [
-          0,
+          1,
           0,
           0.0,
           0.0
@@ -2881,19 +2963,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          50.0
+        ],
+        "Freecash": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Freecash": [
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -2919,14 +3013,453 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "date_range": "Nov 16-17",
+      "bucket_end": 17,
+      "days_in_bucket": 2,
+      "teams": {
+        "SOCIAL": [
+          81.0,
+          10,
+          1,
+          80.0
+        ],
+        "MEDIA": [
+          125.0,
+          29,
+          5,
+          695.0
+        ],
+        "EMAIL": [
+          69.0,
+          23,
+          3,
+          333.0
+        ]
+      },
+      "advertisers": {
+        "ACEBET": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "ALL IN AFFILIATES": [
+          4,
+          0,
+          0.0,
+          0.0
+        ],
+        "BASHER AGENCY": [
+          5,
+          1,
+          130.0,
+          0.0
+        ],
+        "AFF 66": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "B2S": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "CARDCRUSH": [
+          9,
+          0,
+          0.0,
+          0.0
+        ],
+        "CHANCED": [
+          7,
+          1,
+          150.0,
+          0.0
+        ],
+        "COINSROYALE": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "ESKHOL_REAL_LONES": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "GAMETIME DIGITAL": [
+          32,
+          6,
+          678.0,
+          130.0
+        ],
+        "LUCKY_BUNNY_DIRECT": [
+          1,
+          1,
+          150.0,
+          0.0
+        ],
+        "OTHERS": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "SPLASH": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "IMPACT": [
+          0,
+          0,
+          0.0,
+          0.0
+        ]
+      },
+      "advertiser_report": {
+        "Acebet": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casino Smartlink": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "7Bit Casino": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rivo": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Smash Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Cazimbo": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "SweepJungle": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sixty6": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "hellomillions": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "mcluck": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "playfame": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "spinblitz": [
+          2,
+          0,
+          0.0,
+          0.0
+        ],
+        "Fortuneplay": [
+          2,
+          1,
+          130.0,
+          0.0
+        ],
+        "LavishLuck Sweepstakes Casino": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sweet Sweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "cardcrush_direct": [
+          9,
+          0,
+          0.0,
+          0.0
+        ],
+        "Punt": [
+          3,
+          1,
+          150.0,
+          0.0
+        ],
+        "Chanced": [
+          4,
+          0,
+          0.0,
+          0.0
+        ],
+        "CoinsRoyale": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Coins Royale sweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LoneStar sweepstake casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Real Prize(Eskhol)": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Lucky.Me": [
+          6,
+          2,
+          250.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          8,
+          2,
+          204.0,
+          70.0
+        ],
+        "Casinio": [
+          2,
+          1,
+          114.0,
+          0.0
+        ],
+        "Pulsz SEO": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "LavishLuck": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "The Boss": [
+          4,
+          0,
+          0.0,
+          0.0
+        ],
+        "PolyCasino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "CrashMania": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyBunny": [
+          3,
+          0,
+          0.0,
+          0.0
+        ],
+        "RoxyMoxy": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "CardCrush": [
+          1,
+          1,
+          110.0,
+          0.0
+        ],
+        "Mega Spinz": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Hello Million": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolla": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "Richsweeps": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Spinblitz SEO": [
+          2,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "luckybunny_direct": [
+          1,
+          1,
+          150.0,
+          0.0
+        ],
+        "MegaBonanza": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "splashcoins": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Spin Grande": [
+          1,
+          0,
+          0.0,
+          0.0
+        ],
+        "WowVegas": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Pulsz": [
+          0,
+          0,
+          0.0,
+          60.0
+        ],
+        "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "MOLOTOV": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Sesame Care": [
+          0,
+          0,
+          0.0,
+          0.0
+        ]
+      },
+      "inhouse": {
+        "ImperialSweeps": 0.0,
+        "Pirates LP": 0.0,
+        "Spin2Win  sweeps LP": 0.0,
+        "Wannnasee USA LP": 0.0,
+        "SuperSlotz sweeps": 0.0,
+        "Sweepzkings": 0.0,
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
       "date": "2026-11-18",
-      "date_range": "Nov 16-18",
+      "date_range": "Nov 18",
       "bucket_end": 18,
-      "days_in_bucket": 3,
+      "days_in_bucket": 1,
       "teams": {
         "SOCIAL": [
           0.0,
@@ -3040,12 +3573,6 @@
           0.0,
           0.0
         ],
-        "Ice Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3053,6 +3580,12 @@
           0.0
         ],
         "7Bit Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3094,13 +3627,13 @@
           0.0,
           0.0
         ],
-        "playfame": [
+        "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "mcluck": [
+        "playfame": [
           0,
           0,
           0.0,
@@ -3136,13 +3669,13 @@
           0.0,
           0.0
         ],
-        "Chanced": [
+        "Punt": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Punt": [
+        "Chanced": [
           0,
           0,
           0.0,
@@ -3172,6 +3705,24 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casinio": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
@@ -3179,12 +3730,6 @@
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
           0,
           0,
           0.0,
@@ -3202,19 +3747,7 @@
           0.0,
           0.0
         ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "CrashMania": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3226,19 +3759,7 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
+        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3250,7 +3771,7 @@
           0.0,
           0.0
         ],
-        "LuckyZino": [
+        "Mega Spinz": [
           0,
           0,
           0.0,
@@ -3262,7 +3783,13 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
@@ -3274,13 +3801,19 @@
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Richsweeps": [
           0,
           0,
           0.0,
           0.0
         ],
         "Spinblitz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
           0,
           0,
           0.0,
@@ -3304,19 +3837,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
           0,
           0,
           0.0,
           0.0
         ],
         "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -3342,7 +3887,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -3463,12 +4010,6 @@
           0.0,
           0.0
         ],
-        "Ice Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3476,6 +4017,12 @@
           0.0
         ],
         "7Bit Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3517,13 +4064,13 @@
           0.0,
           0.0
         ],
-        "playfame": [
+        "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "mcluck": [
+        "playfame": [
           0,
           0,
           0.0,
@@ -3559,13 +4106,13 @@
           0.0,
           0.0
         ],
-        "Chanced": [
+        "Punt": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Punt": [
+        "Chanced": [
           0,
           0,
           0.0,
@@ -3595,6 +4142,24 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casinio": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
@@ -3602,12 +4167,6 @@
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
           0,
           0,
           0.0,
@@ -3625,19 +4184,7 @@
           0.0,
           0.0
         ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "CrashMania": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3649,19 +4196,7 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
+        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -3673,7 +4208,7 @@
           0.0,
           0.0
         ],
-        "LuckyZino": [
+        "Mega Spinz": [
           0,
           0,
           0.0,
@@ -3685,7 +4220,13 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
@@ -3697,13 +4238,19 @@
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Richsweeps": [
           0,
           0,
           0.0,
           0.0
         ],
         "Spinblitz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
           0,
           0,
           0.0,
@@ -3727,19 +4274,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
           0,
           0,
           0.0,
           0.0
         ],
         "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -3765,7 +4324,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -3886,12 +4447,6 @@
           0.0,
           0.0
         ],
-        "Ice Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Casino Smartlink": [
           0,
           0,
@@ -3899,6 +4454,12 @@
           0.0
         ],
         "7Bit Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
           0,
           0,
           0.0,
@@ -3940,13 +4501,13 @@
           0.0,
           0.0
         ],
-        "playfame": [
+        "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "mcluck": [
+        "playfame": [
           0,
           0,
           0.0,
@@ -3982,13 +4543,13 @@
           0.0,
           0.0
         ],
-        "Chanced": [
+        "Punt": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Punt": [
+        "Chanced": [
           0,
           0,
           0.0,
@@ -4018,6 +4579,24 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casinio": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
@@ -4025,12 +4604,6 @@
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
           0,
           0,
           0.0,
@@ -4048,19 +4621,7 @@
           0.0,
           0.0
         ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "CrashMania": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4072,19 +4633,7 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
+        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4096,7 +4645,7 @@
           0.0,
           0.0
         ],
-        "LuckyZino": [
+        "Mega Spinz": [
           0,
           0,
           0.0,
@@ -4108,7 +4657,13 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
@@ -4120,13 +4675,19 @@
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Richsweeps": [
           0,
           0,
           0.0,
           0.0
         ],
         "Spinblitz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
           0,
           0,
           0.0,
@@ -4150,19 +4711,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
           0,
           0,
           0.0,
           0.0
         ],
         "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -4188,7 +4761,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -4309,12 +4884,6 @@
           0.0,
           0.0
         ],
-        "Ice Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Casino Smartlink": [
           0,
           0,
@@ -4322,6 +4891,12 @@
           0.0
         ],
         "7Bit Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
           0,
           0,
           0.0,
@@ -4363,13 +4938,13 @@
           0.0,
           0.0
         ],
-        "playfame": [
+        "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "mcluck": [
+        "playfame": [
           0,
           0,
           0.0,
@@ -4405,13 +4980,13 @@
           0.0,
           0.0
         ],
-        "Chanced": [
+        "Punt": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Punt": [
+        "Chanced": [
           0,
           0,
           0.0,
@@ -4441,6 +5016,24 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casinio": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
@@ -4448,12 +5041,6 @@
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
           0,
           0,
           0.0,
@@ -4471,19 +5058,7 @@
           0.0,
           0.0
         ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "CrashMania": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4495,19 +5070,7 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
+        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4519,7 +5082,7 @@
           0.0,
           0.0
         ],
-        "LuckyZino": [
+        "Mega Spinz": [
           0,
           0,
           0.0,
@@ -4531,7 +5094,13 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
@@ -4543,13 +5112,19 @@
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Richsweeps": [
           0,
           0,
           0.0,
           0.0
         ],
         "Spinblitz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
           0,
           0,
           0.0,
@@ -4573,19 +5148,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
           0,
           0,
           0.0,
           0.0
         ],
         "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -4611,7 +5198,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     },
     {
@@ -4732,12 +5321,6 @@
           0.0,
           0.0
         ],
-        "Ice Casino": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "Casino Smartlink": [
           0,
           0,
@@ -4745,6 +5328,12 @@
           0.0
         ],
         "7Bit Casino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Ice Casino": [
           0,
           0,
           0.0,
@@ -4786,13 +5375,13 @@
           0.0,
           0.0
         ],
-        "playfame": [
+        "mcluck": [
           0,
           0,
           0.0,
           0.0
         ],
-        "mcluck": [
+        "playfame": [
           0,
           0,
           0.0,
@@ -4828,13 +5417,13 @@
           0.0,
           0.0
         ],
-        "Chanced": [
+        "Punt": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Punt": [
+        "Chanced": [
           0,
           0,
           0.0,
@@ -4864,6 +5453,24 @@
           0.0,
           0.0
         ],
+        "Lucky.Me": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Rolling Riches": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Casinio": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "Pulsz SEO": [
           0,
           0,
@@ -4871,12 +5478,6 @@
           0.0
         ],
         "LavishLuck": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Casinio": [
           0,
           0,
           0.0,
@@ -4894,19 +5495,7 @@
           0.0,
           0.0
         ],
-        "Lucky.Me": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
         "CrashMania": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4918,19 +5507,7 @@
           0.0,
           0.0
         ],
-        "Rolling Riches": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Mega Spinz": [
-          0,
-          0,
-          0.0,
-          0.0
-        ],
-        "Baba": [
+        "RoxyMoxy": [
           0,
           0,
           0.0,
@@ -4942,7 +5519,7 @@
           0.0,
           0.0
         ],
-        "LuckyZino": [
+        "Mega Spinz": [
           0,
           0,
           0.0,
@@ -4954,7 +5531,13 @@
           0.0,
           0.0
         ],
-        "Richsweeps": [
+        "LuckyZino": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Baba": [
           0,
           0,
           0.0,
@@ -4966,13 +5549,19 @@
           0.0,
           0.0
         ],
-        "TitanTreasure": [
+        "Richsweeps": [
           0,
           0,
           0.0,
           0.0
         ],
         "Spinblitz SEO": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "TitanTreasure": [
           0,
           0,
           0.0,
@@ -4996,19 +5585,31 @@
           0.0,
           0.0
         ],
+        "Spin Grande": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
         "WowVegas": [
           0,
           0,
           0.0,
           0.0
         ],
-        "Borrowell": [
+        "Pulsz": [
           0,
           0,
           0.0,
           0.0
         ],
         "Freecash": [
+          0,
+          0,
+          0.0,
+          0.0
+        ],
+        "Borrowell": [
           0,
           0,
           0.0,
@@ -5034,7 +5635,9 @@
         "Wannnasee USA LP": 0.0,
         "SuperSlotz sweeps": 0.0,
         "Sweepzkings": 0.0,
-        "WinningEmpire CA/NZ": 0.0
+        "WinningEmpire CA/NZ": 0.0,
+        "Royalzclub sweeps": 0.0,
+        "Winning4Fun Spins": 0.0
       }
     }
   ]
