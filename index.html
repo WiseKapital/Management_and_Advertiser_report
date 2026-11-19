@@ -99,7 +99,22 @@
   .panel{background:var(--card); border-radius:14px; padding:18px; box-shadow:0 1px 3px rgba(16,24,40,.05); margin-bottom:16px;}
   .panel h3{font-size:16px; font-weight:700; margin-bottom:2px;}
   .panel .hint{font-size:12px; color:var(--muted); margin-bottom:12px;}
-  .panel-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;}
+  .panel-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;}
+  .report-controls{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+
+  .btn-collapse{
+    display:inline-flex; align-items:center; justify-content:center; gap:6px;
+    background:#0b1329; color:#ffffff; border:1px solid #0b1329;
+    border-radius:999px; height:32px; padding:0 14px;
+    font-size:12.5px; font-weight:600; cursor:pointer; white-space:nowrap;
+    box-shadow:0 1px 2px rgba(16,24,40,.08);
+    transition:background-color .15s ease;
+  }
+  .btn-collapse:hover{background:#1e293b;}
+  .btn-collapse svg{
+    width:14px; height:14px; fill:none; stroke:currentColor;
+    stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0;
+  }
   
   .sort-btns{
     display:inline-flex; align-items:center; background:#ffffff; border:1px solid #d7dce4;
@@ -252,18 +267,24 @@
     <div class="panel-head">
       <div>
         <h3>Advertiser Report</h3>
-        <div class="hint">Detailed performance by Vertical, Advertiser and Brand. Click on headers or buttons to sort.</div>
+        <div class="hint" id="unifiedReportHint">Detailed performance by Vertical, Advertiser and Brand. Click on headers or buttons to sort.</div>
       </div>
-      <div class="sort-btns" id="unifiedSortBtns">
-        <button data-sort="vertical" class="active">Vertical ▲</button>
-        <button data-sort="advertiser">Advertiser</button>
-        <button data-sort="brand">Brand</button>
-        <button data-sort="signups">Signups</button>
-        <button data-sort="ftd">FTD</button>
-        <button data-sort="s2p">S2P</button>
-        <button data-sort="revenue">Revenue</button>
-        <button data-sort="budget">Budget</button>
-        <button data-sort="profit">Profit</button>
+      <div class="report-controls">
+        <div class="sort-btns" id="unifiedSortBtns">
+          <button data-sort="vertical" class="active">Vertical ▲</button>
+          <button data-sort="advertiser">Advertiser</button>
+          <button data-sort="brand">Brand</button>
+          <button data-sort="signups">Signups</button>
+          <button data-sort="ftd">FTD</button>
+          <button data-sort="s2p">S2P</button>
+          <button data-sort="revenue">Revenue</button>
+          <button data-sort="budget">Budget</button>
+          <button data-sort="profit">Profit</button>
+        </div>
+        <button type="button" class="btn-collapse" id="btnCollapseReport">
+          <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          <span>Collapse All</span>
+        </button>
       </div>
     </div>
     <table class="report-table" id="unifiedReportTable">
@@ -413,6 +434,8 @@ const state = {
   advs: new Set(),
   reportSortKey: 'vertical',
   reportSortAsc: true,
+  reportCollapsed: false,
+  prevReportSort: null,
   inhouseSortKey: 'budget',
   inhouseSortAsc: false,
   advPerfMetric: 'signups',
@@ -1060,10 +1083,73 @@ function renderUnifiedTable() {
   const table = document.getElementById('unifiedReportTable');
   const tbody = table.querySelector('tbody');
   const tfoot = table.querySelector('tfoot');
-  const sortKey = state.reportSortKey;
-  const sortAsc = state.reportSortAsc;
+  const collapsed = state.reportCollapsed;
 
-  const dataArray = [...CURRENT.allBrands];
+  // Actualizar texto e ícono del botón Collapse All / Show All
+  const collapseBtn = document.getElementById('btnCollapseReport');
+  if (collapseBtn) {
+    collapseBtn.innerHTML = collapsed
+      ? '<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg><span>Show All</span>'
+      : '<svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg><span>Collapse All</span>';
+  }
+
+  // Actualizar subtítulo descriptivo
+  const hintEl = document.getElementById('unifiedReportHint');
+  if (hintEl) {
+    hintEl.textContent = collapsed
+      ? 'Summarized performance by Advertiser. Click on headers or buttons to sort.'
+      : 'Detailed performance by Vertical, Advertiser and Brand. Click on headers or buttons to sort.';
+  }
+
+  // Ocultar/mostrar columnas y botones de Vertical y Brand según el estado
+  const thVertical = table.querySelector('thead th[data-sort="vertical"]');
+  const thBrand = table.querySelector('thead th[data-sort="brand"]');
+  const btnVertical = document.querySelector('#unifiedSortBtns button[data-sort="vertical"]');
+  const btnBrand = document.querySelector('#unifiedSortBtns button[data-sort="brand"]');
+
+  if (thVertical) thVertical.style.display = collapsed ? 'none' : '';
+  if (thBrand) thBrand.style.display = collapsed ? 'none' : '';
+  if (btnVertical) btnVertical.style.display = collapsed ? 'none' : '';
+  if (btnBrand) btnBrand.style.display = collapsed ? 'none' : '';
+
+  let sortKey = state.reportSortKey;
+  let sortAsc = state.reportSortAsc;
+
+  if (collapsed && (sortKey === 'vertical' || sortKey === 'brand')) {
+    sortKey = 'advertiser';
+    sortAsc = true;
+  }
+
+  let dataArray;
+  if (collapsed) {
+    const advGroups = new Map();
+    CURRENT.allBrands.forEach(row => {
+      const advKey = row.advertiser || '—';
+      if (!advGroups.has(advKey)) {
+        advGroups.set(advKey, {
+          advertiser: advKey,
+          signups: 0,
+          ftd: 0,
+          revenue: 0,
+          budget: 0,
+          profit: 0
+        });
+      }
+      const grp = advGroups.get(advKey);
+      grp.signups += row.signups;
+      grp.ftd += row.ftd;
+      grp.revenue += row.revenue;
+      grp.budget += row.budget;
+    });
+
+    dataArray = Array.from(advGroups.values()).map(grp => {
+      grp.profit = grp.revenue - grp.budget;
+      grp.s2pRatio = grp.ftd > 0 ? (grp.signups / grp.ftd) : 9999999;
+      return grp;
+    });
+  } else {
+    dataArray = [...CURRENT.allBrands];
+  }
 
   dataArray.sort((a, b) => {
     let va = a[sortKey];
@@ -1085,6 +1171,19 @@ function renderUnifiedTable() {
     const revCls = row.revenue > 0 ? 'pos' : '';
     const budCls = row.budget > 0 ? 'pos' : '';
     const profCls = row.profit > 0 ? 'pos' : (row.profit < 0 ? 'neg' : '');
+
+    if (collapsed) {
+      return `
+        <tr>
+          <td style="text-align:left; font-weight:600;">${row.advertiser}</td>
+          <td class="num">${fmtInt(row.signups)}</td>
+          <td class="num">${fmtInt(row.ftd)}</td>
+          <td class="num" style="font-weight:600;">${s2p}</td>
+          <td class="num ${revCls}">${fmtMoney(row.revenue)}</td>
+          <td class="num ${budCls}">${fmtMoney(row.budget)}</td>
+          <td class="num ${profCls}">${fmtMoney(row.profit)}</td>
+        </tr>`;
+    }
 
     return `
       <tr>
@@ -1112,7 +1211,7 @@ function renderUnifiedTable() {
 
   tfoot.innerHTML = `
     <tr class="total-row">
-      <td colspan="3" style="text-align:left;">Total</td>
+      <td colspan="${collapsed ? 1 : 3}" style="text-align:left;">Total</td>
       <td class="num">${fmtInt(totS)}</td>
       <td class="num">${fmtInt(totF)}</td>
       <td class="num">${totS2p}</td>
@@ -1386,6 +1485,25 @@ function setupGlobalListeners() {
       tBrand.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
       renderBrandPerfChart();
     });
+  });
+
+  document.getElementById('btnCollapseReport').addEventListener('click', () => {
+    if (!state.reportCollapsed) {
+      state.prevReportSort = { key: state.reportSortKey, asc: state.reportSortAsc };
+      state.reportCollapsed = true;
+      if (state.reportSortKey === 'vertical' || state.reportSortKey === 'brand') {
+        state.reportSortKey = 'advertiser';
+        state.reportSortAsc = true;
+      }
+    } else {
+      state.reportCollapsed = false;
+      if (state.prevReportSort) {
+        state.reportSortKey = state.prevReportSort.key;
+        state.reportSortAsc = state.prevReportSort.asc;
+        state.prevReportSort = null;
+      }
+    }
+    renderUnifiedTable();
   });
 
   document.querySelectorAll('#unifiedReportTable thead th[data-sort]').forEach(th => {
