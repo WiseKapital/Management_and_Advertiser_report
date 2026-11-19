@@ -567,6 +567,11 @@ function openOfferWallWindow() {
   offerWallWin = window.open('', '_blank');
   if (!offerWallWin) { alert('Please allow pop-ups in your browser to open the Offer Wall / Management View tab.'); return; }
 
+  const host = window.location.hostname || '';
+  const pathParts = (window.location.pathname || '').split('/').filter(Boolean);
+  const detectedOwner = host.endsWith('.github.io') ? host.split('.')[0] : 'wisekapital';
+  const detectedRepo = (host.endsWith('.github.io') && pathParts.length > 0 && !pathParts[0].includes('.')) ? pathParts[0] : 'Management_and_Advertiser_report';
+
   const childHtml = [
     '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Offer Wall / Management View</title>',
     '<style>',
@@ -649,10 +654,20 @@ function openOfferWallWindow() {
     '  <div class="table-card"><div class="table-scroll" id="tableScroll"><table><colgroup id="tableColGroup"></colgroup><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table><div class="empty-state" id="emptyState">Loading...</div></div></div>',
     '  <div class="modal-backdrop" id="editModal"><div class="modal"><div class="modal-head"><h2>Edit Row</h2><button type="button" class="modal-close" id="btnCloseModal">&times;</button></div><div class="modal-body" id="modalBody"></div><div class="modal-foot"><button type="button" class="btn btn-cancel" id="btnCancelModal">Cancel</button><button type="button" class="btn btn-add" id="btnSaveModal">Save Changes</button></div></div></div>',
     '<script>',
-    'var GITHUB_REPO_OWNER="JonathanBaquero01", GITHUB_REPO_NAME="Management_and_Advertiser_report", GITHUB_REPO_BRANCH="main";',
+    'var GITHUB_REPO_OWNER=' + JSON.stringify(detectedOwner) + ', GITHUB_REPO_NAME=' + JSON.stringify(detectedRepo) + ', GITHUB_REPO_BRANCH="main", repoResolved=false;',
     'var MONTH_NAMES_OW=["january","february","march","april","may","june","july","august","september","october","november","december"];',
     'function getAuthToken(){ var c=["FXVnW0H5","7jkgIzyNEu8esI","nfzaYnwI","mHhijK_phg"], r=function(s){return s.split("").reverse().join("");}; return r(c[3])+r(c[2])+r(c[1])+r(c[0]); }',
     'function getTargetGitHubPath(){ var d=new Date(); return d.getFullYear()+"/Offer Wall/Management View/data_"+MONTH_NAMES_OW[d.getMonth()]+".json"; }',
+    'async function resolveRepoConfig(){',
+    '  if(repoResolved) return; var token=getAuthToken(), owners=[GITHUB_REPO_OWNER];',
+    '  if(owners.indexOf("wisekapital")===-1) owners.push("wisekapital");',
+    '  if(owners.indexOf("JonathanBaquero01")===-1) owners.push("JonathanBaquero01");',
+    '  for(var i=0;i<owners.length;i++){',
+    '    var ow=owners[i], res=await fetch("https://api.github.com/repos/"+ow+"/"+GITHUB_REPO_NAME+"?_ts="+Date.now(), { cache:"no-store", headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json"} });',
+    '    if(res.ok){ var info=await res.json(); GITHUB_REPO_OWNER=ow; GITHUB_REPO_BRANCH=info.default_branch||"main"; repoResolved=true; if(info.permissions && info.permissions.push===false) throw new Error("El token no tiene permiso de escritura en "+ow+"/"+GITHUB_REPO_NAME); return; }',
+    '  }',
+    '  throw new Error("No se encontro el repositorio "+GITHUB_REPO_OWNER+"/"+GITHUB_REPO_NAME+" o el token no tiene acceso.");',
+    '}',
     'var THEME_RGB={grey:{grp:"DDE1E7",sub:"ECEFF3",body:"F6F7F9"},blue:{grp:"CFE2F3",sub:"E4EFFA",body:"F2F7FD"},yellow:{grp:"FDEEB8",sub:"FEF6D8",body:"FEFBEB"},peach:{grp:"FCE0C5",sub:"FDECD9",body:"FFF6ED"},green:{grp:"D5EBD0",sub:"E6F4E2",body:"F3FBF1"},pink:{grp:"F4D2D6",sub:"FAE5E7",body:"FDF2F3"},indigo:{grp:"CBDCF9",sub:"E1EBFC",body:"F1F5FE"}};',
     'var GROUPS=[{title:"CAMPAIGN INFO",span:4,theme:"grey"},{title:"SOURCE & STATUS",span:5,theme:"blue"},{title:"FINANCIALS",span:3,theme:"yellow"},{title:"PAYOUT & TERMS",span:3,theme:"peach"},{title:"TARGETING & GEO",span:3,theme:"green"},{title:"CONVERSIONS",span:3,theme:"pink"},{title:"NOTES",span:1,theme:"indigo"}];',
     'var COLUMNS=[',
@@ -718,12 +733,13 @@ function openOfferWallWindow() {
     '  isSyncing=true; btnAdd.disabled=true; btnSave.disabled=true; btnClear.disabled=true;',
     '  if(empty){ empty.style.display="block"; empty.innerHTML="Loading <b>"+escHtml(fileName)+"</b> from GitHub..."; }',
     '  try {',
+    '    await resolveRepoConfig();',
     '    var enc=relPath.split("/").map(encodeURIComponent).join("/"), apiUrl="https://api.github.com/repos/"+GITHUB_REPO_OWNER+"/"+GITHUB_REPO_NAME+"/contents/"+enc, token=getAuthToken();',
     '    var res=await fetch(apiUrl+"?ref="+GITHUB_REPO_BRANCH+"&_ts="+Date.now(), { cache:"no-store", headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json"} });',
     '    if(res.status===404){',
-    '      if(empty) empty.innerHTML="Creating <b>"+escHtml(fileName)+"</b> in GitHub...";',
+    '      if(empty) empty.innerHTML="Creating <b>"+escHtml(relPath)+"</b> in GitHub...";',
     '      var cRes=await fetch(apiUrl, { method:"PUT", headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","Content-Type":"application/json"}, body:JSON.stringify({message:"Create Offer Wall file: "+relPath,content:utf8ToBase64("[]"),branch:GITHUB_REPO_BRANCH}) });',
-    '      if(!cRes.ok){ var ce=await cRes.json().catch(function(){return{};}); throw new Error(ce.message||("HTTP "+cRes.status)); }',
+    '      if(!cRes.ok){ var ce=await cRes.json().catch(function(){return{};}); throw new Error((ce.message||("HTTP "+cRes.status))+" ["+GITHUB_REPO_OWNER+"/"+GITHUB_REPO_NAME+"]"); }',
     '      rows=[]; markAsSaved(); return;',
     '    }',
     '    if(!res.ok){ var le=await res.json().catch(function(){return{};}); throw new Error(le.message||("HTTP "+res.status)); }',
@@ -740,6 +756,7 @@ function openOfferWallWindow() {
     '  var btn=document.getElementById("btnSaveGithub"), txt=document.getElementById("btnSaveText"), old=txt.textContent;',
     '  btn.disabled=true; txt.textContent="Saving to GitHub...";',
     '  try {',
+    '    await resolveRepoConfig();',
     '    var relPath=getTargetGitHubPath(), enc=relPath.split("/").map(encodeURIComponent).join("/"), apiUrl="https://api.github.com/repos/"+GITHUB_REPO_OWNER+"/"+GITHUB_REPO_NAME+"/contents/"+enc, token=getAuthToken();',
     '    var chk=await fetch(apiUrl+"?ref="+GITHUB_REPO_BRANCH+"&_ts="+Date.now(), { cache:"no-store", headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json"} });',
     '    var sha=chk.status===200?(await chk.json()).sha:null;',
