@@ -17,8 +17,17 @@
   body{background:var(--bg); color:var(--ink); padding:22px 26px 40px;}
   .wrap{max-width:1560px; margin:0 auto;}
   .topbar{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:10px;}
-  .topbar-left{display:flex; align-items:center; gap:14px;}
+  .topbar-left{display:flex; align-items:center; gap:14px; flex-wrap:wrap;}
   h1{font-size:22px; font-weight:700;}
+
+  .btn-offer-wall{
+    background:var(--red); color:#ffffff; border:none; border-radius:999px;
+    padding:7px 16px; font-size:13px; font-weight:600; cursor:pointer;
+    box-shadow:0 1px 3px rgba(220,38,38,.25);
+    transition:background-color .15s ease, transform .1s ease;
+    white-space:nowrap;
+  }
+  .btn-offer-wall:hover{background:#b91c1c;}
   
   .btn-reset{
     border:1px solid #d7dce4; background:#fff; border-radius:999px; padding:7px 16px;
@@ -191,6 +200,7 @@
   <div class="topbar">
     <div class="topbar-left">
       <h1>Management and advertisers report</h1>
+      <button type="button" class="btn-offer-wall" id="btnOfferWall">Offer Wall/Management View</button>
     </div>
     <button class="btn-reset" id="btnReset">Reset filters</button>
   </div>
@@ -1087,7 +1097,6 @@ function renderUnifiedTable() {
   const tfoot = table.querySelector('tfoot');
   const collapsed = state.reportCollapsed;
 
-  // Actualizar texto e ícono del botón Collapse All / Show All
   const collapseBtn = document.getElementById('btnCollapseReport');
   if (collapseBtn) {
     collapseBtn.innerHTML = collapsed
@@ -1095,7 +1104,6 @@ function renderUnifiedTable() {
       : '<svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg><span>Collapse All</span>';
   }
 
-  // Actualizar subtítulo descriptivo
   const hintEl = document.getElementById('unifiedReportHint');
   if (hintEl) {
     hintEl.textContent = collapsed
@@ -1103,7 +1111,6 @@ function renderUnifiedTable() {
       : 'Detailed performance by Vertical, Advertiser and Brand. Click on headers or buttons to sort.';
   }
 
-  // Ocultar/mostrar columnas y botones de Vertical y Brand según el estado
   const thVertical = table.querySelector('thead th[data-sort="vertical"]');
   const thBrand = table.querySelector('thead th[data-sort="brand"]');
   const btnVertical = document.querySelector('#unifiedSortBtns button[data-sort="vertical"]');
@@ -1418,7 +1425,381 @@ function renderAll() {
   renderAllCharts2x2();
 }
 
+/* =========================================================================
+   OFFER WALL / MANAGEMENT VIEW (NEW WINDOW)
+   ========================================================================= */
+const OFFER_WALL_STORAGE_KEY = 'offer_wall_management_rows_v1';
+window._offerWallFallbackRows = [];
+
+window.getOfferWallRows = function() {
+  try {
+    const raw = localStorage.getItem(OFFER_WALL_STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  return Array.isArray(window._offerWallFallbackRows) ? window._offerWallFallbackRows : [];
+};
+
+window.saveOfferWallRows = function(rows) {
+  window._offerWallFallbackRows = rows;
+  try {
+    localStorage.setItem(OFFER_WALL_STORAGE_KEY, JSON.stringify(rows));
+  } catch (e) {}
+};
+
+let offerWallWin = null;
+
+function openOfferWallWindow() {
+  if (offerWallWin && !offerWallWin.closed) {
+    offerWallWin.focus();
+    return;
+  }
+
+  offerWallWin = window.open('', 'OfferWallManagementView', 'width=1480,height=860,resizable=yes,scrollbars=yes');
+  if (!offerWallWin) {
+    alert('Please allow pop-ups in your browser to open the Offer Wall / Management View window.');
+    return;
+  }
+
+  const childHtml = [
+    '<!DOCTYPE html>',
+    '<html lang="en">',
+    '<head>',
+    '<meta charset="UTF-8">',
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+    '<title>Offer Wall / Management View</title>',
+    '<style>',
+    '  *{box-sizing:border-box; margin:0; padding:0; font-family:"Segoe UI",Inter,Roboto,Arial,sans-serif;}',
+    '  body{background:#f4f5f7; color:#111827; padding:20px 24px;}',
+    '  .header{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:14px;}',
+    '  .header-left{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}',
+    '  h1{font-size:20px; font-weight:700; color:#111827;}',
+    '  .badge{background:#e2e8f0; color:#334155; font-size:12px; font-weight:700; padding:4px 10px; border-radius:999px;}',
+    '  .toolbar{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}',
+    '  .search-input{border:1px solid #d7dce4; background:#fff; border-radius:999px; padding:7px 14px; font-size:13px; width:240px; outline:none;}',
+    '  .search-input:focus{border-color:#2f6fed; box-shadow:0 0 0 2px rgba(47,111,237,.15);}',
+    '  .btn{border:none; border-radius:999px; padding:8px 16px; font-size:13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:background .15s;}',
+    '  .btn-add{background:#0b1329; color:#fff;}',
+    '  .btn-add:hover{background:#1e293b;}',
+    '  .btn-export{background:#fff; color:#111827; border:1px solid #d7dce4;}',
+    '  .btn-export:hover{background:#f8fafc;}',
+    '  .btn-clear{background:#fee2e2; color:#dc2626;}',
+    '  .btn-clear:hover{background:#fecaca;}',
+    '  .table-card{background:#fff; border-radius:14px; box-shadow:0 1px 3px rgba(16,24,40,.06); border:1px solid #e5e7eb; overflow:hidden;}',
+    '  .table-scroll{overflow:auto; max-height:calc(100vh - 120px);}',
+    '  table{width:max-content; min-width:100%; border-collapse:separate; border-spacing:0; font-size:12.5px;}',
+    '  thead th{position:sticky; top:0; z-index:20; background:#f8fafc; color:#475569; font-size:11px; text-transform:uppercase; letter-spacing:.4px; font-weight:700; padding:11px 10px; text-align:left; border-bottom:1px solid #e2e8f0; white-space:nowrap;}',
+    '  thead th.sticky-col, tbody td.sticky-col{position:sticky; left:0; background:#fff; z-index:10; border-right:1px solid #e2e8f0;}',
+    '  thead th.sticky-col{background:#f8fafc; z-index:30;}',
+    '  tbody tr:hover td{background:#f8fafc;}',
+    '  tbody tr:hover td.sticky-col{background:#f8fafc;}',
+    '  tbody td{padding:6px 8px; border-bottom:1px solid #eceef2; vertical-align:middle;}',
+    '  .cell-input{width:100%; border:1px solid transparent; background:transparent; padding:6px 8px; border-radius:6px; font-size:12.5px; color:#111827; outline:none; transition:border-color .15s, background .15s;}',
+    '  .cell-input:hover{border-color:#e2e8f0; background:#fff;}',
+    '  .cell-input:focus{border-color:#2f6fed; background:#fff; box-shadow:0 0 0 2px rgba(47,111,237,.12);}',
+    '  textarea.cell-input{resize:vertical; min-height:30px; line-height:1.35;}',
+    '  .actions-wrap{display:flex; align-items:center; gap:6px;}',
+    '  .row-num{font-size:11px; font-weight:700; color:#94a3b8; min-width:22px; text-align:center;}',
+    '  .icon-btn{border:1px solid #e2e8f0; background:#fff; color:#334155; border-radius:6px; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; transition:all .15s;}',
+    '  .icon-btn:hover{background:#f1f5f9; color:#0f172a;}',
+    '  .icon-btn.del{color:#dc2626; border-color:#fecaca; background:#fff5f5;}',
+    '  .icon-btn.del:hover{background:#fee2e2; color:#b91c1c;}',
+    '  .icon-btn svg{width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}',
+    '  .empty-state{text-align:center; padding:48px 20px; color:#64748b; font-size:14px;}',
+    '  .modal-backdrop{display:none; position:fixed; inset:0; background:rgba(15,23,42,.45); z-index:1000; align-items:center; justify-content:center; padding:20px;}',
+    '  .modal-backdrop.open{display:flex;}',
+    '  .modal{background:#fff; border-radius:16px; width:100%; max-width:920px; max-height:90vh; display:flex; flex-direction:column; box-shadow:0 20px 50px rgba(0,0,0,.2);}',
+    '  .modal-head{padding:16px 22px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center;}',
+    '  .modal-head h2{font-size:17px; font-weight:700;}',
+    '  .modal-close{background:none; border:none; font-size:22px; cursor:pointer; color:#64748b; line-height:1;}',
+    '  .modal-body{padding:18px 22px; overflow:auto; display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;}',
+    '  .field-grp{display:flex; flex-direction:column; gap:5px;}',
+    '  .field-grp.full{grid-column:1 / -1;}',
+    '  .field-grp label{font-size:11px; font-weight:700; text-transform:uppercase; color:#64748b; letter-spacing:.4px;}',
+    '  .field-grp input, .field-grp textarea{border:1px solid #d7dce4; border-radius:8px; padding:8px 10px; font-size:13px; color:#111827; outline:none;}',
+    '  .field-grp input:focus, .field-grp textarea:focus{border-color:#2f6fed; box-shadow:0 0 0 2px rgba(47,111,237,.12);}',
+    '  .modal-foot{padding:14px 22px; border-top:1px solid #e5e7eb; display:flex; justify-content:flex-end; gap:10px;}',
+    '  @media (max-width:700px){ .modal-body{grid-template-columns:1fr;} }',
+    '</style>',
+    '</head>',
+    '<body>',
+    '  <div class="header">',
+    '    <div class="header-left">',
+    '      <h1>Offer Wall / Management View</h1>',
+    '      <span class="badge" id="rowCountBadge">0 rows</span>',
+    '    </div>',
+    '    <div class="toolbar">',
+    '      <input type="text" class="search-input" id="searchInput" placeholder="Search table...">',
+    '      <button type="button" class="btn btn-add" id="btnAddRow">+ Add Row</button>',
+    '      <button type="button" class="btn btn-export" id="btnExportCsv">Export CSV</button>',
+    '      <button type="button" class="btn btn-clear" id="btnClearAll">Clear All</button>',
+    '    </div>',
+    '  </div>',
+    '  <div class="table-card">',
+    '    <div class="table-scroll" id="tableScroll">',
+    '      <table>',
+    '        <thead><tr id="tableHeaderRow"></tr></thead>',
+    '        <tbody id="tableBody"></tbody>',
+    '      </table>',
+    '      <div class="empty-state" id="emptyState">No rows yet. Click <b>+ Add Row</b> to add your first entry.</div>',
+    '    </div>',
+    '  </div>',
+    '  <div class="modal-backdrop" id="editModal">',
+    '    <div class="modal">',
+    '      <div class="modal-head">',
+    '        <h2 id="modalTitle">Edit Row</h2>',
+    '        <button type="button" class="modal-close" id="btnCloseModal">&times;</button>',
+    '      </div>',
+    '      <div class="modal-body" id="modalBody"></div>',
+    '      <div class="modal-foot">',
+    '        <button type="button" class="btn btn-export" id="btnCancelModal">Cancel</button>',
+    '        <button type="button" class="btn btn-add" id="btnSaveModal">Save Changes</button>',
+    '      </div>',
+    '    </div>',
+    '  </div>',
+    '<script>',
+    'var STORAGE_KEY = "offer_wall_management_rows_v1";',
+    'var COLUMNS = [',
+    '  { key: "category", label: "Category", width: "120px" },',
+    '  { key: "campaignId", label: "Campaign ID", width: "100px" },',
+    '  { key: "campaignOffer", label: "Campaign / Offer", width: "210px" },',
+    '  { key: "advertiser", label: "Advertiser", width: "145px" },',
+    '  { key: "status", label: "Status", width: "100px" },',
+    '  { key: "stage", label: "Stage", width: "100px" },',
+    '  { key: "sourceType", label: "Source Type", width: "115px" },',
+    '  { key: "advertiserNetwork", label: "Advertiser / Network", width: "170px" },',
+    '  { key: "previewUrl", label: "Preview URL", width: "200px", type: "url" },',
+    '  { key: "revenue", label: "Revenue", width: "95px", type: "number" },',
+    '  { key: "budget", label: "Budget", width: "95px", type: "number" },',
+    '  { key: "profit", label: "Profit", width: "95px", type: "number" },',
+    '  { key: "twoSp", label: "2SP", width: "85px" },',
+    '  { key: "publisherPayout", label: "Publisher Payout ($)", width: "145px", type: "number" },',
+    '  { key: "conversionEvent", label: "Conversion Event", width: "135px" },',
+    '  { key: "marginPct", label: "Margin %", width: "95px" },',
+    '  { key: "allowedGeo", label: "Allowed GEO", width: "190px", multiline: true },',
+    '  { key: "restrictedGeo", label: "Restricted GEO", width: "230px", multiline: true },',
+    '  { key: "trafficAllowed", label: "Traffic Allowed", width: "200px", multiline: true },',
+    '  { key: "registrations", label: "Registrations", width: "110px", type: "number" },',
+    '  { key: "ftds", label: "FTDs", width: "90px", type: "number" },',
+    '  { key: "s2p", label: "S2P", width: "90px" },',
+    '  { key: "internalNotes", label: "Internal Notes", width: "210px", multiline: true }',
+    '];',
+    'var rows = [];',
+    'var editingRowId = null;',
+    'function loadRows(){',
+    '  try {',
+    '    if (window.opener && typeof window.opener.getOfferWallRows === "function") {',
+    '      rows = window.opener.getOfferWallRows() || [];',
+    '      return;',
+    '    }',
+    '    var raw = localStorage.getItem(STORAGE_KEY);',
+    '    rows = raw ? JSON.parse(raw) : [];',
+    '  } catch (e) { rows = []; }',
+    '}',
+    'function persistRows(){',
+    '  try {',
+    '    if (window.opener && typeof window.opener.saveOfferWallRows === "function") {',
+    '      window.opener.saveOfferWallRows(rows);',
+    '    } else {',
+    '      localStorage.setItem(STORAGE_KEY, JSON.stringify(rows));',
+    '    }',
+    '  } catch (e) {}',
+    '}',
+    'function escHtml(str){',
+    '  return String(str == null ? "" : str)',
+    '    .replace(/&/g, "&amp;")',
+    '    .replace(/</g, "&lt;")',
+    '    .replace(/>/g, "&gt;")',
+    '    .replace(/"/g, "&quot;")',
+    '    .replace(/\x27/g, "&#39;");',
+    '}',
+    'function createEmptyRow(){',
+    '  var obj = { id: "row_" + Date.now() + "_" + Math.random().toString(36).slice(2, 8) };',
+    '  COLUMNS.forEach(function(col){ obj[col.key] = ""; });',
+    '  return obj;',
+    '}',
+    'function renderHeader(){',
+    '  var tr = document.getElementById("tableHeaderRow");',
+    '  var html = "<th class=\\"sticky-col\\" style=\\"min-width:105px;\\">Actions</th>";',
+    '  COLUMNS.forEach(function(col){',
+    '    html += "<th style=\\"min-width:" + col.width + ";\\">" + escHtml(col.label) + "</th>";',
+    '  });',
+    '  tr.innerHTML = html;',
+    '}',
+    'function renderBody(){',
+    '  var q = (document.getElementById("searchInput").value || "").trim().toLowerCase();',
+    '  var filtered = rows.filter(function(r){',
+    '    if (!q) return true;',
+    '    return COLUMNS.some(function(col){',
+    '      return String(r[col.key] || "").toLowerCase().indexOf(q) !== -1;',
+    '    });',
+    '  });',
+    '  document.getElementById("rowCountBadge").textContent = filtered.length + (filtered.length === 1 ? " row" : " rows");',
+    '  var tbody = document.getElementById("tableBody");',
+    '  var empty = document.getElementById("emptyState");',
+    '  if (filtered.length === 0) {',
+    '    tbody.innerHTML = "";',
+    '    empty.style.display = "block";',
+    '    empty.innerHTML = rows.length === 0',
+    '      ? "No rows yet. Click <b>+ Add Row</b> to add your first entry."',
+    '      : "No matching rows found for your search.";',
+    '    return;',
+    '  }',
+    '  empty.style.display = "none";',
+    '  var html = "";',
+    '  filtered.forEach(function(row, idx){',
+    '    html += "<tr data-id=\\"" + escHtml(row.id) + "\\">";',
+    '    html += "<td class=\\"sticky-col\\"><div class=\\"actions-wrap\\">" +',
+    '      "<span class=\\"row-num\\">" + (idx + 1) + "</span>" +',
+    '      "<button type=\\"button\\" class=\\"icon-btn btn-edit\\" title=\\"Edit row\\"><svg viewBox=\\"0 0 24 24\\"><path d=\\"M12 20h9\\"></path><path d=\\"M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z\\"></path></svg></button>" +',
+    '      "<button type=\\"button\\" class=\\"icon-btn del btn-del\\" title=\\"Delete row\\"><svg viewBox=\\"0 0 24 24\\"><polyline points=\\"3 6 5 6 21 6\\"></polyline><path d=\\"M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6\\"></path><path d=\\"M10 11v6\\"></path><path d=\\"M14 11v6\\"></path><path d=\\"M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2\\"></path></svg></button>" +',
+    '      "</div></td>";',
+    '    COLUMNS.forEach(function(col){',
+    '      var val = escHtml(row[col.key] || "");',
+    '      if (col.multiline) {',
+    '        html += "<td><textarea class=\\"cell-input\\" rows=\\"1\\" data-key=\\"" + col.key + "\\">" + val + "</textarea></td>";',
+    '      } else {',
+    '        var inpType = col.type === "number" ? "number" : (col.type === "url" ? "url" : "text");',
+    '        var stepAttr = col.type === "number" ? " step=\\"any\\"" : "";',
+    '        html += "<td><input type=\\"" + inpType + "\\"" + stepAttr + " class=\\"cell-input\\" data-key=\\"" + col.key + "\\" value=\\"" + val + "\\"></td>";',
+    '      }',
+    '    });',
+    '    html += "</tr>";',
+    '  });',
+    '  tbody.innerHTML = html;',
+    '}',
+    'function openEditModal(rowId){',
+    '  var row = rows.find(function(r){ return r.id === rowId; });',
+    '  if (!row) return;',
+    '  editingRowId = rowId;',
+    '  var modalBody = document.getElementById("modalBody");',
+    '  var html = "";',
+    '  COLUMNS.forEach(function(col){',
+    '    var fullCls = col.multiline ? " full" : "";',
+    '    var val = escHtml(row[col.key] || "");',
+    '    html += "<div class=\\"field-grp" + fullCls + "\\"><label>" + escHtml(col.label) + "</label>";',
+    '    if (col.multiline) {',
+    '      html += "<textarea rows=\\"2\\" data-modal-key=\\"" + col.key + "\\">" + val + "</textarea>";',
+    '    } else {',
+    '      var inpType = col.type === "number" ? "number" : (col.type === "url" ? "url" : "text");',
+    '      var stepAttr = col.type === "number" ? " step=\\"any\\"" : "";',
+    '      html += "<input type=\\"" + inpType + "\\"" + stepAttr + " data-modal-key=\\"" + col.key + "\\" value=\\"" + val + "\\">";',
+    '    }',
+    '    html += "</div>";',
+    '  });',
+    '  modalBody.innerHTML = html;',
+    '  document.getElementById("editModal").classList.add("open");',
+    '}',
+    'function closeEditModal(){',
+    '  editingRowId = null;',
+    '  document.getElementById("editModal").classList.remove("open");',
+    '}',
+    'function saveEditModal(){',
+    '  if (!editingRowId) return;',
+    '  var row = rows.find(function(r){ return r.id === editingRowId; });',
+    '  if (!row) return;',
+    '  document.querySelectorAll("[data-modal-key]").forEach(function(el){',
+    '    row[el.getAttribute("data-modal-key")] = el.value;',
+    '  });',
+    '  persistRows();',
+    '  renderBody();',
+    '  closeEditModal();',
+    '}',
+    'function exportCsv(){',
+    '  var escCsv = function(v){',
+    '    var s = String(v == null ? "" : v);',
+    '    if (s.indexOf("\\"") !== -1 || s.indexOf(",") !== -1 || s.indexOf("\\n") !== -1 || s.indexOf("\\r") !== -1) {',
+    '      return "\\"" + s.replace(/"/g, "\\"\\"") + "\\"";',
+    '    }',
+    '    return s;',
+    '  };',
+    '  var lines = [COLUMNS.map(function(c){ return escCsv(c.label); }).join(",")];',
+    '  rows.forEach(function(r){',
+    '    lines.push(COLUMNS.map(function(c){ return escCsv(r[c.key] || ""); }).join(","));',
+    '  });',
+    '  var blob = new Blob(["\\uFEFF" + lines.join("\\r\\n")], { type: "text/csv;charset=utf-8;" });',
+    '  var url = URL.createObjectURL(blob);',
+    '  var a = document.createElement("a");',
+    '  a.href = url;',
+    '  a.download = "offer_wall_management_view.csv";',
+    '  document.body.appendChild(a);',
+    '  a.click();',
+    '  document.body.removeChild(a);',
+    '  URL.revokeObjectURL(url);',
+    '}',
+    'document.getElementById("btnAddRow").addEventListener("click", function(){',
+    '  var newRow = createEmptyRow();',
+    '  rows.push(newRow);',
+    '  persistRows();',
+    '  document.getElementById("searchInput").value = "";',
+    '  renderBody();',
+    '  var tr = document.querySelector("tr[data-id=\\"" + newRow.id + "\\"]");',
+    '  if (tr) {',
+    '    tr.scrollIntoView({ behavior: "smooth", block: "nearest" });',
+    '    var firstInput = tr.querySelector(".cell-input");',
+    '    if (firstInput) firstInput.focus();',
+    '  }',
+    '});',
+    'document.getElementById("btnExportCsv").addEventListener("click", exportCsv);',
+    'document.getElementById("btnClearAll").addEventListener("click", function(){',
+    '  if (rows.length === 0) return;',
+    '  if (confirm("Are you sure you want to delete all rows?")) {',
+    '    rows = [];',
+    '    persistRows();',
+    '    renderBody();',
+    '  }',
+    '});',
+    'document.getElementById("searchInput").addEventListener("input", renderBody);',
+    'document.getElementById("tableBody").addEventListener("input", function(e){',
+    '  var target = e.target;',
+    '  if (!target.classList.contains("cell-input")) return;',
+    '  var tr = target.closest("tr");',
+    '  if (!tr) return;',
+    '  var row = rows.find(function(r){ return r.id === tr.getAttribute("data-id"); });',
+    '  if (row) {',
+    '    row[target.getAttribute("data-key")] = target.value;',
+    '    persistRows();',
+    '  }',
+    '});',
+    'document.getElementById("tableBody").addEventListener("click", function(e){',
+    '  var delBtn = e.target.closest(".btn-del");',
+    '  if (delBtn) {',
+    '    var tr = delBtn.closest("tr");',
+    '    var id = tr.getAttribute("data-id");',
+    '    if (confirm("Delete this row?")) {',
+    '      rows = rows.filter(function(r){ return r.id !== id; });',
+    '      persistRows();',
+    '      renderBody();',
+    '    }',
+    '    return;',
+    '  }',
+    '  var editBtn = e.target.closest(".btn-edit");',
+    '  if (editBtn) {',
+    '    var trEdit = editBtn.closest("tr");',
+    '    openEditModal(trEdit.getAttribute("data-id"));',
+    '  }',
+    '});',
+    'document.getElementById("btnCloseModal").addEventListener("click", closeEditModal);',
+    'document.getElementById("btnCancelModal").addEventListener("click", closeEditModal);',
+    'document.getElementById("btnSaveModal").addEventListener("click", saveEditModal);',
+    'document.getElementById("editModal").addEventListener("click", function(e){',
+    '  if (e.target.id === "editModal") closeEditModal();',
+    '});',
+    'loadRows();',
+    'renderHeader();',
+    'renderBody();',
+    '<\/script>',
+    '</body>',
+    '</html>'
+  ].join('\n');
+
+  offerWallWin.document.open();
+  offerWallWin.document.write(childHtml);
+  offerWallWin.document.close();
+}
+
 function setupGlobalListeners() {
+  document.getElementById('btnOfferWall').addEventListener('click', openOfferWallWindow);
+
   document.getElementById('fromTrigger').addEventListener('click', e => {
     e.stopPropagation();
     state.activePicker === 'from' ? closeCalendar() : openCalendar('from');
