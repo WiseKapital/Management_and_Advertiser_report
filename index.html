@@ -1427,26 +1427,8 @@ function renderAll() {
 }
 
 /* =========================================================================
-   OFFER WALL / MANAGEMENT VIEW (NEW TAB IN SAME BROWSER)
+   OFFER WALL / MANAGEMENT VIEW (NEW TAB IN SAME BROWSER - SIN CACHE/COOKIES)
    ========================================================================= */
-const OFFER_WALL_STORAGE_KEY = 'offer_wall_management_rows_v1';
-window._offerWallFallbackRows = [];
-
-window.getOfferWallRows = function() {
-  try {
-    const raw = localStorage.getItem(OFFER_WALL_STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
-  } catch (e) {}
-  return Array.isArray(window._offerWallFallbackRows) ? window._offerWallFallbackRows : [];
-};
-
-window.saveOfferWallRows = function(rows) {
-  window._offerWallFallbackRows = rows;
-  try {
-    localStorage.setItem(OFFER_WALL_STORAGE_KEY, JSON.stringify(rows));
-  } catch (e) {}
-};
-
 let offerWallWin = null;
 
 function openOfferWallWindow() {
@@ -1479,7 +1461,10 @@ function openOfferWallWindow() {
     '  .toolbar{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}',
     '  .search-input{border:1px solid #d7dce4; background:#fff; border-radius:999px; padding:6px 13px; font-size:12.5px; width:220px; outline:none;}',
     '  .search-input:focus{border-color:#2f6fed; box-shadow:0 0 0 2px rgba(47,111,237,.15);}',
-    '  .btn{border:none; border-radius:999px; padding:7px 14px; font-size:12.5px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:5px; transition:background .15s;}',
+    '  .btn{border:none; border-radius:999px; padding:7px 14px; font-size:12.5px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:background .15s;}',
+    '  .btn-github{background:#000000; color:#ffffff; box-shadow:0 1px 3px rgba(0,0,0,.2);}',
+    '  .btn-github:hover{background:#1f2937;}',
+    '  .btn-github svg{width:14px; height:14px; fill:currentColor; flex-shrink:0;}',
     '  .btn-add{background:#0b1329; color:#fff;}',
     '  .btn-add:hover{background:#1e293b;}',
     '  .btn-export{background:#059669; color:#fff;}',
@@ -1563,6 +1548,10 @@ function openOfferWallWindow() {
     '  <div class="header">',
     '    <div class="header-left">',
     '      <h1>Offer Wall / Management View</h1>',
+    '      <button type="button" class="btn btn-github" id="btnSaveGithub">',
+    '        <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>',
+    '        <span>Save to GitHub</span>',
+    '      </button>',
     '      <span class="badge" id="rowCountBadge">0 rows</span>',
     '    </div>',
     '    <div class="toolbar">',
@@ -1596,7 +1585,6 @@ function openOfferWallWindow() {
     '    </div>',
     '  </div>',
     '<script>',
-    'var STORAGE_KEY = "offer_wall_management_rows_v1";',
     'var THEME_RGB = {',
     '  grey:   { grp: "DDE1E7", sub: "ECEFF3", body: "F6F7F9" },',
     '  blue:   { grp: "CFE2F3", sub: "E4EFFA", body: "F2F7FD" },',
@@ -1641,25 +1629,6 @@ function openOfferWallWindow() {
     '];',
     'var rows = [];',
     'var editingRowId = null;',
-    'function loadRows(){',
-    '  try {',
-    '    if (window.opener && typeof window.opener.getOfferWallRows === "function") {',
-    '      rows = window.opener.getOfferWallRows() || [];',
-    '      return;',
-    '    }',
-    '    var raw = localStorage.getItem(STORAGE_KEY);',
-    '    rows = raw ? JSON.parse(raw) : [];',
-    '  } catch (e) { rows = []; }',
-    '}',
-    'function persistRows(){',
-    '  try {',
-    '    if (window.opener && typeof window.opener.saveOfferWallRows === "function") {',
-    '      window.opener.saveOfferWallRows(rows);',
-    '    } else {',
-    '      localStorage.setItem(STORAGE_KEY, JSON.stringify(rows));',
-    '    }',
-    '  } catch (e) {}',
-    '}',
     'function escHtml(str){',
     '  return String(str == null ? "" : str)',
     '    .replace(/&/g, "&amp;")',
@@ -1791,9 +1760,11 @@ function openOfferWallWindow() {
     '  document.querySelectorAll("[data-modal-key]").forEach(function(el){',
     '    row[el.getAttribute("data-modal-key")] = el.value;',
     '  });',
-    '  persistRows();',
     '  renderBody();',
     '  closeEditModal();',
+    '}',
+    'function saveToGitHub(){',
+    '  alert("Save to GitHub will be configured next.");',
     '}',
     'function exportExcel(){',
     '  var xlsxLib = window.XLSX || (window.opener && window.opener.XLSX);',
@@ -1931,10 +1902,10 @@ function openOfferWallWindow() {
     '  document.body.removeChild(fbA);',
     '  URL.revokeObjectURL(fbUrl);',
     '}',
+    'document.getElementById("btnSaveGithub").addEventListener("click", saveToGitHub);',
     'document.getElementById("btnAddRow").addEventListener("click", function(){',
     '  var newRow = createEmptyRow();',
     '  rows.push(newRow);',
-    '  persistRows();',
     '  document.getElementById("searchInput").value = "";',
     '  renderBody();',
     '  var tr = document.querySelector("tr[data-id=\\"" + newRow.id + "\\"]");',
@@ -1949,7 +1920,6 @@ function openOfferWallWindow() {
     '  if (rows.length === 0) return;',
     '  if (confirm("Are you sure you want to delete all rows?")) {',
     '    rows = [];',
-    '    persistRows();',
     '    renderBody();',
     '  }',
     '});',
@@ -1963,7 +1933,6 @@ function openOfferWallWindow() {
     '  var row = rows.find(function(r){ return r.id === tr.getAttribute("data-id"); });',
     '  if (row) {',
     '    row[target.getAttribute("data-key")] = target.value;',
-    '    persistRows();',
     '  }',
     '});',
     'document.getElementById("tableBody").addEventListener("click", function(e){',
@@ -1973,7 +1942,6 @@ function openOfferWallWindow() {
     '    var id = tr.getAttribute("data-id");',
     '    if (confirm("Delete this row?")) {',
     '      rows = rows.filter(function(r){ return r.id !== id; });',
-    '      persistRows();',
     '      renderBody();',
     '    }',
     '    return;',
@@ -1994,7 +1962,6 @@ function openOfferWallWindow() {
     '  if (e.key === "Escape") closeEditModal();',
     '});',
     'window.addEventListener("resize", resizeAllTextareas);',
-    'loadRows();',
     'renderHeader();',
     'renderBody();',
     '<\/script>',
