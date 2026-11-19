@@ -58,6 +58,9 @@
   .sort-btns{display:inline-flex;align-items:center;background:#fff;border:1px solid #d7dce4;border-radius:999px;overflow:hidden;height:32px;}
   .sort-btns button{border:none;outline:none;background:transparent;padding:0 16px;height:100%;font-size:12.5px;font-weight:500;color:#0f172a;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;}
   .sort-btns button:hover:not(.active){background:#f8fafc;} .sort-btns button.active{background:#0b1329;color:#fff;font-weight:600;}
+  .charts-2col{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:16px;}
+  .charts-2col .panel{margin-bottom:0;}
+  .chart-box{position:relative;height:320px;}
   table{width:100%;border-collapse:collapse;font-size:13px;}
   th,td{padding:10px 12px;text-align:right;white-space:nowrap;} th:first-child,td:first-child{text-align:left;}
   .grp-blue{background:var(--blue);color:#fff;text-align:center;} .grp-green{background:#1f9d55;color:#fff;text-align:center;} .grp-orange{background:#b26a00;color:#fff;text-align:center;} .grp-roi{background:#fff;}
@@ -71,7 +74,7 @@
   .report-table thead th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;}
   .report-table thead th.active-col{color:var(--blue);} .report-table tbody td{font-size:13px;} .report-table tbody tr:hover{background:#fbfcfd;}
   #loadingOverlay{display:none;position:fixed;inset:0;background:rgba(255,255,255,.8);align-items:center;justify-content:center;z-index:9999;font-weight:600;font-size:15px;color:#111827;}
-  @media (max-width:1100px){ .cards{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:1100px){ .cards{grid-template-columns:repeat(2,1fr);} .charts-2col{grid-template-columns:1fr;} }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
@@ -186,6 +189,33 @@
     </table>
   </div>
 
+  <div class="charts-2col">
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h3>Revenue by Advertiser (%)</h3>
+          <div class="hint">Share of total revenue per active advertiser.</div>
+        </div>
+      </div>
+      <div class="chart-box"><canvas id="chAdvRevBar"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h3>Team Distribution</h3>
+          <div class="hint" id="pieHint">Share by team (Budget).</div>
+        </div>
+        <div class="sort-btns" id="pieMetricBtns">
+          <button data-m="budget" class="active">Budget</button>
+          <button data-m="signups">Signups</button>
+          <button data-m="users">FTD</button>
+        </div>
+      </div>
+      <div class="chart-box"><canvas id="chTeamPie"></canvas></div>
+    </div>
+  </div>
+
   <div class="panel">
     <div class="panel-head">
       <div>
@@ -234,7 +264,7 @@ const state = {
   from: FIRST_DAY_OF_MONTH, to: TODAY, activePicker: null,
   viewYear: CURRENT_YEAR, viewMonth: now.getMonth(),
   reportSortKey: 'vertical', reportSortAsc: true, reportCollapsed: false, prevReportSort: null,
-  inhouseSortKey: 'budget', inhouseSortAsc: false
+  inhouseSortKey: 'budget', inhouseSortAsc: false, pieMetric: 'budget'
 };
 
 const fmtInt = v => Math.round(Number(v) || 0).toLocaleString('en-US');
@@ -489,7 +519,9 @@ function renderTeams() {
   }).join('');
 }
 
-let chDailyInstance = null;
+let chDailyInstance = null, chAdvRevBarInst = null, chTeamPieInst = null;
+const barPalette = ['#2f6fed','#ec4899','#f59e0b','#10b981','#8b5cf6','#06b6d4','#f97316','#ef4444','#14b8a6','#6366f1','#84cc16','#a855f7'];
+
 function renderDaily() {
   const filtered = CURRENT.daily, mNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const labels = filtered.map(d => { const [, m, day] = d.date.split('-'); return `${mNames[+m - 1]} ${+day}`; });
@@ -507,6 +539,58 @@ function renderDaily() {
     options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { position: 'top', align: 'center', labels: { boxWidth: 10, usePointStyle: true, pointStyle: 'circle', padding: 14, font: { size: 11 } } } }, scales: { y: { title: { display: true, text: 'Count' }, grid: { color: '#f0f1f4' }, beginAtZero: true, ticks: { callback: v => fmtInt(v) } }, y1: { position: 'right', title: { display: true, text: 'Revenue $' }, grid: { drawOnChartArea: false }, beginAtZero: true, ticks: { callback: v => '$' + fmtInt(v) } }, x: { grid: { display: false } } } }
   });
   chDailyInstance.data.datasets[2].yAxisID = 'y1'; chDailyInstance.data.datasets[5].yAxisID = 'y1'; chDailyInstance.update();
+}
+
+function renderAdvRevBar() {
+  const advTotals = new Map();
+  CURRENT.allBrands.forEach(b => {
+    const name = (b.advertiser || '').trim();
+    if (name && name !== '—') advTotals.set(name, (advTotals.get(name) || 0) + (Number(b.revenue) || 0));
+  });
+  let active = Array.from(advTotals.entries()).filter(([, r]) => r > 0);
+  if (!active.length) {
+    const fallback = new Map();
+    CURRENT.daily.forEach(d => {
+      for (const [adv, arr] of Object.entries(d.advertisers || {})) fallback.set(adv, (fallback.get(adv) || 0) + (Number(arr[2]) || 0));
+    });
+    active = Array.from(fallback.entries()).filter(([, r]) => r > 0);
+  }
+  active.sort((a, b) => b[1] - a[1]);
+  const totalRev = active.reduce((s, [, r]) => s + r, 0);
+  const pcts = active.map(([, r]) => totalRev > 0 ? Number(((r / totalRev) * 100).toFixed(1)) : 0);
+  if (chAdvRevBarInst) chAdvRevBarInst.destroy();
+  chAdvRevBarInst = new Chart(document.getElementById('chAdvRevBar'), {
+    type: 'bar',
+    data: {
+      labels: active.map(([n]) => n),
+      datasets: [{ label: 'Revenue %', data: pcts, backgroundColor: active.map((_, i) => barPalette[i % barPalette.length]), borderRadius: 6, maxBarThickness: 48 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ` ${c.parsed.y}% (${fmtMoney(active[c.dataIndex][1])})` } } },
+      scales: { y: { beginAtZero: true, grid: { color: '#f0f1f4' }, ticks: { callback: v => v + '%' } }, x: { grid: { display: false }, ticks: { font: { size: 11 } } } }
+    }
+  });
+}
+
+function renderTeamPie() {
+  const m = state.pieMetric, lblMap = { budget: 'Budget', signups: 'Signups', users: 'FTD' };
+  document.getElementById('pieHint').textContent = `Share by team (${lblMap[m]}).`;
+  const teamColors = { EMAIL: '#2f6fed', MEDIA: '#f59e0b', SOCIAL: '#ec4899' };
+  const items = CURRENT.teams.filter(t => t.name !== 'Grand total' && (t.mtd[m] || 0) > 0).map(t => ({ name: t.name, val: t.mtd[m], color: teamColors[t.name] || '#8b5cf6' }));
+  const total = items.reduce((s, it) => s + it.val, 0);
+  if (chTeamPieInst) chTeamPieInst.destroy();
+  chTeamPieInst = new Chart(document.getElementById('chTeamPie'), {
+    type: 'pie',
+    data: { labels: items.map(it => it.name), datasets: [{ data: items.map(it => it.val), backgroundColor: items.map(it => it.color), borderWidth: 2, borderColor: '#fff' }] },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 16, font: { size: 12 } } },
+        tooltip: { callbacks: { label: c => { const v = c.parsed, p = total > 0 ? ((v / total) * 100).toFixed(1) : '0.0'; return ` ${c.label}: ${m === 'budget' ? fmtMoney(v) : fmtInt(v)} (${p}%)`; } } }
+      }
+    }
+  });
 }
 
 function renderUnifiedTable() {
@@ -559,7 +643,7 @@ function renderInhouseTable() {
   tfoot.innerHTML = `<tr class="total-row"><td style="text-align:left;">Total</td><td class="num">${fmtInt(totS)}</td><td class="num">${fmtInt(totF)}</td><td class="num">${fmtMoney(totR)}</td><td class="num">${fmtMoney(totB)}</td><td class="num">${fmtMoney(totP)}</td><td class="num">—</td></tr>`;
 }
 
-function renderAll() { renderCards(); renderTeams(); renderDaily(); renderUnifiedTable(); renderInhouseTable(); }
+function renderAll() { renderCards(); renderTeams(); renderDaily(); renderUnifiedTable(); renderAdvRevBar(); renderTeamPie(); renderInhouseTable(); }
 
 let offerWallWin = null;
 function openOfferWallWindow() {
@@ -904,6 +988,13 @@ function setupGlobalListeners() {
       if (state.reportSortKey === f) state.reportSortAsc = !state.reportSortAsc;
       else { state.reportSortKey = f; state.reportSortAsc = (f === 'vertical' || f === 'advertiser' || f === 'brand'); }
       renderUnifiedTable();
+    });
+  });
+  document.querySelectorAll('#pieMetricBtns button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.pieMetric = btn.dataset.m;
+      document.querySelectorAll('#pieMetricBtns button').forEach(b => b.classList.toggle('active', b === btn));
+      renderTeamPie();
     });
   });
   document.querySelectorAll('#inhouseTable thead th[data-sort], #inhouseSortBtns button').forEach(el => {
