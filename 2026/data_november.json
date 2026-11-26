@@ -9,7 +9,7 @@
     "days_elapsed": 26,
     "is_month_closed": false,
     "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,25,27,30",
-    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 12: 132/6/728.01. Bucket 15: 50/6/890. Bucket 18: 115/15/1978. Bucket 21: 48/4/588. Bucket 24 (Nov 22-24, 3 dias): 150/9/1288. Bucket 25 (Nov 25 solo, 1 dia): 83/6/800. Bucket 27 (Nov 26 solo, 1 dia parcial, fecha 26=date_to): 18/3/398. Bucket 30 en 0.",
+    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 12: 132/6/728.01. Bucket 15: 50/6/890. Bucket 18: 115/15/1978. Bucket 21: 48/4/588. Bucket 24 (Nov 22-24, 3 dias): 150/9/1288. Bucket 25 (Nov 25 solo, 1 dia): 83/6/800. Bucket 27 (Nov 26 solo, 1 dia parcial, fecha 26=date_to): 28/3/398. Bucket 30 en 0.",
     "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-26: buckets 1,3,6,9,12,15,18,21,24 completos, bucket 25 completo Nov 25 solo (1 dia), bucket 27 parcial Nov 26 solo (1 dia) fechado 2026-11-26 = date_to, si se suma. Bucket 27 = Nov 26-27 (2 dias) para no solapar, solo Nov 26 incluido. Bucket 30 = Nov 28-30 en 0.",
     "teams_actual": {
       "SOCIAL": {
@@ -21,7 +21,7 @@
       },
       "MEDIA": {
         "budget": 1060,
-        "signups": 454,
+        "signups": 464,
         "ftd": 34,
         "rev": 4975,
         "profit": 3915
@@ -35,7 +35,7 @@
       },
       "TOTAL": {
         "budget": 2859,
-        "signups": 821,
+        "signups": 831,
         "ftd": 59,
         "rev": 8100,
         "profit": 5241
@@ -72,7 +72,7 @@
         "revenue": 0
       }
     },
-    "correction_note": "V 01-26 corregido: LuckyBunny revenue 120 -> 130. Filas suman 831/59/8100.01 (teams dicen 821/59/8100). Ya cuadra revenue a 0.01 (Mega Spinz). Solo queda diferencia 10 signups vs teams, todo en LuckyBunny: tabla trae 56/1/130, si fuera 46/1/130 cuadraria con teams 821. Se deja tabla tal cual en filas. Profit columna tiene 2 errores: Casinio 704 vs 860 (860-0=860, error 156), LuckyBunny 120 vs 130 (130-0=130, error 10), suma columna profit 6874.01. TOTAL reportado ahora 821/59/8100/1060/7040 cuadra en revenue y profit (7040 = 8100-1060, a 0.01 por Mega Spinz), solo signups -10 vs filas. Delta Nov 26 en bucket 27: teams 18/3/398 (SOCIAL 1/0/0, MEDIA 5/0/0, EMAIL 12/3/398), advertisers 28/3/398. Correcciones en delta: Fortuneplay -1, LavishLuck Sweepstakes Casino -1, compensadas con Spin Grande +2 en BASHER (neto BASHER 0). Deltas resto: Ice Casino +2, hellomillions +1/+1/+200, cardcrush_direct +6, Chanced +1, Punt +1, Casinio +3/+1/+88, CardCrush +0/+1/+110, LuckyBunny +11/0/0, luckybunny_direct +2, ChipNWin +1/0/0. Nuevos: ChipNWin 1/0/0 (GAMETIME DIGITAL) solo desde bucket 27. Verticales: Casino 31/0/0, Sweepstake 800/59/8100.01, Others 0. teams_kpi desde imagen Team Performance."
+    "correction_note": "V 01-26 final: Todo cuadra. Teams 831/59/8100 (SOCIAL 105/4/550, MEDIA 464/34/4975, EMAIL 262/21/2575) = filas 831/59/8100.01, diferencia solo 0.01 por Mega Spinz (EMAIL filas 2575.01 vs teams 2575). Correccion Media 454 -> 464 (+10) cierra la diferencia de 10 signups que habia: LuckyBunny 56/1/130 ya es correcto, no era error. Delta Nov 26 en bucket 27: teams 28/3/398 (SOCIAL 1/0/0, MEDIA 15/0/0, EMAIL 12/3/398), advertisers 28/3/398. Profit columna tiene 2 errores que no afectan TOTAL: Casinio 704 vs 860 (860-0=860, error 156), LuckyBunny 120 vs 130 (130-0=130, error 10), suma columna profit 6874.01. TOTAL correcto 831/59/8100.01/1060/7040.01 (8100.01-1060). El TOTAL del mensaje dice 821, quedo sin actualizar al corregir Media a 464 (105+464+262=831). Deltas resto en bucket 27: Ice Casino +2, hellomillions +1/+1/+200, cardcrush_direct +6, Chanced +1, Punt +1, Casinio +3/+1/+88, CardCrush +0/+1/+110, LuckyBunny +11/0/0, luckybunny_direct +2, ChipNWin +1/0/0, Fortuneplay -1, LavishLuck Sweepstakes Casino -1, Spin Grande +2 (neto BASHER 0). Nuevos: ChipNWin 1/0/0 solo desde bucket 27. Verticales: Casino 31/0/0, Sweepstake 800/59/8100.01, Others 0. teams_kpi desde imagen Team Performance."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -4962,7 +4962,7 @@
         ],
         "MEDIA": [
           0,
-          5,
+          15,
           0,
           0.0
         ],
