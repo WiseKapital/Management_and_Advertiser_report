@@ -4,49 +4,49 @@
     "year": 2026,
     "month_key": "2026-11",
     "date_from": "2026-11-01",
-    "date_to": "2026-11-26",
+    "date_to": "2026-11-27",
     "days_in_month": 30,
-    "days_elapsed": 26,
+    "days_elapsed": 27,
     "is_month_closed": false,
     "format": "[BUDGET, SIGNUPS, FTD, REVENUE] - BUCKETS 3 EN 3 - 1,3,6,9,12,15,18,21,24,25,27,30",
-    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 12: 132/6/728.01. Bucket 15: 50/6/890. Bucket 18: 115/15/1978. Bucket 21: 48/4/588. Bucket 24 (Nov 22-24, 3 dias): 150/9/1288. Bucket 25 (Nov 25 solo, 1 dia): 83/6/800. Bucket 27 (Nov 26 solo, 1 dia parcial, fecha 26=date_to): 28/3/398. Bucket 30 en 0.",
-    "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-26: buckets 1,3,6,9,12,15,18,21,24 completos, bucket 25 completo Nov 25 solo (1 dia), bucket 27 parcial Nov 26 solo (1 dia) fechado 2026-11-26 = date_to, si se suma. Bucket 27 = Nov 26-27 (2 dias) para no solapar, solo Nov 26 incluido. Bucket 30 = Nov 28-30 en 0.",
+    "aggregation": "Bucket 1: 28/1/220. Bucket 3: 52/2/310. Bucket 6: 80/4/480. Bucket 9: 65/3/420. Bucket 12: 132/6/728.01. Bucket 15: 50/6/890. Bucket 18: 115/15/1978. Bucket 21: 48/4/588. Bucket 24 (Nov 22-24, 3 dias): 150/9/1288. Bucket 25 (Nov 25 solo, 1 dia): 83/6/800. Bucket 27 (Nov 26-27, 2 dias, fecha 27=date_to): 36/4/528. Bucket 30 en 0.",
+    "bucket_rule": "Bucket label = ultimo dia del bucket. Corte 01-27: buckets 1,3,6,9,12,15,18,21,24 completos, bucket 25 completo Nov 25 solo (1 dia), bucket 27 completo Nov 26-27 (2 dias) fechado 2026-11-27 = date_to. Bucket 30 = Nov 28-30 en 0.",
     "teams_actual": {
       "SOCIAL": {
-        "budget": 990,
-        "signups": 105,
+        "budget": 996,
+        "signups": 108,
         "ftd": 4,
         "rev": 550,
-        "profit": -440
+        "profit": -446
       },
       "MEDIA": {
         "budget": 1060,
-        "signups": 464,
-        "ftd": 34,
-        "rev": 4975,
-        "profit": 3915
+        "signups": 466,
+        "ftd": 35,
+        "rev": 5105,
+        "profit": 4045
       },
       "EMAIL": {
-        "budget": 809,
-        "signups": 262,
+        "budget": 841,
+        "signups": 265,
         "ftd": 21,
         "rev": 2575,
-        "profit": 1766
+        "profit": 1734
       },
       "TOTAL": {
-        "budget": 2859,
-        "signups": 831,
-        "ftd": 59,
-        "rev": 8100,
-        "profit": 5241
+        "budget": 2897,
+        "signups": 839,
+        "ftd": 60,
+        "rev": 8230,
+        "profit": 5333
       }
     },
     "advertiser_totals": {
-      "signups": 831,
-      "ftd": 59,
-      "revenue": 8100.01,
+      "signups": 839,
+      "ftd": 60,
+      "revenue": 8230.01,
       "budget": 1060,
-      "profit": 7040.01
+      "profit": 7170.01
     },
     "inhouse_totals": {
       "signups": 0,
@@ -62,9 +62,9 @@
         "revenue": 0
       },
       "Sweepstake": {
-        "signups": 800,
-        "ftd": 59,
-        "revenue": 8100.01
+        "signups": 808,
+        "ftd": 60,
+        "revenue": 8230.01
       },
       "Others": {
         "signups": 0,
@@ -72,7 +72,7 @@
         "revenue": 0
       }
     },
-    "correction_note": "V 01-26 final: Todo cuadra. Teams 831/59/8100 (SOCIAL 105/4/550, MEDIA 464/34/4975, EMAIL 262/21/2575) = filas 831/59/8100.01, diferencia solo 0.01 por Mega Spinz (EMAIL filas 2575.01 vs teams 2575). Correccion Media 454 -> 464 (+10) cierra la diferencia de 10 signups que habia: LuckyBunny 56/1/130 ya es correcto, no era error. Delta Nov 26 en bucket 27: teams 28/3/398 (SOCIAL 1/0/0, MEDIA 15/0/0, EMAIL 12/3/398), advertisers 28/3/398. Profit columna tiene 2 errores que no afectan TOTAL: Casinio 704 vs 860 (860-0=860, error 156), LuckyBunny 120 vs 130 (130-0=130, error 10), suma columna profit 6874.01. TOTAL correcto 831/59/8100.01/1060/7040.01 (8100.01-1060). El TOTAL del mensaje dice 821, quedo sin actualizar al corregir Media a 464 (105+464+262=831). Deltas resto en bucket 27: Ice Casino +2, hellomillions +1/+1/+200, cardcrush_direct +6, Chanced +1, Punt +1, Casinio +3/+1/+88, CardCrush +0/+1/+110, LuckyBunny +11/0/0, luckybunny_direct +2, ChipNWin +1/0/0, Fortuneplay -1, LavishLuck Sweepstakes Casino -1, Spin Grande +2 (neto BASHER 0). Nuevos: ChipNWin 1/0/0 solo desde bucket 27. Verticales: Casino 31/0/0, Sweepstake 800/59/8100.01, Others 0. teams_kpi desde imagen Team Performance."
+    "correction_note": "V 01-27: Teams 839/60/8230 = filas 839/60/8230.01, diferencia solo 0.01 por Mega Spinz (EMAIL filas 2575.01 vs teams 2575). Bucket 27 ahora Nov 26-27 completo (2 dias) = Nov 26 anterior 28/3/398 + Nov 27 delta 8/1/130. Delta Nov 27 teams: SOCIAL [6,3,0,0] (996/108/4/550), MEDIA [0,2,1,130] (1060/466/35/5105), EMAIL [32,3,0,0] (841/265/21/2575). Delta Nov 27 advertisers 8/1/130: B2S spinblitz +1, BASHER -1/+1/+130 (Fortuneplay +3/+1/+130, LavishLuck Sweepstakes -4), GAMETIME +7 (Rolling +3, Casinio +4, Pulsz SEO +8, LuckyBunny -8), LUCKY_BUNNY_DIRECT +1 (luckybunny_direct 38->39). Filas finales: spinblitz 7, Fortuneplay 32/4/520, LavishLuck Sweepstakes 46, Rolling 62, Casinio 61, Pulsz SEO 24, LuckyBunny 48/1/130, luckybunny_direct 39. Profit columna errores: Casinio 704 vs 860 (error 156), LuckyBunny 120 vs 130 (error 10), suma columna profit 7004.01, TOTAL correcto 7170.01 = 8230.01-1060. TOTAL reportado 839/60/8230/1060/7170 cuadra a 0.01. Inhouse 0/0/0. teams_kpi desde imagen Team Performance."
   },
   "teams_kpi": {
     "EMAIL": {
@@ -4949,26 +4949,26 @@
       }
     },
     {
-      "date": "2026-11-26",
-      "date_range": "Nov 26",
+      "date": "2026-11-27",
+      "date_range": "Nov 26-27",
       "bucket_end": 27,
-      "days_in_bucket": 1,
+      "days_in_bucket": 2,
       "teams": {
         "SOCIAL": [
-          23,
-          1,
+          29,
+          4,
           0,
           0.0
         ],
         "MEDIA": [
           0,
-          15,
-          0,
-          0.0
+          17,
+          1,
+          130.0
         ],
         "EMAIL": [
-          31,
-          12,
+          63,
+          15,
           3,
           398.0
         ]
@@ -4993,15 +4993,15 @@
           0.0
         ],
         "B2S": [
-          1,
+          2,
           1,
           200.0,
           0.0
         ],
         "BASHER AGENCY": [
-          0,
-          0,
-          0.0,
+          -1,
+          1,
+          130.0,
           0.0
         ],
         "CARDCRUSH": [
@@ -5029,7 +5029,7 @@
           0.0
         ],
         "GAMETIME DIGITAL": [
-          15,
+          22,
           2,
           198.0,
           0.0
@@ -5041,7 +5041,7 @@
           0.0
         ],
         "LUCKY_BUNNY_DIRECT": [
-          2,
+          3,
           0,
           0.0,
           0.0
@@ -5127,7 +5127,7 @@
           0.0
         ],
         "spinblitz": [
-          0,
+          1,
           0,
           0.0,
           0.0
@@ -5145,13 +5145,13 @@
           0.0
         ],
         "Fortuneplay": [
-          -1,
-          0,
-          0.0,
+          2,
+          1,
+          130.0,
           0.0
         ],
         "LavishLuck Sweepstakes Casino": [
-          -1,
+          -5,
           0,
           0.0,
           0.0
@@ -5211,7 +5211,7 @@
           0.0
         ],
         "Rolling Riches": [
-          0,
+          3,
           0,
           0.0,
           0.0
@@ -5223,7 +5223,7 @@
           0.0
         ],
         "Casinio": [
-          3,
+          7,
           1,
           88.0,
           0.0
@@ -5235,7 +5235,7 @@
           0.0
         ],
         "Pulsz SEO": [
-          0,
+          8,
           0,
           0.0,
           0.0
@@ -5271,7 +5271,7 @@
           0.0
         ],
         "LuckyBunny": [
-          11,
+          3,
           0,
           0.0,
           0.0
@@ -5361,7 +5361,7 @@
           0.0
         ],
         "luckybunny_direct": [
-          2,
+          3,
           0,
           0.0,
           0.0
